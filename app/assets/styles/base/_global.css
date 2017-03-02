@@ -1,0 +1,36 @@
+/*Global styles*/
+* {
+  box-sizing: border-box;
+}
+
+/*Styles for html*/
+html{
+height:100%;
+}
+
+/*body styles for full width&height background image*/
+body {
+  background: url('../../../assets/images/background.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+/*Styles for anchor*/
+a {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    color: $mainSilver !important;
+    font-size: 19px;
+    line-height: 24px;
+    border-radius: 3px;
+    padding: 2px 15px;
+    text-decoration: none;
+    margin-top: 11px;
+
+    &:hover {
+      color: $mainWhite !important;
+    }
+}
