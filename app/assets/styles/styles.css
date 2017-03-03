@@ -3,4 +3,5 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_navbar";
-@import "modules/_footer";
+@import "modules/_wrapper";
+@import "modules/_site-footer";
