@@ -14,8 +14,9 @@ body {
   background-size: cover;*/
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
-  color: $mainGray !important;
+  color: $mainBlack;
   background-color: $mainWhite;
+  height: 100%;
 }
 
 /*Global image styles*/

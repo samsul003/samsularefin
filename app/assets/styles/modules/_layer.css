@@ -1,0 +1,7 @@
+/*layer on top of the all the elements*/
+.layer {
+  background-color: $mainBlack;
+  color: $mainWhite;
+  width: 100%;
+  height: 100%;
+}
