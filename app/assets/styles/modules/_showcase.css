@@ -1,5 +1,21 @@
+#showcase {
+  margin-top: 60px;
+}
+
 .biography {
 
+  &__headline {
+    margin: 0;
+  }
+  &__title {
+    margin-left: 267px;
+    margin-top: -77px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  &__contact {
+    margin: 100px 0 0 40px;
+  }
   &__photo {
     /*border: 7px solid rgba(0, 0, 0, 0.3);*/
     position: relative;
@@ -14,30 +30,30 @@
     content: '';
     width: 100%;
     height: 100%;
-    border: 1px solid #fff;
+    border: 1px solid $mainGold;
     position: absolute;
     left: 20px;
     bottom: -20px;
   }
   /*pseudo vertical line element*/
-  &__line:before {
+  &__contact::before {
     content: '';
     width: 0;
-    height: 7%;
+    height: 8%;
     position: absolute;
-    border: 1px solid #fff;
-    top: 245px;
-    left: 100px;
+    border: 1px solid $mainRed;
+    top: 390px;
+    left: 104px;
   }
   /*pseudo horizontal line element*/
-  &__line:after {
+  &__title::before {
     content: '';
     width: 4.5%;
     height: 0;
     position: absolute;
-    border: 1px solid #fff;
-    top: 230px;
-    left: 230px;
+    border: 1px solid $mainRed;
+    top: 340px;
+    left: 235px;
   }
 
 }
