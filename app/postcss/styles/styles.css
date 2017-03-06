@@ -655,12 +655,46 @@ img {
   height: 100%;
 }
 
-.biography__photo {
-  border: 7px solid rgba(0, 0, 0, 0.3);
-  position: relative;
-  overflow: hidden;
+.biography__photo {/*border: 7px solid rgba(0, 0, 0, 0.3);*/
+  position: relative;/*overflow: hidden;*/
   width: 200px;
   height: 200px;
   margin: 0 auto 0 15px;
   top: 0;
+}
+
+/*pseudo box element*/
+
+.biography__photo::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+}
+
+/*pseudo vertical line element*/
+
+.biography__line:before {
+  content: '';
+  width: 0;
+  height: 7%;
+  position: absolute;
+  border: 1px solid #fff;
+  top: 245px;
+  left: 100px;
+}
+
+/*pseudo horizontal line element*/
+
+.biography__line:after {
+  content: '';
+  width: 4.5%;
+  height: 0;
+  position: absolute;
+  border: 1px solid #fff;
+  top: 230px;
+  left: 230px;
 }
