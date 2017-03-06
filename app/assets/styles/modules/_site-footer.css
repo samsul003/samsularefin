@@ -4,10 +4,11 @@
   margin-top: 550px;
   text-align: center;
   display: block;
+  position: relative;
 
 &--text {
   margin: 0;
-  color: $mainGray;
+  color: $mainGrey;
   font-weight: 400;
 }
 }
