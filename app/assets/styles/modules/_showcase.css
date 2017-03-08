@@ -1,5 +1,7 @@
 /*showcase styles*/
 .showcase {
+  /*border-bottom: 200px outset rgba($mainGrey, .6);*/
+  padding-bottom: 30px;
 
   /*Styles for biography photo */
   &__photo {
@@ -64,7 +66,7 @@
   /*Styles for biography title */
   &__title {
     margin-left: 315px;
-    margin-top: -6px;
+    margin-top: -2px;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500;

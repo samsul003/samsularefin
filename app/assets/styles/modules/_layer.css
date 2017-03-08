@@ -1,6 +1,0 @@
-/*layer on top of the all the elements*/
-.layer {
-  color: rgba($mainGrey, 1);
-  width: 100%;
-  height: 100%;
-}
