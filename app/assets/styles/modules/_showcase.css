@@ -1,59 +1,109 @@
-#showcase {
-  margin-top: 60px;
-}
+/*showcase styles*/
+.showcase {
 
-.biography {
-
-  &__headline {
-    margin: 0;
-  }
-  &__title {
-    margin-left: 267px;
-    margin-top: -77px;
-    text-transform: capitalize;
-    font-weight: 500;
-  }
-  &__contact {
-    margin: 100px 0 0 40px;
-  }
+  /*Styles for biography photo */
   &__photo {
-    /*border: 7px solid rgba(0, 0, 0, 0.3);*/
     position: relative;
-    /*overflow: hidden;*/
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 0 15px;
-    top: 0;
+    width: 140px;
+    height: 140px;
+    margin: 35px auto 0 65px;
+
+    @mixin atSmall {
+      width: 160px;
+      height: 160px;
+    }
+    @mixin atMedium {
+      width: 180px;
+      height: 180px;
+    }
+    @mixin atLarge {
+      width: 200px;
+      height: 200px;
+    }
   }
   /*pseudo box element*/
   &__photo::before {
     content: '';
     width: 100%;
-    height: 100%;
+    height: 105%;
     border: 1px solid $mainGold;
     position: absolute;
     left: 20px;
-    bottom: -20px;
+    top: 13px;
+
+    @mixin atSmall {
+      bottom: -15px;
+    }
+    @mixin atMedium {
+      bottom: -17px;
+    }
+    @mixin atLarge {
+      bottom: -20px;
+    }
   }
   /*pseudo vertical line element*/
   &__contact::before {
     content: '';
     width: 0;
-    height: 8%;
+    height: 39%;
     position: absolute;
     border: 1px solid $mainRed;
-    top: 390px;
-    left: 104px;
+    top: 219px;
+    left: 108px;
   }
   /*pseudo horizontal line element*/
   &__title::before {
     content: '';
-    width: 4.5%;
+    width: 20%;
     height: 0;
     position: absolute;
     border: 1px solid $mainRed;
-    top: 340px;
-    left: 235px;
+    top: 446px;
+    left: 85px;
   }
+  /*Styles for biography title */
+  &__title {
+    margin-left: 315px;
+    margin-top: -6px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: $mainGold;
 
+    @mixin atSmall {
+      font-size: 18px;
+    }
+    @mixin atMedium {
+      font-size: 20px;
+    }
+    @mixin atLarge {
+      font-size: 23px;
+    }
+  }
+  /*Styles for biography contact */
+  &__contact {
+    margin: 40px 0 0 65px;
+    font-size: 14px;
+    color: $mainGold;
+
+    @mixin atSmall {
+      font-size: 15px;
+    }
+    @mixin atMedium {
+      font-size: 16px;
+    }
+    @mixin atLarge {
+      font-size: 17px;
+    }
+  }
+  /*Styles for biography description*/
+  &__description {
+    /*margin:20px 50px 10px 235px;*/
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 1.21;
+  }
 }

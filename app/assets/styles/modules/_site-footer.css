@@ -2,13 +2,11 @@
 .site-footer{
   padding: .5rem 0;
   text-align: center;
-  /*display: block;
-  position: relative;*/
+  left: 300px;
 
-&--text {
-  display: block;
-  color: $mainGrey;
-  font-weight: 400;
-  text-align: center;
-}
+  &--text {
+    display: block;
+    color: $mainGold;
+    font-weight: 400;
+  }
 }
