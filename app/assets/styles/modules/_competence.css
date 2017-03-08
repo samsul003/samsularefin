@@ -1,8 +1,5 @@
-.competency {
+.competence {
 
-  &__competency-items {
-    list-style: none;
-  }
   ul {
     list-style: none;
   }
