@@ -5,15 +5,47 @@
 
 
   &__logo-container {
+    transform: translateX(-15%) scale(.85);
+    transform-origin: 50% 0;
+    transition: all .5s ease-out;
     float: left;
       @mixin clearfix;
+
+    @mixin atMedium {
+      transform: translateX(-3%) scale(1);
+      transition: all .5s ease-out;
+    }
   }
 
   &__name {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $mainWhite;
-    font-size: 19px;
-    font-weight: 900;
+    display: none;
+
+    @mixin atMedium {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $mainWhite;
+      font-size: 23px;
+      font-weight: 900;
+      display: inline-block;
+    }
+  }
+
+  &__menu-content {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &_menu-button {
+    transform: scale(.85);
+    margin: 16px 35px 0 0;
+    float: right;
+      @mixin clearfix;
+
+    @mixin atMedium {
+      display: none;
+    }
   }
 }

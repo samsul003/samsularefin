@@ -3,14 +3,44 @@
   border-radius: 3%;
   color: $mainWhite;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 23px;
   font-weight: 900;
   padding: 20px 20px;
   margin: 20px 10px 0 0;
   display: inline-block;
+}
 
-  &__logo-container {
-    float: left;
-      @mixin clearfix;
-  }
+/*pseudo menu button*/
+.circle-outer {
+	background: rgba($mainGrey, 1);
+	border-radius:50px;
+	width: 45px;
+	height: 45px;
+  float: right;
+  clear: both;
+  margin-top: 10px;
+  padding-left: 0;
+  display: block;
+  position: absolute;
+    @mixin clearfix;
+}
+
+/*pseudo circle*/
+.circle {
+	background: $mainWhite;
+	border-radius:50px;
+	width:35px;
+	height:35px;
+  float: right;
+  margin-top: 15px;
+  margin-left: 5px;
+  padding-left: 0;
+	border:5px solid $mainGrey;
+  display: block;
+  position: absolute;
+    @mixin clearfix;
+}
+
+.circle:hover {
+    box-shadow: 1px 1px 40px $mainRed;
 }
