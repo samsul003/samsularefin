@@ -6,7 +6,7 @@
   font-size: 23px;
   font-weight: 900;
   padding: 20px 20px;
-  margin: 20px 10px 0 0;
+  margin: 19px 10px 0 0;
   display: inline-block;
 }
 
@@ -27,7 +27,7 @@
 
 /*pseudo circle*/
 .circle {
-	background: $mainWhite;
+	background: $mainGold;
 	border-radius:50px;
 	width:35px;
 	height:35px;
@@ -36,11 +36,8 @@
   margin-left: 5px;
   padding-left: 0;
 	border:5px solid $mainGrey;
+  box-shadow: 1px 1px 45px $mainRed;
   display: block;
   position: absolute;
     @mixin clearfix;
-}
-
-.circle:hover {
-    box-shadow: 1px 1px 40px $mainRed;
 }
