@@ -16,7 +16,19 @@
       transition: all .5s ease-out;
     }
   }
-
+  /*site header logo stamp*/
+  &__logo {
+    background-color: rgba($mainGrey, 1);
+    border-radius: 3%;
+    color: $mainWhite;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 900;
+    padding: 20px 20px;
+    margin: 19px 10px 0 0;
+    display: inline-block;
+  }
+  /*site header logo name*/
   &__name {
     display: none;
 
@@ -29,7 +41,7 @@
       display: inline-block;
     }
   }
-
+  /*styles for menu content*/
   &__menu-content {
     display: none;
 
@@ -37,7 +49,7 @@
       display: block;
     }
   }
-
+  /*styles for menu button*/
   &_menu-button {
     transform: scale(.85);
     margin: 13px 35px 0 0;

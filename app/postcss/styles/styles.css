@@ -583,6 +583,22 @@ img {
   }
 }
 
+/*site header logo stamp*/
+
+.site-header__logo {
+  background-color: rgba(105,105,105, 1);
+  border-radius: 3%;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 900;
+  padding: 20px 20px;
+  margin: 19px 10px 0 0;
+  display: inline-block;
+}
+
+/*site header logo name*/
+
 .site-header__name {
   display: none;
 }
@@ -599,6 +615,8 @@ img {
   }
 }
 
+/*styles for menu content*/
+
 .site-header__menu-content {
   display: none;
 }
@@ -609,6 +627,8 @@ img {
     display: block;
   }
 }
+
+/*styles for menu button*/
 
 .site-header_menu-button {
   -webkit-transform: scale(.85);
@@ -831,19 +851,7 @@ img {
   }
 }
 
-.logo {
-  background-color: rgba(105,105,105, 1);
-  border-radius: 3%;
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: 900;
-  padding: 20px 20px;
-  margin: 19px 10px 0 0;
-  display: inline-block;
-}
-
-/*pseudo menu button*/
+/*styles for outer circle*/
 
 .circle-outer {
 	background: rgba(105,105,105, 1);
@@ -864,7 +872,7 @@ img {
   display: table;
 }
 
-/*pseudo circle*/
+/*styles for circle*/
 
 .circle {
 	background: rgb(191, 176, 115);

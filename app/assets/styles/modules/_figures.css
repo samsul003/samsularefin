@@ -1,16 +1,4 @@
-.logo {
-  background-color: rgba($mainGrey, 1);
-  border-radius: 3%;
-  color: $mainWhite;
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: 900;
-  padding: 20px 20px;
-  margin: 19px 10px 0 0;
-  display: inline-block;
-}
-
-/*pseudo menu button*/
+/*styles for outer circle*/
 .circle-outer {
 	background: rgba($mainGrey, 1);
 	border-radius:50px;
@@ -24,8 +12,7 @@
   position: absolute;
     @mixin clearfix;
 }
-
-/*pseudo circle*/
+/*styles for circle*/
 .circle {
 	background: $mainGold;
 	border-radius:50px;
