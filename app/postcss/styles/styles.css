@@ -781,7 +781,6 @@ figure {
 /*Styles for biography title */
 
 .headline {
-
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 500;
@@ -1061,8 +1060,8 @@ figure {
     font-weight: 500;
     -webkit-transform: translateX(15%) scale(.6);
             transform: translateX(15%) scale(.6);
-    -webkit-transform-origin: 0 -90%;
-            transform-origin: 0 -90%;
+    -webkit-transform-origin: 0 -162%;
+            transform-origin: 0 -162%;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
   }
