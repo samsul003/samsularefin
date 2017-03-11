@@ -4,10 +4,14 @@
 @import "base/_mixins";
 @import "modules/_wrapper";
 @import "modules/_site-header";
-@import "modules/_showcase";
+@import "modules/_page-section";
+@import "modules/_profile";
+@import "modules/_headline";
 @import "modules/_section-title";
+@import "modules/_generic-content-container";
 @import "modules/_figures";
 @import "modules/_primary-nav";
+@import "modules/_btn";
 @import "modules/_competence";
 @import "modules/_projects";
 @import "modules/_photography";

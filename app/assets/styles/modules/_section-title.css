@@ -1,9 +1,11 @@
 .section-title {
-  margin-top: 153px;
   font-weight: 300;
   font-size: 30px;
   color: rgba($mainGrey, 1);
 
+  &--wide {
+    margin-top: 150px;
+  }
   &--narrow {
     margin-top: 70px;
   }

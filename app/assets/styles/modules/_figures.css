@@ -5,12 +5,11 @@
 	width: 45px;
 	height: 45px;
   float: right;
-  clear: both;
   margin-top: 10px;
   padding-left: 0;
   display: block;
   position: absolute;
-    @mixin clearfix;
+	cursor: pointer;
 }
 /*styles for circle*/
 .circle {
@@ -23,8 +22,8 @@
   margin-left: 5px;
   padding-left: 0;
 	border:5px solid $mainGrey;
-  box-shadow: 1px 1px 45px $mainRed;
+  box-shadow: 1px 1px 40px $mainRed;
   display: block;
   position: absolute;
-    @mixin clearfix;
+	cursor: pointer;
 }

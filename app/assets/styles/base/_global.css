@@ -23,4 +23,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 1%;
+}
+
+figure {
+  display: inline-block;
+  width: 250px;
 }
