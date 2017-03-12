@@ -13,7 +13,7 @@
 }
 /*styles for circle*/
 .circle {
-	background: $mainGold;
+	background: $mainWhite;
 	border-radius:50px;
 	width: 30px;
 	height: 30px;
