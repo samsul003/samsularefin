@@ -475,8 +475,6 @@ height:100%;
 /*body styles for full width&height background image*/
 
 body {
-  /*background: url('../../assets/images/background.jpeg') top center no-repeat;
-  background-size: cover;*/
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -492,11 +490,6 @@ img {
   border-radius: 1%;
 }
 
-figure {
-  display: inline-block;
-  width: 250px;
-}
-
 .loader {
   position: fixed;
   text-align: center;
@@ -507,44 +500,39 @@ figure {
   display:none;*/
 }
 
-.preloader {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #696969;
-    position :absolute;
-    -webkit-animation: loader 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: loader 2.5s linear infinite;
-    -webkit-transform: scale(.1);
-            transform: scale(.1);
-    opacity: 1;
+/*styles outer loader*/
+
+.loader__outer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #696969;
+  position :absolute;
+  -webkit-animation: loader 2.5s linear infinite;
+          animation: loader 2.5s linear infinite;
+  -webkit-transform: scale(.1);
+          transform: scale(.1);
+  opacity: 1;
 }
 
-.preloader_inner {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgb(191, 176, 115);
-    position :absolute loader 5s infinite; /* Safari 4.0 - 8.0 */
-    -webkit-animation: loader 2.5s linear infinite;
-            animation: loader 2.5s linear infinite;
-    -webkit-transform: scale(.1);
-            transform: scale(.1);
-    opacity: .5;
-    -webkit-animation-delay: -.7s;
-            animation-delay: -.7s;
+/*styles for loader inner*/
+
+.loader__inner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(191, 176, 115);
+  position :absolute loader 5s infinite;
+  -webkit-animation: loader 2.5s linear infinite;
+          animation: loader 2.5s linear infinite;
+  -webkit-transform: scale(.1);
+          transform: scale(.1);
+  opacity: .5;
+  -webkit-animation-delay: -.7s;
+          animation-delay: -.7s;
 }
 
-/* Safari 4.0 - 8.0 */
-
-/*@-webkit-keyframes mymove {
-    0%   {top: 0px;}
-    25%  {top: 200px;}
-    75%  {top: 50px}
-    100% {top: 100px;}
-}*/
-
-/* Standard syntax */
+/* loader animation */
 
 @-webkit-keyframes loader {
     0%   {top: 0px;background: #696969;-webkit-transform: scale(0);transform: scale(0);}
@@ -731,7 +719,6 @@ figure {
 }
 
 .page-section {
-  /*margin: 25px 0;*/
   padding: 1.2rem 0;
 }
 
@@ -1135,7 +1122,7 @@ figure {
   }
 }
 
-.competence ul {
+.competence li {
   list-style: none;
 }
 
