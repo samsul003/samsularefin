@@ -497,6 +497,71 @@ figure {
   width: 250px;
 }
 
+.loader {
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+	/*opacity: 0;
+  display:none;*/
+}
+
+.preloader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #696969;
+    position :absolute;
+    -webkit-animation: loader 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: loader 2.5s linear infinite;
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 1;
+}
+
+.preloader_inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(191, 176, 115);
+    position :absolute loader 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: loader 2.5s linear infinite;
+            animation: loader 2.5s linear infinite;
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: .5;
+    -webkit-animation-delay: -.7s;
+            animation-delay: -.7s;
+}
+
+/* Safari 4.0 - 8.0 */
+
+/*@-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}*/
+
+/* Standard syntax */
+
+@-webkit-keyframes loader {
+    0%   {top: 0px;background: #696969;-webkit-transform: scale(0);transform: scale(0);}
+    25%  {top: 0px;background: rgb(191, 176, 115);-webkit-transform: scale(.7);transform: scale(.7);}
+    50%  {top: 0px;background: #696969;-webkit-transform: scale(.2);transform: scale(.2);}
+    75%  {top: 0px;background: rgb(191, 176, 115);-webkit-transform: scale(.4);transform: scale(.4);}
+    100% {top: 300px;background: #696969;-webkit-transform: scale(.7);transform: scale(.7);}
+}
+
+@keyframes loader {
+    0%   {top: 0px;background: #696969;-webkit-transform: scale(0);transform: scale(0);}
+    25%  {top: 0px;background: rgb(191, 176, 115);-webkit-transform: scale(.7);transform: scale(.7);}
+    50%  {top: 0px;background: #696969;-webkit-transform: scale(.2);transform: scale(.2);}
+    75%  {top: 0px;background: rgb(191, 176, 115);-webkit-transform: scale(.4);transform: scale(.4);}
+    100% {top: 300px;background: #696969;-webkit-transform: scale(.7);transform: scale(.7);}
+}
+
 .wrapper {
   overflow: hidden;
   padding-left: 20px;
@@ -913,17 +978,20 @@ figure {
 .circle {
 	background: rgb(191, 176, 115);
 	border-radius:50px;
-	width:35px;
-	height:35px;
+	width: 30px;
+	height: 30px;
   float: right;
-  margin-top: 15px;
-  margin-left: 5px;
+  margin-top: 16.5px;
+  margin-left: 8px;
   padding-left: 0;
 	border:5px solid #696969;
-  box-shadow: 1px 1px 40px #800000;
   display: block;
   position: absolute;
 	cursor: pointer;
+}
+
+.circle:hover {
+	box-shadow: 1px 1px 40px #800000;
 }
 
 .primary-nav {

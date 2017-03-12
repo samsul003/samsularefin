@@ -15,15 +15,17 @@
 .circle {
 	background: $mainGold;
 	border-radius:50px;
-	width:35px;
-	height:35px;
+	width: 30px;
+	height: 30px;
   float: right;
-  margin-top: 15px;
-  margin-left: 5px;
+  margin-top: 16.5px;
+  margin-left: 8px;
   padding-left: 0;
 	border:5px solid $mainGrey;
-  box-shadow: 1px 1px 40px $mainRed;
   display: block;
   position: absolute;
 	cursor: pointer;
+}
+.circle:hover {
+	box-shadow: 1px 1px 40px $mainRed;
 }

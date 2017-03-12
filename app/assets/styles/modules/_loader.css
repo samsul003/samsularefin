@@ -1,0 +1,47 @@
+.loader {
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  transition: all .3s ease-out;
+	/*opacity: 0;
+  display:none;*/
+}
+.preloader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $mainGrey;
+    position :absolute;
+    -webkit-animation: loader 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: loader 2.5s linear infinite;
+    transform: scale(.1);
+    opacity: 1;
+}
+.preloader_inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $mainGold;
+    position :absolute loader 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: loader 2.5s linear infinite;
+    transform: scale(.1);
+    opacity: .5;
+    animation-delay: -.7s;
+}
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}*/
+
+/* Standard syntax */
+@keyframes loader {
+    0%   {top: 0px;background: $mainGrey;transform: scale(0);}
+    25%  {top: 0px;background: $mainGold;transform: scale(.7);}
+    50%  {top: 0px;background: $mainGrey;transform: scale(.2);}
+    75%  {top: 0px;background: $mainGold;transform: scale(.4);}
+    100% {top: 300px;background: $mainGrey;transform: scale(.7);}
+}
