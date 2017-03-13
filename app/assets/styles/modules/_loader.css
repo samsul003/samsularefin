@@ -23,7 +23,7 @@
       height: 50px;
       border-radius: 50%;
       background: $mainWhite;
-      position :absolute loader 5s infinite;
+      position :absolute loader 5s infinite; /*magic*/
       animation: loader 2.5s linear infinite;
       transform: scale(.1);
       opacity: .5;

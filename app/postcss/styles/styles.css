@@ -522,7 +522,7 @@ img {
   height: 50px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.7);
-  position :absolute loader 5s infinite;
+  position :absolute loader 5s infinite;/*magic*/
   -webkit-animation: loader 2.5s linear infinite;
           animation: loader 2.5s linear infinite;
   -webkit-transform: scale(.1);
