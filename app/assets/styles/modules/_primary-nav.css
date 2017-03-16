@@ -45,7 +45,7 @@
       background-color: transparent;
 
       &.is-current-link {
-        color: mainRed;
+        color: $mainRed;
       }
     }
   }

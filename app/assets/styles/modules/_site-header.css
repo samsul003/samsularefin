@@ -59,6 +59,10 @@
     @mixin atMedium {
       display: block;
     }
+
+    &--is-visible {
+      display: block;
+    }
   }
   /*styles for menu button*/
   &__menu-button {
@@ -72,16 +76,16 @@
       display: inline-block;
     }
     @mixin atMedium {
-      display: inline-block;
-      transform: scale(1);
+      display: none;
+      /*transform: scale(1);
       transition: all .5s ease-out;
-      padding-top: 3px;
+      padding-top: 3px;*/
     }
     @mixin atLarge {
-      display: inline-block;
-      transform: scale(1);
+      display: none;
+      /*transform: scale(1);
       transition: all .5s ease-out;
-      padding-top: 3px;
+      padding-top: 3px;*/
     }
   }
 }
