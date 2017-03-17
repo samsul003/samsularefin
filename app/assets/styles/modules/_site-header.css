@@ -1,8 +1,14 @@
 .site-header {
+  padding-bottom: 10px;
   position: absolute;
   width: 100%;
   z-index: 2;
+  transition: background-color .3s ease-out;
 
+  &--is-expanded {
+    padding-bottom: 18px;
+    background-color: rgba($mainGrey, .2);
+  }
 
   &__logo-container {
     transform: translateX(-15%) scale(.80);
@@ -54,21 +60,31 @@
   }
   /*styles for menu content*/
   &__menu-content {
-    display: none;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    text-align: center;
+    z-index: -10;
+    position: relative;
 
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      transform: scale(1);
+      z-index: 1;
     }
 
     &--is-visible {
-      display: block;
+      opacity: 1;
+      transform: scale(1);
+      z-index: 1;
     }
   }
   /*styles for menu button*/
   &__menu-button {
-    transform: scale(.85);
-    margin: 13px 35px 0 0;
+    transform: scale(.95);
+    margin: 8px 35px 0 0;
     display: inline-block;
+    z-index: 10;
     float: right;
     @mixin clearfix;
 

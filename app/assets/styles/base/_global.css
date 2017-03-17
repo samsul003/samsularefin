@@ -6,7 +6,6 @@
 /*Styles for html*/
 html{
 min-height:100%;
-transition: background-color 1s;
 }
 
 /*body styles for full width&height background image*/
@@ -16,6 +15,7 @@ body {
   color: $mainWhite;
   background-color: $mainBlack;
   min-height: 100%;
+  width: auto;
 }
 
 /*Global image styles*/
@@ -25,6 +25,9 @@ img {
   border-radius: 1%;
 }
 
-.content {
+/*Entire content of the page is being hidden until the loader shows up*/
+.site-content {
   display: none;
+  margin: 0;
+  padding: 0;
 }

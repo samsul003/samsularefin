@@ -3,8 +3,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*transform-origin: 50% 0;*/
-
   text-align: center;
   z-index: 999;
   transition: all .3s ease-out;
@@ -39,6 +37,6 @@
     0%   {top: 0px;background: $mainGold;transform: scale(0);}
     25%  {top: 0px;background: $mainWhite;transform: scale(.7);}
     50%  {top: 0px;background: $mainGrey;transform: scale(.2);}
-    75%  {top: 0px;background: $mainWhite;transform: scale(.4);}
-    100% {top: 0px;background: $mainGold;transform: scale(1.2); opacity: .5;}
+    75%  {top: 0px;background: $mainGold;transform: scale(.4);}
+    100% {top: 0px;background: $mainGrey;transform: scale(1.2); opacity: .5; transition: all .3s ease-out;}
 }
