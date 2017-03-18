@@ -714,6 +714,7 @@ img {
           transform: scale(.95);
   margin: 8px 35px 0 0;
   display: inline-block;
+  position: relative;
   z-index: 10;
   float: right;
 }
@@ -831,9 +832,9 @@ img {
 /*styles for box frame*/
 
 .profile__photo__frame {
-  border: 1px solid rgb(191, 176, 115);
-  border-radius: 1%;
-  width: 250px;
+  border: 1.5px solid rgb(191, 176, 115);
+  border-radius: 0.5%;
+  width: 240px;
   height: 280px;
   display: block;
   position: absolute;
@@ -986,8 +987,9 @@ img {
 /*styles for circle*/
 
 .circle {
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(128,0,0, .5);
 	border-radius:50px;
+	/*box-shadow: 1px 1px 40px $mainRed;*/
 	width: 30px;
 	height: 30px;
   float: right;
@@ -1000,9 +1002,9 @@ img {
 	cursor: pointer;
 }
 
-.circle:hover {
-	box-shadow: 1px 1px 40px #800000;
-}
+/*.circle:hover {
+	box-shadow: 1px 1px 40px $mainRed;
+}*/
 
 .primary-nav {
   margin-top: 30px;
@@ -1085,23 +1087,32 @@ img {
 }
 
 .btn {
-  background-color: #696969;
+  position: relative;
+  background-color: #696969 .1;
   color: rgba(255, 255, 255, 0.7);
+  position: relative;
   font-size: 21px;
-  font-weight: 900;
+  font-weight: 300;
   text-decoration: none;
   text-align: center;
-  padding: 15px 0;
+  padding: 0;
   margin-left: 25px;
   display: block;
+  border: 2px solid rgb(191, 176, 115);
+  border-radius: 40px;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(0) scale(.6);
-          transform: translateX(0) scale(.6);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   -webkit-transform-origin: 0 -410%;
           transform-origin: 0 -410%;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgb(191, 176, 115);
 }
 
 @media (min-width: 530px) {
@@ -1110,8 +1121,8 @@ img {
     width: 55px;
     font-size: 28px;
     margin-left: 0;
-    -webkit-transform: translateX(8%) scale(.5);
-            transform: translateX(8%) scale(.5);
+    -webkit-transform: translateX(8%);
+            transform: translateX(8%);
     -webkit-transform-origin: 0 -220%;
             transform-origin: 0 -220%;
     -webkit-transition: all .5s ease-out;
@@ -1122,13 +1133,10 @@ img {
 @media (min-width: 768px) {
 
   .btn {
-    width: auto;
-    font-size: 28px;
-    margin-left: 0;
-    -webkit-transform: translateX(4%) scale(.5);
-            transform: translateX(4%) scale(.5);
-    -webkit-transform-origin: 0 -220%;
-            transform-origin: 0 -220%;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
   }
@@ -1138,8 +1146,8 @@ img {
 
   .btn {
     font-weight: 500;
-    -webkit-transform: translateX(15%) scale(.6);
-            transform: translateX(15%) scale(.6);
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
     -webkit-transform-origin: 0 -162%;
             transform-origin: 0 -162%;
     -webkit-transition: all .5s ease-out;

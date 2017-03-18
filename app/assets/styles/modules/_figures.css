@@ -13,8 +13,9 @@
 }
 /*styles for circle*/
 .circle {
-	background: $mainWhite;
+	background: rgba($mainRed, .5);
 	border-radius:50px;
+	/*box-shadow: 1px 1px 40px $mainRed;*/
 	width: 30px;
 	height: 30px;
   float: right;
@@ -26,6 +27,6 @@
   position: absolute;
 	cursor: pointer;
 }
-.circle:hover {
+/*.circle:hover {
 	box-shadow: 1px 1px 40px $mainRed;
-}
+}*/

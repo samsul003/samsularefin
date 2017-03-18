@@ -1,40 +1,48 @@
 .btn {
-  background-color: $mainGrey;
+  position: relative;
+  background-color: $mainGrey .1;
   color: $mainWhite;
+  position: relative;
   font-size: 21px;
-  font-weight: 900;
+  font-weight: 300;
   text-decoration: none;
   text-align: center;
-  padding: 15px 0;
+  padding: 0;
   margin-left: 25px;
   display: block;
+  border: 2px solid $mainGold;
+  border-radius: 40px;
   top: 0;
   left: 0;
-  transform: translateX(0) scale(.6);
+  transform: translateX(0);
   transform-origin: 0 -410%;
   transition: all .5s ease-out;
+
+    &:hover {
+      color: $mainBlack;
+      background-color: $mainGold;
+    }
 
   @mixin atSmall {
     width: 55px;
     font-size: 28px;
     margin-left: 0;
-    transform: translateX(8%) scale(.5);
+    transform: translateX(8%);
     transform-origin: 0 -220%;
     transition: all .5s ease-out;
   }
 
   @mixin atMedium {
-    width: auto;
-    font-size: 28px;
-    margin-left: 0;
-    transform: translateX(4%) scale(.5);
-    transform-origin: 0 -220%;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px;
     transition: all .5s ease-out;
   }
 
   @mixin atLarge {
     font-weight: 500;
-    transform: translateX(15%) scale(.6);
+    transform: translateX(15%);
     transform-origin: 0 -162%;
     transition: all .5s ease-out;
   }
