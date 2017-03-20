@@ -7,7 +7,6 @@
   z-index: 999;
   transition: all .3s ease-out;
 
-
   /*styles outer loader*/
   &__outer {
       width: 50px;
