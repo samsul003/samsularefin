@@ -1,5 +1,6 @@
 $mainWhite:  rgba(255, 255, 255, 0.7);
-$mainBlack: rgba(0, 0, 0, 0.85);
+$mainBlack: rgba(0, 0, 0, 0.9);
+$mainLightBlack: rgba(0, 0, 0, 0.4);
 $mainGrey: #696969;
 $mainRed: #800000;
-$mainGold: rgb(191, 176, 115);
+$mainGold: rgb(191, 176, 110);

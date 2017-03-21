@@ -1,19 +1,28 @@
 /*showcase styles*/
-.profile {
+.card {
+  position: relative;
+  background-color: $mainLightBlack;
+  text-align: center;
+  border-radius: 1%;
   padding-bottom: 40px;
   margin-right: 50px;
-  width: 30%;
+  max-width: 300px;
+  max-height: 380px;
   float: left;
   @mixin clearfix;
 
   /*Styles for biography photo */
   &__photo {
-
+    width: 100%;
+    opacity: 0.9;
 
     @mixin atSmall {
       transition: all .3s ease-out;
     }
     @mixin atMedium {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 30px;
       transition: all .3s ease-out;
     }
     @mixin atLarge {
@@ -28,12 +37,12 @@
   &__photo__frame {
     border: 1.5px solid $mainGold;
     border-radius: 0.5%;
-  	width: 240px;
-  	height: 280px;
-    display: block;
+  	width: 255px;
+  	height: 310px;
+    display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(45%, 100%) scale(1);
+    transform: translate(13%, -6%);
   }
 }

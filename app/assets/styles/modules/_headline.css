@@ -1,6 +1,8 @@
 /*Styles for biography title */
 .headline {
   text-transform: capitalize;
+  text-align: center;
+  padding: 20px 10px;
   font-size: 20px;
   font-weight: 500;
   color: $mainGold;

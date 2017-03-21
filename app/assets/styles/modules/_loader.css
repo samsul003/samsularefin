@@ -33,9 +33,31 @@
 }
 /* loader animation */
 @keyframes loader {
-    0%   {top: 0px;background: $mainGold;transform: scale(0);}
-    25%  {top: 0px;background: $mainWhite;transform: scale(.7);}
-    50%  {top: 0px;background: $mainGrey;transform: scale(.2);}
-    75%  {top: 0px;background: $mainGold;transform: scale(.4);}
-    100% {top: 0px;background: $mainGrey;transform: scale(1.2); opacity: .5; transition: all .3s ease-out;}
+    0%   {
+      top: 0px;
+      background: $mainGold;
+      transform: scale(0);
+    }
+    25%  {
+      top: 0px;
+      background: $mainWhite;
+      transform: scale(.7);
+    }
+    50%  {
+      top: 0px;
+      background: $mainGrey;
+      transform: scale(.2);
+    }
+    75%  {
+      top: 0px;
+      background: $mainGold;
+      transform: scale(.4);
+    }
+    100% {
+      top: 0px;
+      background: $mainGrey;
+      transform: scale(1.2);
+      opacity: .5;
+      transition: all .3s ease-out;
+    }
 }

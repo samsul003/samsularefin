@@ -5,8 +5,9 @@
   left: 300px;
 
   &--text {
-    display: block;
+    display: inline-block;
     color: $mainGold;
+    font-size: 17px;
     font-weight: 400;
   }
 }

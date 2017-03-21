@@ -1,6 +1,6 @@
 .btn {
-  position: relative;
   background-color: $mainGrey .1;
+  display: inline-block;
   color: $mainWhite;
   position: relative;
   font-size: 21px;
@@ -8,15 +8,22 @@
   text-decoration: none;
   text-align: center;
   padding: 0;
-  margin-left: 25px;
+  margin-top: -90px;
   display: block;
-  border: 2px solid $mainGold;
-  border-radius: 40px;
+  border: 1px solid $mainGold;
+  border-radius: 1%;
   top: 0;
-  left: 0;
-  transform: translateX(0);
-  transform-origin: 0 -410%;
+  left: 45px;
   transition: all .5s ease-out;
+
+  &--narrow {
+    padding: 0;
+    margin-top: 0;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-out;
+  }
 
     &:hover {
       color: $mainBlack;
