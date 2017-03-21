@@ -4,14 +4,12 @@ class PageLoader {
   constructor() {
     this.loader = $(".loader");
     this.siteContent = $(".site-content");
-    this.logo = $(".site-header__logo");
     this.events();
   }
 
   events() {
     // page loader animation
     $(document).ready(this.loadAnimation.bind(this));
-
 
   }
 

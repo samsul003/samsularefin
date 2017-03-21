@@ -35,10 +35,10 @@
   }
   /*site header logo stamp*/
   &__logo {
-    background-color: rgba($mainGrey, 1);
+    background-color: $mainGold;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     border-radius: 3%;
-    color: $mainWhite;
+    color: $mainBlack;
     text-decoration: none;
     font-size: 23px;
     font-weight: 900;
@@ -53,7 +53,7 @@
     @mixin atMedium {
       text-transform: uppercase;
       text-decoration: none;
-      color: $mainWhite;
+      color: $mainGold;
       font-size: 23px;
       font-weight: 900;
       display: inline-block;

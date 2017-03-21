@@ -10369,7 +10369,6 @@ var PageLoader = function () {
 
     this.loader = (0, _jquery2.default)(".loader");
     this.siteContent = (0, _jquery2.default)(".site-content");
-    this.logo = (0, _jquery2.default)(".site-header__logo");
     this.events();
   }
 
