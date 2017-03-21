@@ -37,7 +37,7 @@
   &__logo {
     background-color: $mainGold;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 3%;
+    border-radius: 2%;
     color: $mainBlack;
     text-decoration: none;
     font-size: 23px;

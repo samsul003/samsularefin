@@ -1,12 +1,23 @@
+.slate-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
 .slate {
     z-index: 2;
+    border-radius: 1%;
     height: 300px;
     width: 250px;
     margin: 0 15px;
     display: flex;
     flex-flow: column nowrap;
     opacity: 1;
-    transition: opacity 100ms ease-out, transform 100ms ease-out;
 
     &:nth-of-type(1) {
         justify-content: space-between;
