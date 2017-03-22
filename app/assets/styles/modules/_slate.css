@@ -7,7 +7,15 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    margin: 30px 0;
+
+    &--extended {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+    }
 }
 
 .slate {
@@ -35,7 +43,7 @@
         }*/
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(4) {
         justify-content: flex-end;
     }
 
