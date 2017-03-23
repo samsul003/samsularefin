@@ -36,6 +36,7 @@
     height: 1px;
     background: $mainGold;
 }
+
 .diamond {
 	z-index: 1;
 	position: relative;

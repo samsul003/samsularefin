@@ -34,7 +34,7 @@
     }
   }
   a {
-    color: $mainGold;
+    color: $mainWhite;
     background-color: rgba($mainGrey, 1);
     font-size: 10px;
     font-weight: 700;

@@ -548,7 +548,7 @@ img {
 @-webkit-keyframes loader {
     0%   {
       top: 0px;
-      background: rgb(191, 176, 110);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(0);
               transform: scale(0);
     }
@@ -566,7 +566,7 @@ img {
     }
     75%  {
       top: 0px;
-      background: rgb(191, 176, 110);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(.4);
               transform: scale(.4);
     }
@@ -584,7 +584,7 @@ img {
 @keyframes loader {
     0%   {
       top: 0px;
-      background: rgb(191, 176, 110);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(0);
               transform: scale(0);
     }
@@ -602,7 +602,7 @@ img {
     }
     75%  {
       top: 0px;
-      background: rgb(191, 176, 110);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(.4);
               transform: scale(.4);
     }
@@ -708,10 +708,9 @@ img {
 /*site header logo stamp*/
 
 .site-header__logo {
-  background-color: rgb(191, 176, 110);
-  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
+  background-color: #696969;
   border-radius: 2%;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   font-size: 23px;
   font-weight: 900;
@@ -731,7 +730,7 @@ img {
   .site-header__name {
     text-transform: uppercase;
     text-decoration: none;
-    color: rgb(191, 176, 110);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 23px;
     font-weight: 900;
     display: inline-block;
@@ -906,7 +905,7 @@ img {
 /*styles for box frame*/
 
 .card__photo__frame {
-  border: 1.5px solid rgb(191, 176, 110);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
   border-radius: 0.5%;
   width: 255px;
   height: 310px;
@@ -1013,6 +1012,7 @@ img {
 
 .slate--top h2, .slate--bottom h2 {
   color: rgba(0, 0, 0, 0.9);
+  opacity: .8;
   font-style: italic;
 }
 
@@ -1031,7 +1031,8 @@ img {
 
 .slate--bottom {
   height: 100px;
-  background-color: rgb(191, 176, 110);
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: .8;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1048,7 +1049,7 @@ img {
   padding: 20px 10px;
   font-size: 20px;
   font-weight: 500;
-  color: rgb(191, 176, 110);
+  color: rgb(191, 176, 125);
   top: 0;
   left: 0;
   -webkit-transform: translateX(8%) scale(.8);
@@ -1200,7 +1201,7 @@ img {
 /*styles for circle*/
 
 .circle {
-	background: rgb(191, 176, 110);
+	background: rgb(191, 176, 125);
 	border-radius:50px;
 	/*box-shadow: 1px 1px 40px $mainRed;*/
 	width: 30px;
@@ -1223,7 +1224,7 @@ img {
 	z-index: 5;
 		border: 0;
     height: 1px;
-    background: rgb(191, 176, 110);
+    background: rgb(191, 176, 125);
 }
 
 .diamond {
@@ -1236,8 +1237,8 @@ img {
 	-webkit-transform-origin: 0 210%;
 	        transform-origin: 0 210%;
 	display: inline-block;
-	fill: rgb(191, 176, 110);
-	border: 1px solid rgb(191, 176, 110);
+	fill: rgb(191, 176, 125);
+	border: 1px solid rgb(191, 176, 125);
 	box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 1);
   height: 35px;
@@ -1305,7 +1306,7 @@ img {
 }
 
 .primary-nav a {
-  color: rgb(191, 176, 110);
+  color: rgba(255, 255, 255, 0.75);
   background-color: rgba(105,105,105, 1);
   font-size: 10px;
   font-weight: 700;
@@ -1331,16 +1332,16 @@ img {
 .btn {
   background-color: transparent;
   display: inline-block;
-  color: rgb(191, 176, 110);
+  color: rgb(191, 176, 125);
   position: relative;
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 100;
   text-decoration: none;
   text-align: center;
   padding: 0;
   margin-top: -90px;
   display: block;
-  border: 1px solid rgb(191, 176, 110);
+  border: 1px solid #696969;
   border-radius: 1%;
   top: 0;
   left: 45px;
@@ -1358,7 +1359,7 @@ img {
 
 .btn:hover {
   color: rgba(0, 0, 0, 0.9);
-  background-color: rgb(191, 176, 110);
+  background-color: rgb(191, 176, 125);
 }
 
 @media (min-width: 530px) {
@@ -1445,7 +1446,7 @@ img {
   fill: none;
   stroke-width: 3;
   stroke-dasharray: 100;
-  stroke: rgb(191, 176, 110);
+  stroke: rgb(191, 176, 125);
   opacity: 1;
   -webkit-animation: load 15s infinite;
           animation: load 15s infinite;
@@ -1455,8 +1456,8 @@ img {
 
 @keyframes load{0%{stroke-dashoffset:0}}
 
-.projects li {
-  list-style: none;
+.projects {
+  
 }
 
 .photography li {
@@ -1477,7 +1478,7 @@ img {
   display: inline-block;
   position: relative;
   top: 30px;
-  color: rgb(191, 176, 110);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 17px;
   font-weight: 400;
 }

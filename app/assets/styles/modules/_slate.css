@@ -55,7 +55,8 @@
 
         h2 {
           color: $mainBlack;
-            font-style: italic;
+          opacity: .8;
+          font-style: italic;
         }
     }
 
@@ -68,7 +69,8 @@
 
     &--bottom {
         height: 100px;
-        background-color: $mainGold;
+        background-color: $mainWhite;
+        opacity: .8;
         text-align: center;
         align-items: center;
         justify-content: space-around;
