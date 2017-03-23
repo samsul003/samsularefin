@@ -30,3 +30,27 @@
 .circle:hover {
 	box-shadow: 1px 1px 40px $mainRed;
 }
+.line {
+	z-index: 5;
+		border: 0;
+    height: 1px;
+    background: $mainGold;
+}
+.diamond {
+	z-index: 1;
+	position: relative;
+	top: 0;
+	left: 45%;
+	transform: translate(50%, 50%);
+	transform-origin: 0 210%;
+	display: inline-block;
+	fill: $mainGold;
+	border: 1px solid $mainGold;
+	box-shadow: 0 0 0 8px $mainLightBlack;
+  background: $mainDarkBlack;
+  height: 35px;
+	width: 35px;
+  text-align: center;
+  transform:rotate(45deg);
+
+}
