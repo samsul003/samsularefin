@@ -1,6 +1,7 @@
 .generic-content-container {
   width: 700px;
   float: left;
+  background-color: $mainFreshBlack;
   @mixin clearfix;
 
   p {

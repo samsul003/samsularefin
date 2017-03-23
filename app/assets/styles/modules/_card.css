@@ -35,7 +35,7 @@
   }
   /*styles for box frame*/
   &__photo__frame {
-    border: 1.5px solid $mainWhite;
+    border: 1.5px solid $mainGrey;
     border-radius: 0.5%;
   	width: 255px;
   	height: 310px;

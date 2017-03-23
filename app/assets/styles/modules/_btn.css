@@ -25,7 +25,7 @@
 
     &:hover {
       color: $mainBlack;
-      background-color: $mainGold;
+      background-color: $mainWhite;
     }
 
   @mixin atSmall {

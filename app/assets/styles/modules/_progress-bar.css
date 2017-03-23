@@ -35,7 +35,7 @@
             fill: none;
             stroke-width: 3;
             stroke-dasharray: 100;
-            stroke: $mainGold;
+            stroke: $mainGrey;
             opacity: 1;
             animation: load 15s infinite;
         }

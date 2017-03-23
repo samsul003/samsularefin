@@ -1,6 +1,6 @@
 /*styles for outer circle*/
 .circle-outer {
-	background: rgba($mainGrey, 1);
+	background: $mainGrey;
 	border-radius:50px;
 	width: 45px;
 	height: 45px;
@@ -13,7 +13,7 @@
 }
 /*styles for circle*/
 .circle {
-	background: $mainGold;
+	background: $mainWhite;
 	border-radius:50px;
 	/*box-shadow: 1px 1px 40px $mainRed;*/
 	width: 30px;
@@ -28,14 +28,14 @@
 	cursor: pointer;
 }
 .circle:hover {
-	box-shadow: 1px 1px 40px $mainRed;
+	box-shadow: 1px 1px 40px $mainFreshBlack;
 }
-.line {
+/*.line {
 	z-index: 5;
 		border: 0;
     height: 1px;
     background: $mainGold;
-}
+}*/
 
 .diamond {
 	position: relative;
@@ -45,8 +45,8 @@
 	transform-origin: 0 50%;
 	display: inline-block;
 	background-color: $mainBlack;
-	border: 2px solid $mainGold;
-	box-shadow: 0 0 0 8px $mainLightBlack;
+	border: 2px solid $mainGrey;
+	box-shadow: 0 0 0 8px $mainBlack;
   height: 35px;
 	width: 35px;
   text-align: center;

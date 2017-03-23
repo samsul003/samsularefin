@@ -35,7 +35,7 @@
 @keyframes loader {
     0%   {
       top: 0px;
-      background: $mainGold;
+      background: $mainGrey;
       transform: scale(0);
     }
     25%  {
@@ -45,17 +45,17 @@
     }
     50%  {
       top: 0px;
-      background: $mainGrey;
+      background: $mainFreshBlack;
       transform: scale(.2);
     }
     75%  {
       top: 0px;
-      background: $mainGold;
+      background: $mainGrey;
       transform: scale(.4);
     }
     100% {
       top: 0px;
-      background: $mainGrey;
+      background: $mainFreshBlack;
       transform: scale(1.2);
       opacity: .5;
       transition: all .3s ease-out;
