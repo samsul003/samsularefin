@@ -478,7 +478,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   min-height: 100%;
   width: auto;
 }
@@ -728,11 +728,11 @@ img {
 @media (min-width: 768px) {
 
   .site-header__name {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
     font-size: 23px;
-    font-weight: 900;
+    font-weight: 300;
     display: inline-block;
   }
 }
@@ -1032,7 +1032,7 @@ img {
 .slate--bottom {
   height: 100px;
   background-color: rgba(255, 255, 255, 0.75);
-  opacity: .8;
+  opacity: .9;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1228,25 +1228,22 @@ img {
 }
 
 .diamond {
-	z-index: 1;
 	position: relative;
 	top: 0;
-	left: 45%;
+	left: 47%;
 	-webkit-transform: translate(50%, 50%);
 	        transform: translate(50%, 50%);
-	-webkit-transform-origin: 0 210%;
-	        transform-origin: 0 210%;
+	-webkit-transform-origin: 0 50%;
+	        transform-origin: 0 50%;
 	display: inline-block;
-	fill: rgb(191, 176, 125);
-	border: 1px solid rgb(191, 176, 125);
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 2px solid rgb(191, 176, 125);
 	box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.4);
-  background: rgba(0, 0, 0, 1);
   height: 35px;
 	width: 35px;
   text-align: center;
   -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
-
 }
 
 .primary-nav {
@@ -1280,7 +1277,7 @@ img {
 
 .primary-nav li {
   list-style: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: inline-block;
   padding-right: 5px;
 }
@@ -1332,10 +1329,9 @@ img {
 .btn {
   background-color: transparent;
   display: inline-block;
-  color: rgb(191, 176, 125);
+  color: rgba(255, 255, 255, 0.75);
   position: relative;
   font-size: 21px;
-  font-weight: 100;
   text-decoration: none;
   text-align: center;
   padding: 0;
@@ -1350,9 +1346,10 @@ img {
 }
 
 .btn--narrow {
-  top: 30px;
+  top: 0;
+  left: 5.5%;
   display: inline-block;
-  left: 0;
+  margin-bottom: -50px;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -1470,15 +1467,15 @@ img {
   padding: 8px 0;
   margin-top: -8px;
   text-align: center;
-  left: 300px;
-  background-color: rgba(105,105,105, 0.1);
+  /*left: 300px;*/
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .site-footer--text {
   display: inline-block;
+  left: -105px;
   position: relative;
-  top: 30px;
+  top: 50px;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 15px;
 }

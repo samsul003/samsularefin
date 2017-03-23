@@ -38,20 +38,17 @@
 }
 
 .diamond {
-	z-index: 1;
 	position: relative;
 	top: 0;
-	left: 45%;
+	left: 47%;
 	transform: translate(50%, 50%);
-	transform-origin: 0 210%;
+	transform-origin: 0 50%;
 	display: inline-block;
-	fill: $mainGold;
-	border: 1px solid $mainGold;
+	background-color: $mainBlack;
+	border: 2px solid $mainGold;
 	box-shadow: 0 0 0 8px $mainLightBlack;
-  background: $mainDarkBlack;
   height: 35px;
 	width: 35px;
   text-align: center;
   transform:rotate(45deg);
-
 }

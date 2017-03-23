@@ -16,7 +16,7 @@
   }
   li {
     list-style: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display: inline-block;
     padding-right: 5px;
 

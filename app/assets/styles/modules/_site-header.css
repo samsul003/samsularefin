@@ -50,11 +50,11 @@
     display: none;
 
     @mixin atMedium {
-      text-transform: uppercase;
+      text-transform: capitalize;
       text-decoration: none;
       color: $mainWhite;
       font-size: 23px;
-      font-weight: 900;
+      font-weight: 300;
       display: inline-block;
     }
   }

@@ -3,15 +3,15 @@
   padding: 8px 0;
   margin-top: -8px;
   text-align: center;
-  left: 300px;
-  background-color: rgba($mainGrey, 0.1);
+  /*left: 300px;*/
+  background-color: $mainLightBlack;
 
   &--text {
     display: inline-block;
+    left: -105px;
     position: relative;
-    top: 30px;
+    top: 50px;
     color: $mainWhite;
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 15px;
   }
 }
