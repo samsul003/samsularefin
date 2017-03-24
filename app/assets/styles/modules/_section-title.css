@@ -10,7 +10,7 @@
   font-weight: 300;
   font-size: 40px;
   opacity: 0.3;
-  color: rgba($mainWhite, .1);
+  color: rgba($mainWhite, .1) transparent;
   z-index: 15;
 
   &--wide {
