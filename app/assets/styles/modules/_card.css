@@ -44,5 +44,10 @@
     top: 0;
     left: 0;
     transform: translate(13%, -6%);
+
+    &:hover {
+      border: 1.5px solid $mainGold;
+      cursor: pointer;
+    }
   }
 }

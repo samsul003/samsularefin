@@ -1,7 +1,7 @@
 $mainWhite:  rgba(255, 255, 255, 0.65);
 $mainBlack: rgba(0, 0, 0, 1);
-$mainFreshBlack: rgba(0, 0, 0, 0.25);
-$mainLightBlack: rgba(0, 0, 0, 0.4);
+$mainFreshBlack: rgba(0, 0, 0, 0.3);
+$mainLightBlack: rgba(0, 0, 0, 0.8);
 $mainGrey: rgba(192,192,192, 0.3);
 /*$mainRed: rgba(255,0,0, 0.6);*/
 $mainGold: rgb(191, 176, 125);
