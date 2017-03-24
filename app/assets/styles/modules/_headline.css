@@ -11,6 +11,13 @@
   transform: translateX(8%) scale(.8);
   transform-origin: 0 -860%;
   transition: all .5s ease-out;
+  z-index: 10;
+
+  &:hover {
+    color: $mainGold;
+    transition: all .5s ease-out;
+    cursor: pointer;
+  }
 
   @mixin atSmall {
     font-size: 22px;

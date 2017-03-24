@@ -460,8 +460,6 @@ template {
   display: none;
 }
 
-/*$mainRed: rgba(255,0,0, 0.6);*/
-
 /*Global styles*/
 
 * {
@@ -480,7 +478,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 100%;
   width: auto;
 }
@@ -490,7 +488,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 1%;
+  border-radius: 0.5%;
+}
+
+ul {
+  list-style: none;
 }
 
 /*Entire content of the page is being hidden until the loader shows up*/
@@ -562,7 +564,7 @@ img {
     }
     50%  {
       top: 0px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(.2);
               transform: scale(.2);
     }
@@ -574,7 +576,7 @@ img {
     }
     100% {
       top: 0px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.3);
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       opacity: .5;
@@ -598,7 +600,7 @@ img {
     }
     50%  {
       top: 0px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgb(191, 176, 125);
       -webkit-transform: scale(.2);
               transform: scale(.2);
     }
@@ -610,7 +612,7 @@ img {
     }
     100% {
       top: 0px;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.3);
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       opacity: .5;
@@ -721,6 +723,13 @@ img {
   display: inline-block;
 }
 
+.site-header__logo:hover {
+  background-color: rgb(191, 176, 125);
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
 /*site header logo name*/
 
 .site-header__name {
@@ -736,6 +745,12 @@ img {
     font-size: 23px;
     font-weight: 300;
     display: inline-block;
+  }
+
+  .site-header__name:hover {
+    color: rgb(191, 176, 125);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
   }
 }
 
@@ -849,7 +864,7 @@ img {
 
 .card {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
   border-radius: 1%;
   padding-bottom: 40px;
@@ -922,6 +937,8 @@ img {
 .card__photo__frame:hover {
   border: 1.5px solid rgb(191, 176, 125);
   cursor: pointer;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .slate-container {
@@ -941,10 +958,9 @@ img {
     -webkit-perspective: 500px;
             perspective: 500px;
     position: relative;
-    overflow: hidden;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.3);
 }
 
 .slate-container--extended {
@@ -970,7 +986,7 @@ img {
     border-radius: 1%;
     height: 280px;
     width: 230px;
-    margin: 0 15px;
+    margin: 0 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1026,7 +1042,7 @@ img {
 }
 
 .slate--top {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1067,6 +1083,14 @@ img {
           transform-origin: 0 -860%;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  z-index: 10;
+}
+
+.headline:hover {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
 }
 
 @media (min-width: 530px) {
@@ -1121,8 +1145,15 @@ img {
   font-weight: 300;
   font-size: 40px;
   opacity: 0.3;
-  color: rgba(rgba(255, 255, 255, 0.8), .1) transparent;
+  color: rgba(255, 255, 255, 0.8) transparent;
   z-index: 15;
+}
+
+.section-title:hover {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
 }
 
 .section-title--wide {
@@ -1171,14 +1202,20 @@ img {
 .generic-content-container {
   width: 800px;
   float: left;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.3);
 }
 
 .generic-content-container::after, .generic-content-container::before {
   content: "";
   clear: both;
   display: table;
+}
+
+.generic-content-container--narrow {
+  width: 1100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 165px rgba(0, 0, 0, 0.3);
 }
 
 .generic-content-container p {
@@ -1228,7 +1265,7 @@ img {
 }
 
 .circle:hover {
-	box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.3);
 }
 
 /*.line {
@@ -1255,6 +1292,13 @@ img {
   text-align: center;
   -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
+}
+
+.diamond:hover {
+  border: 1px solid rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
 }
 
 .primary-nav {
@@ -1324,6 +1368,12 @@ img {
   padding: 5px 7px;
 }
 
+.primary-nav a:hover {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
 @media (min-width: 768px) {
 
   .primary-nav a {
@@ -1368,6 +1418,8 @@ img {
 .btn:hover {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 @media (min-width: 530px) {
@@ -1464,8 +1516,48 @@ img {
 
 @keyframes load{0%{stroke-dashoffset:0}}
 
-.projects {
-  
+.project {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+.project::after, .project::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.project__list {
+  padding-left: 0;
+}
+
+.project__item {
+  float: left;
+  width: 100%;
+  max-width: 1010px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.project__item:first-child {
+  margin-top: -130px;
+  max-width: 550px;
+}
+
+.project__item:last-child {
+  margin-top: -210px;
+  margin-left: 290px;
+  max-width: 300px;
+}
+
+.project__image {
+  margin: 20px 0 20px 0;
 }
 
 .photography li {
@@ -1479,7 +1571,7 @@ img {
   margin-top: -8px;
   text-align: center;
   /*left: 300px;*/
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .site-footer--text {
@@ -1489,4 +1581,11 @@ img {
   top: 50px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
+}
+
+.site-footer--text:hover {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
 }

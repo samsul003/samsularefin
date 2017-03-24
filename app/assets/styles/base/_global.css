@@ -13,7 +13,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   color: $mainWhite;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 100%;
   width: auto;
 }
@@ -22,7 +22,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 1%;
+  border-radius: 0.5%;
+}
+
+ul {
+  list-style: none;
 }
 
 /*Entire content of the page is being hidden until the loader shows up*/

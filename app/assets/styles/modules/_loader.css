@@ -45,7 +45,7 @@
     }
     50%  {
       top: 0px;
-      background: $mainFreshBlack;
+      background: $mainGold;
       transform: scale(.2);
     }
     75%  {
@@ -55,7 +55,7 @@
     }
     100% {
       top: 0px;
-      background: $mainFreshBlack;
+      background: $mainLightBlack;
       transform: scale(1.2);
       opacity: .5;
       transition: all .3s ease-out;

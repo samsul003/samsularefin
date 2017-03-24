@@ -1,9 +1,15 @@
 .generic-content-container {
   width: 800px;
   float: left;
-  background-color: $mainFreshBlack;
-  box-shadow: 0 0 0 145px $mainFreshBlack;
+  background-color: $mainLightBlack;
+  box-shadow: 0 0 0 145px $mainLightBlack;
   @mixin clearfix;
+
+  &--narrow {
+    width: 1100px;
+    background-color: $mainLightBlack;
+    box-shadow: 0 0 0 165px $mainLightBlack;
+  }
 
   p {
     font-weight: 300;

@@ -10,8 +10,14 @@
   font-weight: 300;
   font-size: 40px;
   opacity: 0.3;
-  color: rgba($mainWhite, .1) transparent;
+  color: $mainWhite transparent;
   z-index: 15;
+
+  &:hover {
+    color: $mainGold;
+    transition: all .5s ease-out;
+    cursor: pointer;
+  }
 
   &--wide {
     margin-top: 150px;

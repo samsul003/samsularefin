@@ -43,6 +43,11 @@
     display: block;
     padding: 5px 7px;
 
+    &:hover {
+      color: $mainGold;
+      transition: all .5s ease-out;
+    }
+
     @mixin atMedium {
       font-size: 18px;
       padding: 12px 6px;

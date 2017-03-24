@@ -44,10 +44,18 @@
     padding: 20px 20px;
     margin: 19px 10px 0 0;
     display: inline-block;
+
+    &:hover {
+      background-color: $mainGold;
+      color: $mainFreshBlack;
+      transition: all .5s ease-out;
+
+    }
   }
   /*site header logo name*/
   &__name {
     display: none;
+
 
     @mixin atMedium {
       text-transform: capitalize;
@@ -56,6 +64,11 @@
       font-size: 23px;
       font-weight: 300;
       display: inline-block;
+
+      &:hover {
+        color: $mainGold;
+        transition: all .5s ease-out;
+      }
     }
   }
   /*styles for menu content*/

@@ -28,7 +28,7 @@
 	cursor: pointer;
 }
 .circle:hover {
-	box-shadow: 1px 1px 40px $mainFreshBlack;
+	box-shadow: 1px 1px 40px $mainLightBlack;
 }
 /*.line {
 	z-index: 5;
@@ -51,4 +51,10 @@
 	width: 35px;
   text-align: center;
   transform:rotate(45deg);
+
+	&:hover {
+		border: 1px solid $mainGold;
+		transition: all .5s ease-out;
+		cursor: pointer;
+	}
 }

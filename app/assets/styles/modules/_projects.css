@@ -1,3 +1,38 @@
-.projects {
-  
+.project {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  margin-top: 0;
+
+  @mixin clearfix;
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__item {
+    float: left;
+    width: 100%;
+    max-width: 1010px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 5;
+
+    &:first-child {
+      margin-top: -130px;
+      max-width: 550px;
+    }
+    &:last-child {
+      margin-top: -210px;
+      margin-left: 290px;
+      max-width: 300px;
+    }
+  }
+
+  &__image {
+    margin: 20px 0 20px 0;
+  }
 }

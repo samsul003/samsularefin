@@ -1,7 +1,7 @@
 /*showcase styles*/
 .card {
   position: relative;
-  background-color: $mainLightBlack;
+  background-color: $mainFreshBlack;
   text-align: center;
   border-radius: 1%;
   padding-bottom: 40px;
@@ -48,6 +48,7 @@
     &:hover {
       border: 1.5px solid $mainGold;
       cursor: pointer;
+      transition: all .5s ease-out;
     }
   }
 }
