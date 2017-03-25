@@ -49,7 +49,7 @@
     }
 
     @mixin atMedium {
-      font-size: 18px;
+      font-size: 21px;
       padding: 12px 6px;
       background-color: transparent;
 
