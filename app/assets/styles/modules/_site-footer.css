@@ -13,11 +13,5 @@
     top: 50px;
     color: $mainWhite;
     font-size: 15px;
-
-    &:hover {
-      color: $mainGold;
-      transition: all .5s ease-out;
-      cursor: pointer;
-    }
   }
 }

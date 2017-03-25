@@ -55,20 +55,15 @@
   /*site header logo name*/
   &__name {
     display: none;
-
+    cursor: none;
 
     @mixin atMedium {
-      text-transform: capitalize;
+      text-transform: uppercase;
       text-decoration: none;
       color: $mainWhite;
       font-size: 23px;
       font-weight: 300;
       display: inline-block;
-
-      &:hover {
-        color: $mainGold;
-        transition: all .5s ease-out;
-      }
     }
   }
   /*styles for menu content*/

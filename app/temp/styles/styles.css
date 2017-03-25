@@ -734,23 +734,18 @@ ul {
 
 .site-header__name {
   display: none;
+  cursor: none;
 }
 
 @media (min-width: 768px) {
 
   .site-header__name {
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     font-size: 23px;
     font-weight: 300;
     display: inline-block;
-  }
-
-  .site-header__name:hover {
-    color: rgb(191, 176, 125);
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
   }
 }
 
@@ -962,7 +957,6 @@ ul {
     margin-top: -80px;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
 }
 
 .slate-container--extended {
@@ -1106,20 +1100,6 @@ ul {
   transition: all .5s ease-out;
 }
 
-.headline--travel:hover {
-  color: rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  cursor: pointer;
-}
-
-.headline:hover {
-  color: rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  cursor: pointer;
-}
-
 @media (min-width: 530px) {
 
   .headline {
@@ -1172,13 +1152,6 @@ ul {
   opacity: 0.3;
   color: rgba(255, 255, 255, 0.8) transparent;
   z-index: 15;
-}
-
-.section-title:hover {
-  color: rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  cursor: pointer;
 }
 
 .section-title--wide {
@@ -1659,11 +1632,4 @@ ul {
   top: 50px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
-}
-
-.site-footer--text:hover {
-  color: rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  cursor: pointer;
 }

@@ -9,7 +9,6 @@
     margin-top: -80px;
     background-color: $mainLightBlack;
     box-shadow: 0 0 0 65px $mainLightBlack;
-    overflow: hidden;
 
     &--extended {
       margin-top: 50px;

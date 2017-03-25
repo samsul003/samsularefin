@@ -13,12 +13,6 @@
   color: $mainWhite transparent;
   z-index: 15;
 
-  &:hover {
-    color: $mainGold;
-    transition: all .5s ease-out;
-    cursor: pointer;
-  }
-
   &--wide {
     margin-top: 150px;
   }
