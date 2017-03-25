@@ -959,8 +959,10 @@ ul {
             perspective: 500px;
     position: relative;
     height: 100%;
+    margin-top: -80px;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .slate-container--extended {
@@ -979,6 +981,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.3);
 }
 
 .slate {
@@ -1012,9 +1016,7 @@ ul {
 .slate:nth-of-type(3) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;/*&--top {
-            flex: 1;
-        }*/
+          justify-content: space-between;
 }
 
 .slate:nth-of-type(4) {
@@ -1036,8 +1038,7 @@ ul {
 }
 
 .slate--top h2, .slate--bottom h2 {
-  color: rgba(0, 0, 0, 1);
-  opacity: .8;
+  color: rgba(0, 0, 0, 0.9);
   font-style: italic;
 }
 
