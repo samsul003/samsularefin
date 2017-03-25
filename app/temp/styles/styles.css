@@ -1066,6 +1066,14 @@ ul {
       justify-content: space-around;
 }
 
+.slate--bottom > h2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+
 /*Styles for biography title */
 
 .headline {
@@ -1077,13 +1085,24 @@ ul {
   color: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
-  -webkit-transform: translateX(8%) scale(.8);
-          transform: translateX(8%) scale(.8);
+  -webkit-transform: translateX(4%) scale(.8);
+          transform: translateX(4%) scale(.8);
   -webkit-transform-origin: 0 -860%;
           transform-origin: 0 -860%;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   z-index: 10;
+}
+
+.headline--travel {
+  text-transform: capitalize;
+  font-size: 33px;
+  -webkit-transform: translateX(4%) scale(1);
+          transform: translateX(4%) scale(1);
+  -webkit-transform-origin: 0 -700%;
+          transform-origin: 0 -700%;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .headline:hover {
@@ -1109,13 +1128,13 @@ ul {
 @media (min-width: 768px) {
 
   .headline {
-    font-size: 24px;
-    -webkit-transform: translateX(0) scale(.8);
-            transform: translateX(0) scale(.8);
+    font-size: 33px;
     -webkit-transform-origin: 0 -700%;
             transform-origin: 0 -700%;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
+    -webkit-transform: translateX(-6%) scale(1);
+            transform: translateX(-6%) scale(1);
   }
 }
 
@@ -1123,8 +1142,6 @@ ul {
 
   .headline {
     font-size: 26px;
-    -webkit-transform: translateX(3%) scale(.8);
-            transform: translateX(3%) scale(.8);
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
     -webkit-transition: all .5s ease-out;
@@ -1393,6 +1410,7 @@ ul {
   color: rgba(255, 255, 255, 0.8);
   position: relative;
   font-size: 21px;
+  font-weight: 300;
   text-decoration: none;
   text-align: center;
   padding: 0;
@@ -1401,18 +1419,23 @@ ul {
   border: 1px solid rgba(192,192,192, 0.3);
   border-radius: 1%;
   top: 0;
-  left: 45px;
+  left: 65px;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
-.btn--narrow {
+.btn--footer {
   top: 0;
-  left: 5.5%;
+  left: 6%;
   display: inline-block;
   margin-bottom: -50px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+}
+
+.btn--travel {
+  top: 0;
+  left: 5%;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 .btn:hover {
@@ -1440,10 +1463,11 @@ ul {
 @media (min-width: 768px) {
 
   .btn {
-    width: 160px;
+    width: 130px;
     height: 40px;
-    font-size: 20px;
-    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
   }
@@ -1477,6 +1501,13 @@ ul {
   font-family: Lato;
   font-weight:100;
   margin: 2rem;
+}
+
+.progress-bar>li:hover {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
 }
 
 .progress-bar>li:after {
@@ -1546,18 +1577,58 @@ ul {
 }
 
 .project__item:first-child {
-  margin-top: -130px;
+  margin-top: -150px;
   max-width: 550px;
 }
 
 .project__item:last-child {
-  margin-top: -210px;
+  margin-top: -315px;
   margin-left: 290px;
   max-width: 300px;
 }
 
 .project__image {
   margin: 20px 0 20px 0;
+}
+
+.project__image__frame {
+  border: 1.5px solid rgba(192,192,192, 0.3);
+  border-radius: 0.5%;
+  width: 500px;
+  height: 380px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 10%);
+          transform: translate(0, 10%);
+}
+
+.project__image__frame:hover {
+  border: 1.5px solid rgb(191, 176, 125);
+  cursor: pointer;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.project__image__frame--travel {
+  border: 1.5px solid rgba(192,192,192, 0.3);
+  border-radius: 0.5%;
+  width: 260px;
+  height: 390px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -1%;
+  -webkit-transform: translate(0, 20%);
+          transform: translate(0, 20%);
+}
+
+.project__image__frame--travel:hover {
+  border: 1.5px solid rgb(191, 176, 125);
+  cursor: pointer;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .photography li {
@@ -1576,7 +1647,7 @@ ul {
 
 .site-footer--text {
   display: inline-block;
-  left: -107px;
+  left: -90px;
   position: relative;
   top: 50px;
   color: rgba(255, 255, 255, 0.8);

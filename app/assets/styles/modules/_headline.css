@@ -8,10 +8,18 @@
   color: $mainWhite;
   top: 0;
   left: 0;
-  transform: translateX(8%) scale(.8);
+  transform: translateX(4%) scale(.8);
   transform-origin: 0 -860%;
   transition: all .5s ease-out;
   z-index: 10;
+
+  &--travel {
+    text-transform: capitalize;
+    font-size: 33px;
+    transform: translateX(4%) scale(1);
+    transform-origin: 0 -700%;
+    transition: all .5s ease-out;
+  }
 
   &:hover {
     color: $mainGold;
@@ -26,14 +34,13 @@
     transition: all .5s ease-out;
   }
   @mixin atMedium {
-    font-size: 24px;
-    transform: translateX(0) scale(.8);
+    font-size: 33px;
     transform-origin: 0 -700%;
     transition: all .5s ease-out;
+    transform: translateX(-6%) scale(1);
   }
   @mixin atLarge {
     font-size: 26px;
-    transform: translateX(3%) scale(.8);
     transform-origin: 0 0;
     transition: all .5s ease-out;
   }

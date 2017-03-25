@@ -13,6 +13,12 @@
         font-weight:100;
         margin: 2rem;
 
+        &:hover {
+          color: $mainGold;
+          transition: all .5s ease-out;
+          cursor: pointer;
+        }
+
         &:after {
             content: attr(data-percent);
             position: absolute;
@@ -23,9 +29,11 @@
             text-align: center;
         }
     }
+
     svg {
         width: 10rem;
         height: 10rem;
+
         &:nth-child(2) {
             position: absolute;
             left: 0;

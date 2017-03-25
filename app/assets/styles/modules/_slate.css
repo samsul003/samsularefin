@@ -75,5 +75,13 @@
         text-align: center;
         align-items: center;
         justify-content: space-around;
+
+        & > h2 {
+          &:hover {
+            transform: scale(1.2);
+            transition: all .5s ease-out;
+            cursor: pointer;
+          }
+        }
     }
 }

@@ -4,6 +4,7 @@
   color: $mainWhite;
   position: relative;
   font-size: 21px;
+  font-weight: 300;
   text-decoration: none;
   text-align: center;
   padding: 0;
@@ -12,15 +13,21 @@
   border: 1px solid $mainGrey;
   border-radius: 1%;
   top: 0;
-  left: 45px;
+  left: 65px;
   transition: all .5s ease-out;
 
-  &--narrow {
+  &--footer {
     top: 0;
-    left: 5.5%;
+    left: 6%;
     display: inline-block;
     margin-bottom: -50px;
-    transition: all .5s ease-out;
+  }
+
+  &--travel {
+    top: 0;
+    left: 5%;
+    display: inline-block;
+    margin-bottom: 0;
   }
 
     &:hover {
@@ -39,10 +46,11 @@
   }
 
   @mixin atMedium {
-    width: 160px;
+    width: 130px;
     height: 40px;
-    font-size: 20px;
-    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
     transition: all .5s ease-out;
   }
 
