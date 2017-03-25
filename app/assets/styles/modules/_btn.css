@@ -1,3 +1,4 @@
+/*styles for buttons*/
 .btn {
   background-color: transparent;
   display: inline-block;
@@ -16,13 +17,14 @@
   left: 65px;
   transition: all .5s ease-out;
 
+  /*styles for footer button*/
   &--footer {
     top: 0;
     left: 6%;
     display: inline-block;
     margin-bottom: -50px;
   }
-
+  /*styles for travel view project button*/
   &--travel {
     top: 0;
     left: 5%;

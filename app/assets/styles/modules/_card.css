@@ -1,54 +1,88 @@
-/*showcase styles*/
+/*styles for card container*/
+.card-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+    position: relative;
+    height: 100%;
+    margin-top: -80px;
+    background-color: $mainLightBlack;
+    box-shadow: 0 0 0 65px $mainLightBlack;
+
+    /*styles for card layer*/
+    &--extended {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      background-color: $mainLightBlack;
+      box-shadow: 0 0 0 65px $mainLightBlack;
+    }
+}
+/*styles for competence cards*/
 .card {
-  position: relative;
-  background-color: $mainFreshBlack;
-  text-align: center;
-  border-radius: 1%;
-  padding-bottom: 40px;
-  margin-right: 50px;
-  max-width: 300px;
-  max-height: 380px;
-  float: left;
-  @mixin clearfix;
+    z-index: 2;
+    border-radius: 1%;
+    height: 280px;
+    width: 230px;
+    margin: 0 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    opacity: 1;
 
-  /*Styles for biography photo */
-  &__photo {
-    width: 100%;
-    opacity: 0.9;
+    &:nth-of-type(1) {
+        justify-content: space-between;
+    }
 
-    @mixin atSmall {
-      transition: all .3s ease-out;
+    &:nth-of-type(2) {
+        justify-content: space-between;
     }
-    @mixin atMedium {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 30px;
-      transition: all .3s ease-out;
-    }
-    @mixin atLarge {
-      top: -50%;
-      left: 0;
-      position: relative;
-      transform: translate(0, -25%) scale(.85);
-      transition: all .3s ease-out;
-    }
-  }
-  /*styles for box frame*/
-  &__photo__frame {
-    border: 1.5px solid $mainGrey;
-    border-radius: 0.5%;
-  	width: 255px;
-  	height: 310px;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(13%, -6%);
 
-    &:hover {
-      border: 1.5px solid $mainGold;
-      cursor: pointer;
-      transition: all .5s ease-out;
+    &:nth-of-type(3) {
+        justify-content: space-between;
     }
-  }
+
+    &:nth-of-type(4) {
+        justify-content: flex-end;
+    }
+
+    &--top,
+    &--bottom {
+        padding: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+
+        h2 {
+          color: $mainFreshBlack;
+          font-style: italic;
+        }
+    }
+
+    &--top {
+        background-color: $mainFreshBlack;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+
+    &--bottom {
+        height: 100px;
+        background-color: $mainWhite;
+        opacity: .9;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+
+        & > h2 {
+          &:hover {
+            transform: scale(1.2);
+            transition: all .5s ease-out;
+            cursor: pointer;
+          }
+        }
+    }
 }

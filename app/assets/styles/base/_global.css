@@ -8,7 +8,7 @@ html{
 min-height:100%;
 }
 
-/*body styles for full width&height background image*/
+/*Global body styles*/
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -29,7 +29,7 @@ ul {
   list-style: none;
 }
 
-/*Entire content of the page is being hidden until the loader shows up*/
+/*Entire content of the page is hidden until the loader animation is complete*/
 .site-content {
   display: none;
   margin: 0;

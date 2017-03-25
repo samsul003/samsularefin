@@ -1,3 +1,4 @@
+/*styles for site-header*/
 .site-header {
   padding-bottom: 10px;
   position: absolute;
@@ -5,11 +6,12 @@
   z-index: 2;
   transition: background-color .3s ease-out;
 
+  /*site-header styles for mobile devices*/
   &--is-expanded {
     padding-bottom: 18px;
     background-color: rgba($mainGrey, .2);
   }
-
+  /*styles for logo container*/
   &__logo-container {
     transform: translateX(-15%) scale(.80);
     transform-origin: 50% 0;
@@ -80,7 +82,7 @@
       transform: scale(1);
       z-index: 1;
     }
-
+    /*make menu content visible*/
     &--is-visible {
       opacity: 1;
       transform: scale(1);

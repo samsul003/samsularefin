@@ -1,21 +1,22 @@
+/*media query for mobile devices*/
 @define-mixin atSmall {
   @media (min-width: 530px) {
       @mixin-content;
   }
 }
-
+/*media query for medium devices*/
 @define-mixin atMedium {
   @media (min-width: 768px) {
       @mixin-content;
   }
 }
-
+/*media query for large devices*/
 @define-mixin atLarge{
   @media (min-width: 1010px) {
       @mixin-content;
   }
 }
-
+/*clearfix for floted elements*/
 @define-mixin clearfix {
   &::after, &::before {
     content: "";

@@ -6,8 +6,8 @@
 @import "modules/_wrapper";
 @import "modules/_site-header";
 @import "modules/_page-section";
+@import "modules/_showcase";
 @import "modules/_card";
-@import "modules/_slate";
 @import "modules/_headline";
 @import "modules/_section-title";
 @import "modules/_generic-content-container";

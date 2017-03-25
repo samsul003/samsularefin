@@ -1,0 +1,54 @@
+/*showcase styles*/
+.showcase {
+  position: relative;
+  background-color: $mainFreshBlack;
+  text-align: center;
+  border-radius: 1%;
+  padding-bottom: 40px;
+  margin-right: 50px;
+  max-width: 300px;
+  max-height: 380px;
+  float: left;
+  @mixin clearfix;
+
+  /*Styles for biography photo */
+  &__photo {
+    width: 100%;
+    opacity: 0.9;
+
+    @mixin atSmall {
+      transition: all .3s ease-out;
+    }
+    @mixin atMedium {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 30px;
+      transition: all .3s ease-out;
+    }
+    @mixin atLarge {
+      top: -50%;
+      left: 0;
+      position: relative;
+      transform: translate(0, -25%) scale(.85);
+      transition: all .3s ease-out;
+    }
+  }
+  /*styles for box frame*/
+  &__photo__frame {
+    border: 1.5px solid $mainGrey;
+    border-radius: 0.5%;
+  	width: 255px;
+  	height: 310px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(13%, -6%);
+
+    &:hover {
+      border: 1.5px solid $mainGold;
+      cursor: pointer;
+      transition: all .5s ease-out;
+    }
+  }
+}

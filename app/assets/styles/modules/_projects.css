@@ -1,3 +1,4 @@
+/*styles for project section*/
 .project {
   width: 100%;
   margin-left: auto;
@@ -35,6 +36,7 @@
   &__image {
     margin: 20px 0 20px 0;
 
+    /*styles for first image frame*/
     &__frame {
       border: 1.5px solid $mainGrey;
       border-radius: 0.5%;
@@ -52,6 +54,7 @@
         transition: all .5s ease-out;
       }
     }
+    /*styles for second image frame*/
     &__frame--travel {
       border: 1.5px solid $mainGrey;
       border-radius: 0.5%;
