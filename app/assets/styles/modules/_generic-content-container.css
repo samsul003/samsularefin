@@ -1,15 +1,16 @@
-/*styles for generic content container*/
+/*styles for generic content container and section layer*/
 .generic-content-container {
   width: 800px;
   float: left;
   background-color: $mainLightBlack;
-  box-shadow: 0 0 0 145px $mainLightBlack;
+  box-shadow: 0 0 0 150px $mainLightBlack;
   @mixin clearfix;
 
-  &--narrow {
+  /*styles for project section layer*/
+  &--wide {
     width: 1010px;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 0 165px $mainLightBlack;
+    box-shadow: 0 0 0 180px $mainLightBlack;
   }
 
   p {

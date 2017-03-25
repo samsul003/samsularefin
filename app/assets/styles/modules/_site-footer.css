@@ -7,7 +7,7 @@
 
   &--text {
     display: inline-block;
-    left: -90px;
+    left: -80px;
     position: relative;
     top: 50px;
     color: $mainWhite;
