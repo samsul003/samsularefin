@@ -58,3 +58,43 @@
 		cursor: pointer;
 	}
 }
+
+.triangle {
+	position: relative;
+  display: inline-block;
+  vertical-align: middle;
+	top: 0;
+	left: 25%;
+	transform: translate(50%, 50%);
+
+
+		&--middle {
+	  width: 80px;
+	  height: 40px;
+		margin-top: -20px;
+	  border-bottom: 40px solid $mainLightBlack;
+	  border-left: 40px solid transparent;
+	  border-right: 40px solid transparent;
+	}
+
+		&--left {
+	  width: 60px;
+	  height: 30px;
+		left: 50%;
+	  border-bottom: 30px solid $mainFreshBlack;
+	  border-left: 30px solid transparent;
+	  border-right: 30px solid transparent;
+		z-index: 1;
+		opacity: .5;
+	}
+
+	&--right {
+	width: 60px;
+	height: 30px;
+	left: 10%;
+	border-bottom: 30px solid $mainFreshBlack;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	opacity: .5;
+}
+}

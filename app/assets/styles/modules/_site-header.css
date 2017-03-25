@@ -55,7 +55,7 @@
   /*site header logo name*/
   &__name {
     display: none;
-    cursor: none;
+    cursor: text;
 
     @mixin atMedium {
       text-transform: uppercase;

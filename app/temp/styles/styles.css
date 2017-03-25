@@ -734,7 +734,7 @@ ul {
 
 .site-header__name {
   display: none;
-  cursor: none;
+  cursor: text;
 }
 
 @media (min-width: 768px) {
@@ -1297,6 +1297,46 @@ ul {
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   cursor: pointer;
+}
+
+.triangle {
+	position: relative;
+  display: inline-block;
+  vertical-align: middle;
+	top: 0;
+	left: 25%;
+	-webkit-transform: translate(50%, 50%);
+	        transform: translate(50%, 50%);
+}
+
+.triangle--middle {
+  width: 80px;
+  height: 40px;
+  margin-top: -20px;
+  border-bottom: 40px solid rgba(0, 0, 0, 0.3);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.triangle--left {
+  width: 60px;
+  height: 30px;
+  left: 50%;
+  border-bottom: 30px solid rgba(0, 0, 0, 0.9);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  z-index: 1;
+  opacity: .5;
+}
+
+.triangle--right {
+  width: 60px;
+  height: 30px;
+  left: 10%;
+  border-bottom: 30px solid rgba(0, 0, 0, 0.9);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  opacity: .5;
 }
 
 .primary-nav {
