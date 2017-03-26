@@ -47,7 +47,6 @@
 
     &:hover {
       border: 1.5px solid $mainGold;
-      cursor: pointer;
       transition: all .5s ease-out;
     }
   }

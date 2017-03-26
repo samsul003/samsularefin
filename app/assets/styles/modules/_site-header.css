@@ -37,9 +37,10 @@
   }
   /*site header logo stamp*/
   &__logo {
-    background-color: $mainGrey;
+    background-color: $mainGold;
+    opacity: .7;
     border-radius: 2%;
-    color: $mainWhite;
+    color: $mainFreshBlack;
     text-decoration: none;
     font-size: 23px;
     font-weight: 900;
@@ -48,8 +49,8 @@
     display: inline-block;
 
     &:hover {
-      background-color: $mainGold;
-      color: $mainFreshBlack;
+      background-color: $mainGrey;
+      color: $mainWhite;
       transition: all .5s ease-out;
 
     }
@@ -57,7 +58,6 @@
   /*site header logo name*/
   &__name {
     display: none;
-    cursor: text;
 
     @mixin atMedium {
       text-transform: uppercase;

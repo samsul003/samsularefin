@@ -732,9 +732,10 @@ ul {
 /*site header logo stamp*/
 
 .site-header__logo {
-  background-color: rgba(192,192,192, 0.3);
+  background-color: rgb(191, 176, 125);
+  opacity: .7;
   border-radius: 2%;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   font-size: 23px;
   font-weight: 900;
@@ -744,8 +745,8 @@ ul {
 }
 
 .site-header__logo:hover {
-  background-color: rgb(191, 176, 125);
-  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(192,192,192, 0.3);
+  color: rgba(255, 255, 255, 0.8);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -754,7 +755,6 @@ ul {
 
 .site-header__name {
   display: none;
-  cursor: text;
 }
 
 @media (min-width: 768px) {
@@ -955,7 +955,6 @@ ul {
 
 .showcase__photo__frame:hover {
   border: 1.5px solid rgb(191, 176, 125);
-  cursor: pointer;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -1092,11 +1091,10 @@ ul {
 }
 
 .card--bottom > h2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-  cursor: pointer;
 }
 
 /*Styles for section headlines */
@@ -1183,8 +1181,8 @@ ul {
   text-align: center;
   font-weight: 300;
   font-size: 40px;
-  opacity: 0.3;
-  color: rgba(255, 255, 255, 0.8) transparent;
+  opacity: 0.4;
+  color: rgb(191, 176, 125);
   z-index: 15;
 }
 
@@ -1301,20 +1299,13 @@ ul {
 	        transform-origin: 0 50%;
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 1);
-	border: 1px solid rgba(192,192,192, 0.3);
+	border: 1.5px solid rgb(191, 176, 125);
 	box-shadow: 0 0 0 8px rgba(0, 0, 0, 1);
   height: 35px;
 	width: 35px;
   text-align: center;
   -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
-}
-
-.diamond:hover {
-  border: 1px solid rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  cursor: pointer;
 }
 
 /*styles for section seperator*/
@@ -1557,7 +1548,6 @@ ul {
   color: rgb(191, 176, 125);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-  cursor: pointer;
 }
 
 .progress-bar>li:after {
@@ -1660,7 +1650,6 @@ ul {
 
 .project__image__frame:hover {
   border: 1.5px solid rgb(191, 176, 125);
-  cursor: pointer;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -1682,7 +1671,6 @@ ul {
 
 .project__image__frame--travel:hover {
   border: 1.5px solid rgb(191, 176, 125);
-  cursor: pointer;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }

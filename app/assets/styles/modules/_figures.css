@@ -40,18 +40,12 @@
 	transform-origin: 0 50%;
 	display: inline-block;
 	background-color: $mainBlack;
-	border: 1px solid $mainGrey;
+	border: 1.5px solid $mainGold;
 	box-shadow: 0 0 0 8px $mainBlack;
   height: 35px;
 	width: 35px;
   text-align: center;
   transform:rotate(45deg);
-
-	&:hover {
-		border: 1px solid $mainGold;
-		transition: all .5s ease-out;
-		cursor: pointer;
-	}
 }
 
 /*styles for section seperator*/
