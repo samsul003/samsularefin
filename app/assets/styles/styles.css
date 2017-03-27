@@ -8,6 +8,7 @@
 @import "modules/_page-section";
 @import "modules/_showcase";
 @import "modules/_card";
+@import "modules/_modal";
 @import "modules/_headline";
 @import "modules/_section-title";
 @import "modules/_generic-content-container";
@@ -17,4 +18,5 @@
 @import "modules/_progress-bar";
 @import "modules/_projects";
 @import "modules/_photography";
+@import "modules/_social-icons";
 @import "modules/_site-footer";
