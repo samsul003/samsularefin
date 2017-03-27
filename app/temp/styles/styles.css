@@ -533,7 +533,7 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(192,192,192, 0.3);
+  background: rgba(192,192,192, 0.35);
   position :absolute;
   -webkit-animation: loader 2.5s linear infinite;
           animation: loader 2.5s linear infinite;
@@ -564,7 +564,7 @@ ul {
 @-webkit-keyframes loader {
     0%   {
       top: 0px;
-      background: rgba(192,192,192, 0.3);
+      background: rgba(192,192,192, 0.35);
       -webkit-transform: scale(0);
               transform: scale(0);
     }
@@ -582,7 +582,7 @@ ul {
     }
     75%  {
       top: 0px;
-      background: rgba(192,192,192, 0.3);
+      background: rgba(192,192,192, 0.35);
       -webkit-transform: scale(.4);
               transform: scale(.4);
     }
@@ -600,7 +600,7 @@ ul {
 @keyframes loader {
     0%   {
       top: 0px;
-      background: rgba(192,192,192, 0.3);
+      background: rgba(192,192,192, 0.35);
       -webkit-transform: scale(0);
               transform: scale(0);
     }
@@ -618,7 +618,7 @@ ul {
     }
     75%  {
       top: 0px;
-      background: rgba(192,192,192, 0.3);
+      background: rgba(192,192,192, 0.35);
       -webkit-transform: scale(.4);
               transform: scale(.4);
     }
@@ -672,7 +672,7 @@ ul {
 
 .site-header--is-expanded {
   padding-bottom: 18px;
-  background-color: rgba(rgba(192,192,192, 0.3), .2);
+  background-color: rgba(rgba(192,192,192, 0.35), .2);
 }
 
 /*styles for logo container*/
@@ -691,6 +691,19 @@ ul {
   content: "";
   clear: both;
   display: table;
+}
+
+.site-header__logo-container:hover .site-header__logo {
+  background-color: rgba(192,192,192, 0.35);
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.site-header__logo-container:hover .site-header__name {
+  color: rgb(191, 176, 125);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 @media (min-width: 530px) {
@@ -733,7 +746,7 @@ ul {
 
 .site-header__logo {
   background-color: rgb(191, 176, 125);
-  opacity: .7;
+  opacity: .8;
   border-radius: 2%;
   color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
@@ -742,13 +755,6 @@ ul {
   padding: 20px 20px;
   margin: 19px 10px 0 0;
   display: inline-block;
-}
-
-.site-header__logo:hover {
-  background-color: rgba(192,192,192, 0.3);
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 /*site header logo name*/
@@ -941,7 +947,7 @@ ul {
 /*styles for box frame*/
 
 .showcase__photo__frame {
-  border: 1.5px solid rgba(192,192,192, 0.3);
+  border: 1.5px solid rgba(192,192,192, 0.35);
   border-radius: 0.5%;
   width: 255px;
   height: 310px;
@@ -1332,7 +1338,7 @@ ul {
 /*styles for outer circle*/
 
 .circle-outer {
-	background: rgba(192,192,192, 0.3);
+	background: rgba(192,192,192, 0.35);
 	border-radius:50px;
 	width: 45px;
 	height: 45px;
@@ -1356,7 +1362,7 @@ ul {
   margin-top: 16.5px;
   margin-left: 8px;
   padding-left: 0;
-	border:5px solid rgba(192,192,192, 0.3);
+	border:5px solid rgba(192,192,192, 0.35);
   display: block;
   position: absolute;
 	cursor: pointer;
@@ -1489,7 +1495,7 @@ ul {
 
 .primary-nav a {
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(rgba(192,192,192, 0.3), 1);
+  background-color: rgba(rgba(192,192,192, 0.35), 1);
   font-size: 10px;
   font-weight: 700;
   border-radius: 1%;
@@ -1531,7 +1537,7 @@ ul {
   padding: 0;
   margin-top: -90px;
   display: block;
-  border: 1px solid rgba(192,192,192, 0.3);
+  border: 1px solid rgba(192,192,192, 0.35);
   border-radius: 1%;
   top: 0;
   left: 65px;
@@ -1656,7 +1662,7 @@ ul {
   fill: none;
   stroke-width: 3;
   stroke-dasharray: 100;
-  stroke: rgba(192,192,192, 0.3);
+  stroke: rgba(192,192,192, 0.35);
   opacity: 1;
   -webkit-animation: load 15s infinite;
           animation: load 15s infinite;
@@ -1715,7 +1721,7 @@ ul {
 /*styles for first image frame*/
 
 .project__image__frame {
-  border: 1.5px solid rgba(192,192,192, 0.3);
+  border: 1.5px solid rgba(192,192,192, 0.35);
   border-radius: 0.5%;
   width: 500px;
   height: 405px;
@@ -1736,7 +1742,7 @@ ul {
 /*styles for second image frame*/
 
 .project__image__frame--travel {
-  border: 1.5px solid rgba(192,192,192, 0.3);
+  border: 1.5px solid rgba(192,192,192, 0.35);
   border-radius: 0.5%;
   width: 260px;
   height: 395px;
@@ -1764,7 +1770,8 @@ ul {
   text-align: center;
 }
 
-.social-icons__icon {/*background-color: $mainGrey;*/
+.social-icons__icon {
+  background-color: rgba(0, 0, 0, 0.9);
   color: rgb(191, 176, 125);
   display: inline-block;
   margin: 0 5px 5px 5px;/*width: 33%;

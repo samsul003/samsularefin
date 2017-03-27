@@ -19,6 +19,18 @@
     float: left;
     @mixin clearfix;
 
+    &:hover {
+      .site-header__logo {
+        background-color: $mainGrey;
+        color: $mainWhite;
+        transition: all .5s ease-out;
+      }
+      .site-header__name {
+        color: $mainGold;
+        transition: all .5s ease-out;
+      }
+    }
+
     @mixin atSmall {
         transform: translateX(-10%) scale(.85);
         transform-origin: 50% 0;
@@ -38,7 +50,7 @@
   /*site header logo stamp*/
   &__logo {
     background-color: $mainGold;
-    opacity: .7;
+    opacity: .8;
     border-radius: 2%;
     color: $mainFreshBlack;
     text-decoration: none;
@@ -47,13 +59,6 @@
     padding: 20px 20px;
     margin: 19px 10px 0 0;
     display: inline-block;
-
-    &:hover {
-      background-color: $mainGrey;
-      color: $mainWhite;
-      transition: all .5s ease-out;
-
-    }
   }
   /*site header logo name*/
   &__name {
