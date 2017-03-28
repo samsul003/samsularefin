@@ -21,8 +21,8 @@
 
     &:hover {
       .site-header__logo {
-        background-color: $mainGrey;
-        color: $mainWhite;
+        background-color: $mainWhite;
+        color: $mainFreshBlack;
         transition: all .5s ease-out;
       }
       .site-header__name {
@@ -50,7 +50,7 @@
   /*site header logo stamp*/
   &__logo {
     background-color: $mainGold;
-    opacity: .8;
+    opacity: 0.9;
     border-radius: 2%;
     color: $mainFreshBlack;
     text-decoration: none;
@@ -65,7 +65,7 @@
     display: none;
 
     @mixin atMedium {
-      text-transform: uppercase;
+      text-transform: capitalize;
       text-decoration: none;
       color: $mainWhite;
       font-size: 23px;
