@@ -1,7 +1,7 @@
 /*project color variables*/
-$mainWhite:  rgba(255, 255, 255, 0.8);
+$mainWhite:  rgba(255, 255, 255, 0.7);
 $mainBlack: rgba(0, 0, 0, 1);
 $mainLightBlack: rgba(0, 0, 0, 0.3);
 $mainFreshBlack: rgba(0, 0, 0, 0.9);
-$mainGrey: rgba(192,192,192, 0.35);
+$mainGrey: rgba(192,192,192, 0.5);
 $mainGold: rgb(191, 176, 125);

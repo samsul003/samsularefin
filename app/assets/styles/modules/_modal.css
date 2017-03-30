@@ -11,6 +11,15 @@
   transform: scale(1.2);
   transition: all .5s ease-out;
 
+  h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $mainGold;
+    opacity: 0.6;
+    margin-top: -50px;
+    font-weight: 100;
+  }
+
   &--is-visible {
     opacity: 1;
     visibility: visible;
@@ -26,8 +35,9 @@
 
   &__description {
     text-align: center;
+    color: $mainGrey;
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.65;
   }
 
