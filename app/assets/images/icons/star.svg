@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:#d4953f;}</style>
+  </defs>
+  <title>star</title>
+  <path class="cls-1" d="M32 0l-8 24h-24l20 16-8 24 20-16 20 16-8-24 20-16h-24z" style="fill: rgb(191, 176, 125);"/>
+</svg>
