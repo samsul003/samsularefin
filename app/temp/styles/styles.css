@@ -1715,6 +1715,20 @@ ul {
 
 @keyframes load{0%{stroke-dashoffset:0}}
 
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 4s ease-out;
+  transition: all 4s ease-out;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 /*styles for project section*/
 
 .project {
