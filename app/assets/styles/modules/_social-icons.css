@@ -1,5 +1,6 @@
 .social-icons {
   text-align: center;
+  color: $mainGold;
   opacity: 0.7;
 
   &__icon {

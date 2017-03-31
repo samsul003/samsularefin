@@ -1278,38 +1278,6 @@ ul {
   margin-bottom: .6rem;
 }
 
-.section-title__icon--bio {
-  position: relative;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%) scale(1.9);
-          transform: translate(-50%, -50%) scale(1.9);
-}
-
-.section-title__icon--competence {
-  position: relative;
-  top: 10%;
-  left: 3%;
-  -webkit-transform: translate(-50%, -10%) scale(1.1);
-          transform: translate(-50%, -10%) scale(1.1);
-}
-
-.section-title__icon--projects {
-  position: relative;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%) scale(1.9);
-          transform: translate(-50%, -50%) scale(1.9);
-}
-
-.section-title__icon--photography {
-  position: relative;
-  top: 10%;
-  left: 3%;
-  -webkit-transform: translate(-50%, -10%) scale(1.4);
-          transform: translate(-50%, -10%) scale(1.4);
-}
-
 @media (min-width: 530px) {
 
   .section-title__icon {
@@ -1549,7 +1517,6 @@ ul {
 
 .primary-nav a:hover {
   color: rgb(191, 176, 125);
-  border: 1px solid rgba(192,192,192, 0.5);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
@@ -1562,7 +1529,7 @@ ul {
     background-color: transparent;
   }
 
-  .primary-nav a.is-current-link {
+  .primary-nav a:is-current-link {
     color: rgb(191, 176, 125);
   }
 }
@@ -1659,55 +1626,31 @@ ul {
  */
 
 .icon {
-       background-image: url('/assets/images/sprites/sprite-54664175.svg');
+       background-image: url('/assets/images/sprites/sprite-2281b334.svg');
      }
 
-.icon--about {
-      width: 32px;
-      height: 32px;
-      background-position: 0 100%;
-    }
-
-.icon--camera {
+.icon--codepen {
       width: 50px;
       height: 50px;
       background-position: 0 0;
     }
 
-.icon--codepen {
-      width: 50px;
-      height: 50px;
-      background-position: 50% 0;
-    }
-
 .icon--facebook {
-      width: 50px;
-      height: 50px;
-      background-position: 0 60.97560975609756%;
-    }
-
-.icon--github {
-      width: 50px;
-      height: 50px;
-      background-position: 50% 60.97560975609756%;
-    }
-
-.icon--idea {
-      width: 32px;
-      height: 32px;
-      background-position: 27.11864406779661% 100%;
-    }
-
-.icon--linkedin {
       width: 50px;
       height: 50px;
       background-position: 100% 0;
     }
 
-.icon--skull {
+.icon--github {
       width: 50px;
       height: 50px;
-      background-position: 100% 60.97560975609756%;
+      background-position: 0 100%;
+    }
+
+.icon--linkedin {
+      width: 50px;
+      height: 50px;
+      background-position: 100% 100%;
     }
 
 /*styles for radial progress bar animation*/
@@ -1868,6 +1811,7 @@ ul {
 
 .social-icons {
   text-align: center;
+  color: rgb(191, 176, 125);
   opacity: 0.7;
 }
 

@@ -46,7 +46,6 @@
 
     &:hover {
       color: $mainGold;
-      border: 1px solid $mainGrey;
       transition: all .5s ease-out;
     }
 
@@ -55,7 +54,7 @@
       padding: 12px 12px;
       background-color: transparent;
 
-      &.is-current-link {
+      &:is-current-link {
         color: $mainGold;
       }
     }

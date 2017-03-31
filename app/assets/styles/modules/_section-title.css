@@ -37,31 +37,6 @@
     margin-right: auto;
     margin-bottom: .6rem;
 
-    &--bio {
-      position: relative;
-      top: 50%;
-      left: 0;
-      transform: translate(-50%, -50%) scale(1.9);
-    }
-    &--competence {
-      position: relative;
-      top: 10%;
-      left: 3%;
-      transform: translate(-50%, -10%) scale(1.1);
-    }
-    &--projects {
-      position: relative;
-      top: 50%;
-      left: 0;
-      transform: translate(-50%, -50%) scale(1.9);
-    }
-    &--photography {
-      position: relative;
-      top: 10%;
-      left: 3%;
-      transform: translate(-50%, -10%) scale(1.4);
-    }
-
     @mixin atSmall {
       position: relative;
       display: inline-block;
