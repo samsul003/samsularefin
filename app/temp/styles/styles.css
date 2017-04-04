@@ -489,8 +489,8 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
   border-radius: 0.5%;
+  vertical-align: top;
 }
 
 ul {
@@ -1552,8 +1552,6 @@ ul {
   border-radius: 1%;
   top: 0;
   left: 65px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 /*styles for footer button*/
@@ -1591,8 +1589,6 @@ ul {
             transform: translateX(8%);
     -webkit-transform-origin: 0 -220%;
             transform-origin: 0 -220%;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
   }
 }
 
@@ -1603,8 +1599,6 @@ ul {
     height: 40px;
     font-size: 16px;
     padding-top: 10px;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
   }
 }
 
@@ -1616,8 +1610,6 @@ ul {
             transform: translateX(15%);
     -webkit-transform-origin: 0 -162%;
             transform-origin: 0 -162%;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
   }
 }
 
@@ -1719,8 +1711,8 @@ ul {
   opacity: 0;
   -webkit-transition: all 4s ease-out;
   transition: all 4s ease-out;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .reveal-item--is-visible {
@@ -1817,11 +1809,59 @@ ul {
   transition: all .5s ease-out;
 }
 
-/*styles for photography section*/
-
-.photography li {
-  list-style: none;
+#columns {
+	-webkit-column-width: 320px;
+	   -moz-column-width: 320px;
+	        column-width: 320px;
+	-webkit-column-gap: 15px;
+	   -moz-column-gap: 15px;
+	        column-gap: 15px;
+  width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
 }
+
+div#columns figure {
+	background: rgba(0, 0, 0, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	-webkit-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+	width: 100%;
+  height: auto;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: .9rem;
+	color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+div#columns:hover figure{
+  border: 1px solid rgb(191, 176, 125);
+  cursor: pointer;
+}
+
+div#columns:hover figure:not(:hover) {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+	opacity: 0.4;
+}
+
+/*@media screen and (max-width: 750px) {
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}*/
 
 .social-icons {
   text-align: center;
