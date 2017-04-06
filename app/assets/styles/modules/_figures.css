@@ -35,7 +35,7 @@
 .diamond {
 	position: relative;
 	top: 0;
-	left: 48%;
+	left: 47%;
 	transform: translate(50%, 50%);
 	transform-origin: 0 50%;
 	display: inline-block;
@@ -48,8 +48,11 @@
   transform:rotate(45deg);
 }
 
+/*forget about this now as it must be fixed inorder not to show
+unexpected horizontal scroll bar to the page
+*/
 /*styles for section seperator*/
-.triangle {
+/*.triangle {
 	position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -84,4 +87,4 @@
 	border-right: 30px solid transparent;
 	opacity: .5;
 	}
-}
+}*/

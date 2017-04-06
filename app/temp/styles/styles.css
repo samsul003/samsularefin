@@ -472,6 +472,7 @@ template {
 
 html{
 min-height:100%;
+min-width: 100%;
 }
 
 /*Global body styles*/
@@ -481,8 +482,8 @@ body {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(0, 0, 0, 0.9);
-  min-height: 100%;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 /*Global image styles*/
@@ -493,15 +494,11 @@ img {
   vertical-align: top;
 }
 
-ul {
-  list-style: none;
-}
-
 /*Entire content of the page is hidden until the loader animation is complete*/
 
 .site-content {
   display: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -706,7 +703,7 @@ ul {
   transition: all .5s ease-out;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .site-header__logo-container {
     -webkit-transform: translateX(-10%) scale(.85);
@@ -730,7 +727,7 @@ ul {
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .site-header__logo-container {
     -webkit-transform: translateX(-3%) scale(1);
@@ -825,7 +822,7 @@ ul {
   display: table;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .site-header__menu-button {
     display: inline-block;
@@ -841,7 +838,7 @@ ul {
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .site-header__menu-button {
     display: none;/*transform: scale(1);
@@ -878,7 +875,7 @@ ul {
   padding-bottom: 0;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .page-section--no-b-padding-until-large {
     padding-bottom: 4.5rem;
@@ -912,7 +909,7 @@ ul {
   opacity: 0.9;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .showcase__photo {
     -webkit-transition: all .3s ease-out;
@@ -931,7 +928,7 @@ ul {
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .showcase__photo {
     top: -50%;
@@ -1199,7 +1196,7 @@ ul {
   transition: all .5s ease-out;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .headline {
     font-size: 22px;
@@ -1221,7 +1218,7 @@ ul {
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .headline {
     font-size: 26px;
@@ -1278,7 +1275,7 @@ ul {
   margin-bottom: .6rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .section-title__icon {
     position: relative;
@@ -1290,7 +1287,7 @@ ul {
   }
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .section-title {
     font-size: 55px;
@@ -1304,7 +1301,7 @@ ul {
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1024px) {
 
   .section-title {
     font-size: 65px;
@@ -1339,7 +1336,7 @@ ul {
   margin: 0 0 1.8rem 0;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .generic-content-container p {
     font-size: 17px;
@@ -1388,7 +1385,7 @@ ul {
 .diamond {
 	position: relative;
 	top: 0;
-	left: 48%;
+	left: 47%;
 	-webkit-transform: translate(50%, 50%);
 	        transform: translate(50%, 50%);
 	-webkit-transform-origin: 0 50%;
@@ -1404,47 +1401,48 @@ ul {
           transform:rotate(45deg);
 }
 
+/*forget about this now as it must be fixed inorder not to show
+unexpected horizontal scroll bar to the page
+*/
+
 /*styles for section seperator*/
 
-.triangle {
+/*.triangle {
 	position: relative;
   display: inline-block;
   vertical-align: middle;
 	top: 0;
 	left: 25%;
-	-webkit-transform: translate(50%, 50%);
-	        transform: translate(50%, 50%);
-}
+	transform: translate(50%, 50%);
 
-.triangle--middle {
-  width: 80px;
-  height: 40px;
-  margin-top: -20px;
-  border-bottom: 40px solid rgba(0, 0, 0, 0.3);
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
-
-.triangle--left {
-  width: 60px;
-  height: 30px;
-  left: 50%;
-  border-bottom: 30px solid rgba(0, 0, 0, 0.9);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  z-index: 1;
-  opacity: .5;
-}
-
-.triangle--right {
-  width: 60px;
-  height: 30px;
-  left: 10%;
-  border-bottom: 30px solid rgba(0, 0, 0, 0.9);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  opacity: .5;
-}
+		&--middle {
+	  width: 80px;
+	  height: 40px;
+		margin-top: -20px;
+	  border-bottom: 40px solid $mainLightBlack;
+	  border-left: 40px solid transparent;
+	  border-right: 40px solid transparent;
+	}
+		&--left {
+	  width: 60px;
+	  height: 30px;
+		left: 50%;
+	  border-bottom: 30px solid $mainFreshBlack;
+	  border-left: 30px solid transparent;
+	  border-right: 30px solid transparent;
+		z-index: 1;
+		opacity: .5;
+	}
+	&--right {
+	width: 60px;
+	height: 30px;
+	left: 10%;
+	border-bottom: 30px solid $mainFreshBlack;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	opacity: .5;
+	}
+}*/
 
 /*styles for primary navigation*/
 
@@ -1538,16 +1536,17 @@ ul {
 
 .btn {
   background-color: transparent;
-  display: inline-block;
+  display: block;
   color: rgba(255, 255, 255, 0.7);
   position: relative;
-  font-size: 21px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 100;
   text-decoration: none;
   text-align: center;
-  padding: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px 0;
   margin-top: -90px;
-  display: block;
   border: 1px solid rgba(192,192,192, 0.5);
   border-radius: 1%;
   top: 0;
@@ -1557,10 +1556,41 @@ ul {
 /*styles for footer button*/
 
 .btn--footer {
-  top: 0;
-  left: 7%;
+  position: relative;
+  top: 14px;
+  left: 1%;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
   display: inline-block;
-  margin-bottom: -50px;
+  margin-bottom: -20px;
+}
+
+@media (min-width: 480px) {
+
+  .btn--footer {
+    top: -10px;
+    left: 13%;
+    margin-bottom: -50px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .btn--footer {
+    top: -10px;
+    left: 5%;
+    margin-bottom: -50px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .btn--footer {
+    top: -10px;
+    left: 1.5%;
+    margin-bottom: -50px;
+  }
 }
 
 /*styles for travel view project button*/
@@ -1572,45 +1602,17 @@ ul {
   margin-bottom: 0;
 }
 
+/*@mixin atMedium {
+    width: 55%;
+    height: auto;
+    font-size: 19px;
+  }*/
+
 .btn:hover {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
-}
-
-@media (min-width: 530px) {
-
-  .btn {
-    width: 55px;
-    font-size: 28px;
-    margin-left: 0;
-    -webkit-transform: translateX(8%);
-            transform: translateX(8%);
-    -webkit-transform-origin: 0 -220%;
-            transform-origin: 0 -220%;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .btn {
-    width: 130px;
-    height: 40px;
-    font-size: 16px;
-    padding-top: 10px;
-  }
-}
-
-@media (min-width: 1010px) {
-
-  .btn {
-    font-weight: 500;
-    -webkit-transform: translateX(15%);
-            transform: translateX(15%);
-    -webkit-transform-origin: 0 -162%;
-            transform-origin: 0 -162%;
-  }
 }
 
 /* modules/_sprite.css is auto generated by Gulp, do not edit it manually !!
@@ -1739,6 +1741,7 @@ ul {
 
 .project__list {
   padding-left: 0;
+  list-style: none;
 }
 
 .project__item {
@@ -1819,7 +1822,7 @@ ul {
 	   -moz-column-gap: 15px;
 	        column-gap: 15px;
   width: 90%;
-	max-width: 1100px;
+	max-width: 1010px;
 	margin: 50px auto;
 }
 
@@ -1878,7 +1881,7 @@ ul {
   position: relative;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 480px) {
 
   .social-icons__icon {
     width: 72px;
@@ -1898,17 +1901,44 @@ ul {
 /*footer styles*/
 
 .site-footer{
-  padding: 8px 0;
-  margin-top: -8px;
+  padding: 9px 0;
+  margin-top: -9px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .site-footer--text {
   display: inline-block;
-  left: -80px;
   position: relative;
-  top: 50px;
+  text-align: center;
+  top: 40px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
+  font-size: 16px;
+}
+
+@media (min-width: 480px) {
+
+  .site-footer--text {
+    margin-left: -34%;
+    top: 50px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .site-footer--text {
+    margin-left: -23%;
+    top: 50px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .site-footer--text {
+    margin-left: -16%;
+    top: 50px;
+    font-size: 18px;
+  }
 }

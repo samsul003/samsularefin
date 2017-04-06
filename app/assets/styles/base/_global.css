@@ -6,6 +6,7 @@
 /*Styles for html*/
 html{
 min-height:100%;
+min-width: 100%;
 }
 
 /*Global body styles*/
@@ -14,8 +15,8 @@ body {
   font-weight: 400;
   color: $mainWhite;
   background-color: rgba(0, 0, 0, 0.9);
-  min-height: 100%;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 /*Global image styles*/
@@ -25,13 +26,9 @@ img {
   vertical-align: top;
 }
 
-ul {
-  list-style: none;
-}
-
 /*Entire content of the page is hidden until the loader animation is complete*/
 .site-content {
   display: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }

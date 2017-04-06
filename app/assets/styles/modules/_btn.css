@@ -1,27 +1,54 @@
 /*styles for buttons*/
 .btn {
   background-color: transparent;
-  display: inline-block;
+  display: block;
   color: $mainWhite;
   position: relative;
-  font-size: 21px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 100;
   text-decoration: none;
   text-align: center;
-  padding: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px 0;
   margin-top: -90px;
-  display: block;
   border: 1px solid $mainGrey;
   border-radius: 1%;
   top: 0;
   left: 65px;
 
+  /*@mixin atMedium {
+    width: 55%;
+    height: auto;
+    font-size: 19px;
+  }*/
+
   /*styles for footer button*/
   &--footer {
-    top: 0;
-    left: 7%;
+    position: relative;
+    top: 14px;
+    left: 1%;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
     display: inline-block;
-    margin-bottom: -50px;
+    margin-bottom: -20px;
+
+    @mixin atSmall {
+      top: -10px;
+      left: 13%;
+      margin-bottom: -50px;
+    }
+    @mixin atMedium {
+      top: -10px;
+      left: 5%;
+      margin-bottom: -50px;
+    }
+    @mixin atLarge {
+      top: -10px;
+      left: 1.5%;
+      margin-bottom: -50px;
+    }
   }
   /*styles for travel view project button*/
   &--travel {
@@ -36,25 +63,4 @@
       background-color: $mainWhite;
       transition: all .5s ease-out;
     }
-
-  @mixin atSmall {
-    width: 55px;
-    font-size: 28px;
-    margin-left: 0;
-    transform: translateX(8%);
-    transform-origin: 0 -220%;
-  }
-
-  @mixin atMedium {
-    width: 130px;
-    height: 40px;
-    font-size: 16px;
-    padding-top: 10px;
-  }
-
-  @mixin atLarge {
-    font-weight: 500;
-    transform: translateX(15%);
-    transform-origin: 0 -162%;
-  }
 }
