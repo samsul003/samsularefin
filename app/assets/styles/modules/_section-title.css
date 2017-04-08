@@ -1,10 +1,10 @@
 /*styles for section titles*/
 .section-title {
   top: 0;
-  left: 6%;
-  width: 500px;
+  left: 0;
+  width: 250px;
   padding-bottom: 10px;
-  transform: translate(50%, -70%);
+  transform: translate(6%, -50%);
   position: relative;
   text-align: center;
   font-weight: 300;
@@ -17,7 +17,15 @@
     margin-top: 150px;
   }
   &--narrow {
-    margin-top: 70px;
+    margin-top: 20px;
+
+    @mixin atSmall {
+      margin-top: 30px;
+    }
+
+    @mixin atLarge {
+      margin-top: 70px;
+    }
   }
 
   &--less-margin {
@@ -49,11 +57,17 @@
 
   @mixin atSmall {
     font-size: 55px;
+    left: 11%;
   }
   @mixin atMedium {
     font-size: 60px;
+    left: 25%;
   }
   @mixin atLarge {
+    top: 0;
+    left: 6%;
+    width: 500px;
+    transform: translate(50%, -70%);
     font-size: 65px;
   }
 }

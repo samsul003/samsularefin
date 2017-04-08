@@ -53,9 +53,21 @@
   /*styles for travel view project button*/
   &--travel {
     top: 0;
-    left: 5%;
+    left: 6%;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
     display: inline-block;
-    margin-bottom: 0;
+
+    @mixin atSmall {
+      left: 8%;
+    }
+    @mixin atMedium {
+      left: 8%;
+    }
+    @mixin atLarge {
+      left: 8%;
+    }
   }
 
     &:hover {

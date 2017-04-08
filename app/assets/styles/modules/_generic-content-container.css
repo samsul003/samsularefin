@@ -7,8 +7,8 @@
   @mixin clearfix;
 
   /*styles for project section layer*/
-  &--wide {
-    width: 1010px;
+  &--narrow {
+    width: auto;
     background-color: $mainLightBlack;
     box-shadow: 0 0 0 180px $mainLightBlack;
   }

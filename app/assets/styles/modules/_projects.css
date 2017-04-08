@@ -1,11 +1,11 @@
 /*styles for project section*/
 .project {
   width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0;
   margin-top: 0;
-
   @mixin clearfix;
 
   &__list {
@@ -15,8 +15,7 @@
 
   &__item {
     float: left;
-    width: 100%;
-    max-width: 1010px;
+    width: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
@@ -24,13 +23,51 @@
     z-index: 5;
 
     &:first-child {
-      margin-top: -150px;
-      max-width: 550px;
+      margin-left: 4%;
+      margin-top: -100px;
     }
     &:last-child {
-      margin-top: -300px;
-      margin-left: 290px;
-      max-width: 300px;
+      margin-top: -15px;
+      margin-left: 50px;
+      width: 75%;
+    }
+    @mixin atSmall {
+      &:first-child {
+        margin-left: 5%;
+        margin-top: -100px;
+        width: 95%;
+      }
+      &:last-child {
+        margin-left: 21%;
+        width: 65%;
+      }
+    }
+    @mixin atMedium {
+      &:first-child {
+        margin-left: 13%;
+        margin-top: -110px;
+        width: 75%;
+      }
+      &:last-child {
+        margin-left: 30%;
+        margin-top: -35px;
+        width: 40%;
+      }
+    }
+    @mixin atLarge {
+      max-width: 1024px;
+      padding-top: 40px;
+
+      &:first-child {
+        margin-top: -150px;
+        margin-left: -5px;
+        max-width: 550px;
+      }
+      &:last-child {
+        margin-top: -300px;
+        margin-left: 340px;
+        max-width: 310px;
+      }
     }
   }
 
@@ -41,13 +78,35 @@
     &__frame {
       border: 1.5px solid $mainGrey;
       border-radius: 0.5%;
-      width: 500px;
-      height: 405px;
+      width: 230px;
+      height: 185px;
       display: inline-block;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(0, 10%);
+      transform: translate(0, 20%);
+
+      @mixin atSmall {
+        width: 375px;
+        height: 300px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 12%);
+      }
+      @mixin atMedium {
+        width: 495px;
+        height: 395px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 10%);
+      }
+      @mixin atLarge {
+        width: 500px;
+        height: 395px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 10%);
+      }
 
       &:hover {
         border: 1.5px solid $mainGold;
@@ -58,13 +117,35 @@
     &__frame--travel {
       border: 1.5px solid $mainGrey;
       border-radius: 0.5%;
-      width: 260px;
-      height: 395px;
+      width: 175px;
+      height: 245px;
       display: inline-block;
       position: absolute;
       top: 0;
-      left: -1%;
-      transform: translate(0, 20%);
+      left: 0;
+      transform: translate(0, 18%);
+
+      @mixin atSmall {
+        width: 240px;
+        height: 355px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 11%);
+      }
+      @mixin atMedium {
+        width: 260px;
+        height: 380px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 20%);
+      }
+      @mixin atLarge {
+        width: 270px;
+        height: 410px;
+        top: 0;
+        left: -1%;
+        transform: translate(0, 20%);
+      }
 
       &:hover {
         border: 1.5px solid $mainGold;
