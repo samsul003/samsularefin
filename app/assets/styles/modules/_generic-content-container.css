@@ -2,15 +2,16 @@
 .generic-content-container {
   width: 800px;
   float: left;
+  margin-top: -7%;
   background-color: $mainLightBlack;
-  box-shadow: 0 0 0 150px $mainLightBlack;
+  box-shadow: 0 0 6px 65px $mainLightBlack;
   @mixin clearfix;
 
   /*styles for project section layer*/
   &--narrow {
     width: auto;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 0 180px $mainLightBlack;
+    box-shadow: 0 0 6px 170px $mainLightBlack;
   }
 
   p {

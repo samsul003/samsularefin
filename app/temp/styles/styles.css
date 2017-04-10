@@ -893,6 +893,7 @@ img {
   margin-right: 50px;
   max-width: 300px;
   max-height: 380px;
+  margin-top: -6%;
   float: left;
 }
 
@@ -984,7 +985,7 @@ img {
     height: 100%;
     margin-top: -80px;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
 }
 
 /*styles for card layer*/
@@ -1006,7 +1007,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 65px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
 }
 
 /*styles for competence cards*/
@@ -1273,7 +1274,7 @@ img {
 @media (min-width: 1024px) {
 
   .section-title--narrow {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 }
 
@@ -1342,8 +1343,9 @@ img {
 .generic-content-container {
   width: 800px;
   float: left;
+  margin-top: -7%;
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
 }
 
 .generic-content-container::after, .generic-content-container::before {
@@ -1357,7 +1359,7 @@ img {
 .generic-content-container--narrow {
   width: auto;
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 180px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 170px rgba(0, 0, 0, 0.3);
 }
 
 .generic-content-container p {
@@ -2034,20 +2036,21 @@ unexpected horizontal scroll bar to the page
 	-webkit-column-width: 320px;
 	   -moz-column-width: 320px;
 	        column-width: 320px;
-	-webkit-column-gap: 15px;
-	   -moz-column-gap: 15px;
-	        column-gap: 15px;
+	-webkit-column-gap: 0;
+	   -moz-column-gap: 0;
+	        column-gap: 0;
   width: 90%;
 	max-width: 1010px;
-	margin: 50px auto;
+	margin: -70px auto 85px auto;
+	box-shadow: 0 0 6px 80px rgba(0, 0, 0, 0.3);
 }
 
 #columns figure {
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  margin: 0 2px 15px;
+  margin: 15px;
   padding: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   -webkit-transition: opacity .5s ease-out;
   transition: opacity .5s ease-out;
   display: inline-block;

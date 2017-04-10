@@ -8,6 +8,7 @@
   margin-right: 50px;
   max-width: 300px;
   max-height: 380px;
+  margin-top: -6%;
   float: left;
   @mixin clearfix;
 
