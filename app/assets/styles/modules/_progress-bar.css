@@ -24,15 +24,36 @@
             position: absolute;
             width: 100%;
             top: 3.7rem;
-            left: 0;
+            left: -10%;
             font-size: 2rem;
             text-align: center;
+
+            @mixin atSmall {
+              left: 0;
+            }
+            @mixin atMedium {
+              left: 0;
+            }
+            @mixin atLarge {
+              left: 0;
+            }
         }
     }
 
     svg {
         width: 10rem;
         height: 10rem;
+        margin-left: -10%;
+
+        @mixin atSmall {
+          margin-left: 0;
+        }
+        @mixin atMedium {
+          margin-left: 0;
+        }
+        @mixin atLarge {
+          margin-left: 0;
+        }
 
         &:nth-child(2) {
             position: absolute;
