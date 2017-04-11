@@ -1,21 +1,30 @@
 /*styles for buttons*/
 .btn {
-  background-color: transparent;
+  background-color: $mainFreshBlack;
   display: block;
   color: $mainWhite;
   position: relative;
-  font-size: 17px;
-  font-weight: 100;
+  font-weight: 200;
   text-decoration: none;
   text-align: center;
-  width: 40%;
-  height: auto;
-  padding: 10px 0;
-  margin-top: -90px;
   border: 1px solid $mainGrey;
   border-radius: 1%;
-  top: 0;
-  left: 65px;
+  z-index: 9;
+  font-size: 14px;
+  width: 45%;
+  height: auto;
+  padding: 10px 0;
+  margin-top: -27%;
+  left: 28%;
+
+  @mixin atLarge {
+    font-size: 17px;
+    width: 40%;
+    height: auto;
+    padding: 10px 0;
+    margin-top: -28%;
+    left: 30%;
+  }
 
   /*@mixin atMedium {
     width: 55%;
@@ -72,6 +81,7 @@
 
     &:hover {
       color: $mainBlack;
+      font-weight: 600;
       background-color: $mainWhite;
       transition: all .5s ease-out;
     }

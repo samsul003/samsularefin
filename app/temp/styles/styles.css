@@ -850,36 +850,7 @@ img {
 /*styles for page section*/
 
 .page-section {
-  padding: 1.2rem 0;
-}
-
-@media (min-width: 768px) {
-
-  .page-section {
-    padding: 4.5rem 0;
-  }
-}
-
-.page-section--no-b-padding-until-medium {
-  padding-bottom: 0;
-}
-
-@media (min-width: 768px) {
-
-  .page-section--no-b-padding-until-medium {
-    padding-bottom: 4.5rem;
-  }
-}
-
-.page-section--no-b-padding-until-large {
-  padding-bottom: 0;
-}
-
-@media (min-width: 1024px) {
-
-  .page-section--no-b-padding-until-large {
-    padding-bottom: 4.5rem;
-  }
+  padding: 4.5rem 0;
 }
 
 /*showcase styles*/
@@ -889,11 +860,11 @@ img {
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
   border-radius: 1%;
-  padding-bottom: 40px;
   margin-right: 50px;
-  max-width: 300px;
-  max-height: 380px;
-  margin-top: -6%;
+  left: 9%;
+  max-width: 450px;
+  max-height: 360px;
+  margin-top: -33px;
   float: left;
 }
 
@@ -903,29 +874,35 @@ img {
   display: table;
 }
 
+@media (min-width: 1024px) {
+
+  .showcase {
+    margin-right: 50px;
+    max-width: 300px;
+    max-height: 465px;
+    margin-top: -14.5%;
+    left: 0;
+  }
+}
+
 /*Styles for biography photo */
 
 .showcase__photo {
   width: 100%;
   opacity: 0.9;
+  top: -50%;
+  left: 0;
+  -webkit-transform: translate(-17%, -6%) scale(.85);
+          transform: translate(-17%, -6%) scale(.85);
 }
 
-@media (min-width: 480px) {
-
-  .showcase__photo {
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-}
+@media (min-width: 480px) {}
 
 @media (min-width: 768px) {
 
   .showcase__photo {
-    width: 100%;
     margin-left: 0;
     margin-top: 30px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
   }
 }
 
@@ -934,11 +911,8 @@ img {
   .showcase__photo {
     top: -50%;
     left: 0;
-    position: relative;
-    -webkit-transform: translate(0, -25%) scale(.85);
-            transform: translate(0, -25%) scale(.85);
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transform: translate(0, -10%) scale(.85);
+            transform: translate(0, -10%) scale(.85);
   }
 }
 
@@ -946,21 +920,24 @@ img {
 
 .showcase__photo__frame {
   border: 1.5px solid rgba(192,192,192, 0.5);
+  opacity: 0.3;
   border-radius: 0.5%;
-  width: 255px;
-  height: 310px;
+  width: 198px;
+  height: 238px;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translate(13%, -6%);
-          transform: translate(13%, -6%);
+  -webkit-transform: translate(13%, 10%);
+          transform: translate(13%, 10%);
 }
 
-.showcase__photo__frame:hover {
-  border: 1.5px solid rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+@media (min-width: 1024px) {
+
+  .showcase__photo__frame {
+    width: 255px;
+    height: 310px;
+  }
 }
 
 /*styles for card container*/
@@ -1189,14 +1166,21 @@ img {
   text-transform: capitalize;
   text-align: center;
   padding: 20px 10px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
-  top: 0;
-  left: 0;
+  margin-top: -1%;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   z-index: 10;
+}
+
+@media (min-width: 1024px) {
+
+  .headline {
+    font-size: 20px;
+  }
 }
 
 /*styles for headline travel*/
@@ -1241,10 +1225,10 @@ img {
 /*styles for section titles*/
 
 .section-title {
-  top: 0;
-  left: 0;
   width: 250px;
   padding-bottom: 10px;
+  top: 0;
+  left: 0;
   -webkit-transform: translate(6%, -50%);
           transform: translate(6%, -50%);
   position: relative;
@@ -1257,7 +1241,14 @@ img {
 }
 
 .section-title--wide {
-  margin-top: 150px;
+  margin-top: 60px;
+}
+
+@media (min-width: 1024px) {
+
+  .section-title--wide {
+    margin-top: 150px;
+  }
 }
 
 .section-title--narrow {
@@ -1341,9 +1332,9 @@ img {
 /*styles for generic content container and section layer*/
 
 .generic-content-container {
-  width: 800px;
+  width: 280px;
   float: left;
-  margin-top: -7%;
+  margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
 }
@@ -1352,6 +1343,14 @@ img {
   content: "";
   clear: both;
   display: table;
+}
+
+@media (min-width: 1024px) {
+
+  .generic-content-container {
+    width: 800px;
+    margin-top: 0;
+  }
 }
 
 /*styles for project section layer*/
@@ -1566,22 +1565,34 @@ unexpected horizontal scroll bar to the page
 /*styles for buttons*/
 
 .btn {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.9);
   display: block;
   color: rgba(255, 255, 255, 0.7);
   position: relative;
-  font-size: 17px;
-  font-weight: 100;
+  font-weight: 200;
   text-decoration: none;
   text-align: center;
-  width: 40%;
-  height: auto;
-  padding: 10px 0;
-  margin-top: -90px;
   border: 1px solid rgba(192,192,192, 0.5);
   border-radius: 1%;
-  top: 0;
-  left: 65px;
+  z-index: 9;
+  font-size: 14px;
+  width: 45%;
+  height: auto;
+  padding: 10px 0;
+  margin-top: -27%;
+  left: 28%;
+}
+
+@media (min-width: 1024px) {
+
+  .btn {
+    font-size: 17px;
+    width: 40%;
+    height: auto;
+    padding: 10px 0;
+    margin-top: -28%;
+    left: 30%;
+  }
 }
 
 /*styles for footer button*/
@@ -1664,6 +1675,7 @@ unexpected horizontal scroll bar to the page
 
 .btn:hover {
   color: rgba(0, 0, 0, 1);
+  font-weight: 600;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
@@ -1967,12 +1979,6 @@ unexpected horizontal scroll bar to the page
   }
 }
 
-.project__image__frame:hover {
-  border: 1.5px solid rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-}
-
 /*styles for second image frame*/
 
 .project__image__frame--travel {
@@ -2022,12 +2028,6 @@ unexpected horizontal scroll bar to the page
     -webkit-transform: translate(0, 20%);
             transform: translate(0, 20%);
   }
-}
-
-.project__image__frame--travel:hover {
-  border: 1.5px solid rgb(191, 176, 125);
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 /*Styles for photo grid column*/

@@ -4,51 +4,58 @@
   background-color: $mainFreshBlack;
   text-align: center;
   border-radius: 1%;
-  padding-bottom: 40px;
   margin-right: 50px;
-  max-width: 300px;
-  max-height: 380px;
-  margin-top: -6%;
+  left: 9%;
+  max-width: 450px;
+  max-height: 360px;
+  margin-top: -33px;
   float: left;
   @mixin clearfix;
+
+  @mixin atLarge {
+    margin-right: 50px;
+    max-width: 300px;
+    max-height: 465px;
+    margin-top: -14.5%;
+    left: 0;
+  }
 
   /*Styles for biography photo */
   &__photo {
     width: 100%;
     opacity: 0.9;
+    top: -50%;
+    left: 0;
+    transform: translate(-17%, -6%) scale(.85);
 
     @mixin atSmall {
-      transition: all .3s ease-out;
     }
     @mixin atMedium {
-      width: 100%;
       margin-left: 0;
       margin-top: 30px;
-      transition: all .3s ease-out;
     }
     @mixin atLarge {
       top: -50%;
       left: 0;
-      position: relative;
-      transform: translate(0, -25%) scale(.85);
-      transition: all .3s ease-out;
+      transform: translate(0, -10%) scale(.85);
     }
   }
   /*styles for box frame*/
   &__photo__frame {
     border: 1.5px solid $mainGrey;
+    opacity: 0.3;
     border-radius: 0.5%;
-  	width: 255px;
-  	height: 310px;
+  	width: 198px;
+  	height: 238px;
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(13%, -6%);
+    transform: translate(13%, 10%);
 
-    &:hover {
-      border: 1.5px solid $mainGold;
-      transition: all .5s ease-out;
+    @mixin atLarge {
+      width: 255px;
+    	height: 310px;
     }
   }
 }

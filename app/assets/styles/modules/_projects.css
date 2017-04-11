@@ -107,11 +107,6 @@
         left: 0;
         transform: translate(0, 10%);
       }
-
-      &:hover {
-        border: 1.5px solid $mainGold;
-        transition: all .5s ease-out;
-      }
     }
     /*styles for second image frame*/
     &__frame--travel {
@@ -145,11 +140,6 @@
         top: 0;
         left: -1%;
         transform: translate(0, 20%);
-      }
-
-      &:hover {
-        border: 1.5px solid $mainGold;
-        transition: all .5s ease-out;
       }
     }
   }

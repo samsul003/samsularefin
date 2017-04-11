@@ -11321,8 +11321,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mobileMenu = new _MobileMenu2.default();
 var pageLoader = new _PageLoader2.default();
-new _RevealOnScroll2.default((0, _jquery2.default)(".card"), "-50%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".project"), "-150%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".card"), "-30%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".project"), "-140%");
 var modal = new _Modal2.default();
 
 /***/ })

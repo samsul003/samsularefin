@@ -1,9 +1,9 @@
 /*styles for section titles*/
 .section-title {
-  top: 0;
-  left: 0;
   width: 250px;
   padding-bottom: 10px;
+  top: 0;
+  left: 0;
   transform: translate(6%, -50%);
   position: relative;
   text-align: center;
@@ -14,7 +14,11 @@
   z-index: 15;
 
   &--wide {
-    margin-top: 150px;
+    margin-top: 60px;
+
+    @mixin atLarge {
+      margin-top: 150px;
+    }
   }
   &--narrow {
     margin-top: 20px;
