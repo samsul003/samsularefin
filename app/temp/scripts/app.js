@@ -10334,6 +10334,8 @@ var MobileMenu = function () {
     value: function toggleTheMenu() {
       this.menuContent.toggleClass("site-header__menu-content--is-visible");
       this.siteHeader.toggleClass("site-header--is-expanded");
+      this.menuButton.toggleClass("site-header__menu-button--animate");
+      this.menuButton.toggleClass("site-header__menu-button--close-x");
     }
   }]);
 

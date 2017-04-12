@@ -4,7 +4,7 @@
   float: left;
   margin-top: 25px;
   background-color: $mainLightBlack;
-  box-shadow: 0 0 6px 65px $mainLightBlack;
+  box-shadow: 0 0 0 65px $mainLightBlack;
   @mixin clearfix;
 
   @mixin atSmall {
@@ -25,11 +25,19 @@
     width: auto;
     margin-top: 60px;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 6px 100px $mainLightBlack;
+    box-shadow: 0 0 0 120px $mainLightBlack;
 
+    @mixin atSmall {
+      margin-top: 70px;
+      box-shadow: 0 0 0 75px $mainLightBlack;
+    }
+    @mixin atMedium {
+      margin-top: 70px;
+      box-shadow: 0 0 0 90px $mainLightBlack;
+    }
     @mixin atLarge {
       margin-top: 70px;
-      box-shadow: 0 0 6px 160px $mainLightBlack;
+      box-shadow: 0 0 0 120px $mainLightBlack;
     }
   }
 

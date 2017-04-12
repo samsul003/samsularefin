@@ -7,12 +7,22 @@
     perspective: 500px;
     position: relative;
     height: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 6px 65px $mainLightBlack;
+    box-shadow: 0 0 0 30px $mainLightBlack;
 
+    @mixin atSmall {
+      background-color: $mainLightBlack;
+      box-shadow: 0 0 0 40px $mainLightBlack;
+    }
+    @mixin atMedium {
+      background-color: $mainLightBlack;
+      box-shadow: 0 0 0 50px $mainLightBlack;
+    }
     @mixin atLarge {
       margin-top: -30px;
+      background-color: $mainLightBlack;
+      box-shadow: 0 0 0 60px $mainLightBlack;
     }
 
     /*styles for card layer*/
@@ -24,7 +34,7 @@
       align-items: center;
       justify-content: center;
       background-color: $mainLightBlack;
-      box-shadow: 0 0 6px 65px $mainLightBlack;
+      box-shadow: 0 0 0 65px $mainLightBlack;
 
       @mixin atLarge {
         margin-top: 50px;
