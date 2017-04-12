@@ -7,13 +7,17 @@
     perspective: 500px;
     position: relative;
     height: 100%;
-    margin-top: -80px;
+    margin-top: 15px;
     background-color: $mainLightBlack;
     box-shadow: 0 0 6px 65px $mainLightBlack;
 
+    @mixin atLarge {
+      margin-top: -30px;
+    }
+
     /*styles for card layer*/
     &--extended {
-      margin-top: 50px;
+      margin-top: 5px;
       margin-bottom: 20px;
       display: flex;
       flex-flow: row wrap;
@@ -21,6 +25,10 @@
       justify-content: center;
       background-color: $mainLightBlack;
       box-shadow: 0 0 6px 65px $mainLightBlack;
+
+      @mixin atLarge {
+        margin-top: 50px;
+      }
     }
 }
 /*styles for competence cards*/

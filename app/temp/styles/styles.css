@@ -960,15 +960,22 @@ img {
             perspective: 500px;
     position: relative;
     height: 100%;
-    margin-top: -80px;
+    margin-top: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+
+  .card-container {
+    margin-top: -30px;
+  }
 }
 
 /*styles for card layer*/
 
 .card-container--extended {
-  margin-top: 50px;
+  margin-top: 5px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,6 +992,13 @@ img {
           justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 6px 65px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+
+  .card-container--extended {
+    margin-top: 50px;
+  }
 }
 
 /*styles for competence cards*/
@@ -1265,7 +1279,7 @@ img {
 @media (min-width: 1024px) {
 
   .section-title--narrow {
-    margin-top: 120px;
+    margin-top: 60px;
   }
 }
 
@@ -1349,7 +1363,7 @@ img {
 
   .generic-content-container {
     width: 800px;
-    margin-top: 0;
+    margin-top: -30px;
   }
 }
 
@@ -1357,19 +1371,30 @@ img {
 
 .generic-content-container--narrow {
   width: auto;
+  margin-top: 60px;
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 6px 170px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 100px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+
+  .generic-content-container--narrow {
+    margin-top: 70px;
+    box-shadow: 0 0 6px 160px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .generic-content-container p {
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.75;
   margin: 0 0 1.8rem 0;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1024px) {
 
   .generic-content-container p {
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.85;
   }
 }
 
@@ -2040,9 +2065,17 @@ unexpected horizontal scroll bar to the page
 	   -moz-column-gap: 0;
 	        column-gap: 0;
   width: 90%;
-	max-width: 1010px;
-	margin: -70px auto 85px auto;
-	box-shadow: 0 0 6px 80px rgba(0, 0, 0, 0.3);
+	max-width: 1100px;
+	margin: -50px auto 5px auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 20px;
+}
+
+@media (min-width: 1024px) {
+
+  #columns {
+    margin: -90px auto 30px auto;
+  }
 }
 
 #columns figure {
