@@ -2,9 +2,6 @@
 .section-title {
   width: 250px;
   padding-bottom: 10px;
-  top: 0;
-  left: 0;
-  transform: translate(6%, -50%);
   position: relative;
   text-align: center;
   font-weight: 300;
@@ -12,10 +9,24 @@
   opacity: 0.5;
   color: $mainGold;
   z-index: 15;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 
   &--wide {
     margin-top: 60px;
 
+    @mixin atSmall {
+      top: 0;
+      left: 50%;
+      transform: translate(20%, 0);
+    }
+    @mixin atMedium {
+      margin-top: 150px;
+      top: 0;
+      left: 50%;
+      transform: translate(10%, -50%);
+    }
     @mixin atLarge {
       margin-top: 150px;
     }
@@ -24,7 +35,16 @@
     margin-top: 20px;
 
     @mixin atSmall {
+      margin-top: 20px;
+      top: 0;
+      left: 50%;
+      transform: translate(7%, 0);
+    }
+    @mixin atMedium {
       margin-top: 30px;
+      top: 0;
+      left: 50%;
+      transform: translate(5%, 0);
     }
     @mixin atLarge {
       margin-top: 60px;

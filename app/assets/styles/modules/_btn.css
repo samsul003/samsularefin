@@ -17,6 +17,14 @@
   margin-top: -27%;
   left: 28%;
 
+  @mixin atSmall {
+    font-size: 15px;
+    margin-top: -25%;
+  }
+  @mixin atMedium {
+    font-size: 16px;
+    margin-top: -27%;
+  }
   @mixin atLarge {
     font-size: 17px;
     width: 40%;
@@ -26,17 +34,11 @@
     left: 30%;
   }
 
-  /*@mixin atMedium {
-    width: 55%;
-    height: auto;
-    font-size: 19px;
-  }*/
-
   /*styles for footer button*/
   &--footer {
     position: relative;
     top: 14px;
-    left: 1%;
+    left: 2.25%;
     width: auto;
     height: auto;
     padding: 10px 15px;
@@ -45,17 +47,17 @@
 
     @mixin atSmall {
       top: -10px;
-      left: 13%;
+      left: 21%;
       margin-bottom: -50px;
     }
     @mixin atMedium {
       top: -10px;
-      left: 5%;
+      left: 12%;
       margin-bottom: -50px;
     }
     @mixin atLarge {
       top: -10px;
-      left: 1.5%;
+      left: 7.25%;
       margin-bottom: -50px;
     }
   }

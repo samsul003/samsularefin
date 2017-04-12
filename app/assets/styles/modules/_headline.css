@@ -11,6 +11,12 @@
   transition: all .5s ease-out;
   z-index: 10;
 
+  @mixin atSmall {
+    font-size: 18px;
+  }
+  @mixin atMedium {
+    font-size: 19px;
+  }
   @mixin atLarge {
     font-size: 20px;
   }

@@ -12,6 +12,20 @@
   float: left;
   @mixin clearfix;
 
+  @mixin atSmall {
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 450px;
+    margin-top: -3.5%;
+    left: 16%;
+  }
+  @mixin atMedium {
+    margin-right: 50px;
+    max-width: 250px;
+    max-height: 440px;
+    margin-top: -7%;
+    left: 0;
+  }
   @mixin atLarge {
     margin-right: 50px;
     max-width: 300px;
@@ -29,15 +43,17 @@
     transform: translate(-17%, -6%) scale(.85);
 
     @mixin atSmall {
+      margin-left: 50.5px;
+      margin-top: 15px;
     }
     @mixin atMedium {
-      margin-left: 0;
+      margin-left: 42.5px;
       margin-top: 30px;
     }
     @mixin atLarge {
       top: -50%;
       left: 0;
-      transform: translate(0, -10%) scale(.85);
+      transform: translate(-14%, -10%) scale(.85);
     }
   }
   /*styles for box frame*/
@@ -53,6 +69,14 @@
     left: 0;
     transform: translate(13%, 10%);
 
+    @mixin atSmall {
+      width: 255px;
+    	height: 303px;
+    }
+    @mixin atMedium {
+      width: 215px;
+    	height: 270px;
+    }
     @mixin atLarge {
       width: 255px;
     	height: 310px;
