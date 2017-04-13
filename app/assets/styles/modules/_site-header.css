@@ -94,7 +94,7 @@
       z-index: 1;
     }
   }
-  /*styles for menu button*/
+  /*styles for hamburger menu button*/
   &__menu-button {
     width: 35px;
     height: 40px;
@@ -111,7 +111,6 @@
       display: none;
     }
   }
-
   &__menu-button span {
     display: block;
     position: absolute;
@@ -121,31 +120,25 @@
     border-radius: 3px;
     opacity: 1;
     transform: rotate(0deg);
-    transition: .25s ease-out;
+    transition: .3s ease-out;
   }
-
   &__menu-button span:nth-child(1) {
     top: 0px;
   }
-
   &__menu-button span:nth-child(2) {
     top: 10px;
   }
-
   &__menu-button span:nth-child(3) {
     top: 20px;
   }
-
   &__menu-button--animate span:nth-child(1) {
     top: 13px;
     transform: rotate(405deg);
   }
-
   &__menu-button--animate span:nth-child(2) {
     opacity: 0;
     left: -25px;
   }
-
   &__menu-button--animate span:nth-child(3) {
     top: 13px;
     transform: rotate(-405deg);

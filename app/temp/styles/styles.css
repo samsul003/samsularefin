@@ -805,7 +805,7 @@ img {
   z-index: 1;
 }
 
-/*styles for menu button*/
+/*styles for hamburger menu button*/
 
 .site-header__menu-button {
   width: 35px;
@@ -844,8 +844,8 @@ img {
   opacity: 1;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: .25s ease-out;
-  transition: .25s ease-out;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
 }
 
 .site-header__menu-button span:nth-child(1) {
@@ -1873,6 +1873,10 @@ img {
        background-image: url('/assets/images/sprites/sprite-2281b334.svg');
      }
 
+.no-svg .icon {
+       background-image: url('/assets/images/sprites/sprite-2281b334.png');
+     }
+
 .icon--codepen {
       width: 50px;
       height: 50px;
@@ -2102,7 +2106,7 @@ img {
   }
 
   .project__item:last-child {
-    margin-top: -300px;
+    margin-top: -250px;
     margin-left: 340px;
     max-width: 310px;
   }

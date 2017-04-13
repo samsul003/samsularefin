@@ -4,6 +4,9 @@
      .icon {
        background-image: url('/assets/images/sprites/sprite-2281b334.svg');
      }
+     .no-svg .icon {
+       background-image: url('/assets/images/sprites/sprite-2281b334.png');
+     }
     .icon--codepen {
       width: 50px;
       height: 50px;
