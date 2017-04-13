@@ -19,7 +19,56 @@
     width: 800px;
     margin-top: -30px;
   }
+  p {
+    font-size: 17px;
+    line-height: 1.75;
+    margin: 0 0 1.8rem 0;
 
+    @mixin atSmall {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    @mixin atLarge {
+      font-size: 18px;
+      line-height: 1.85;
+    }
+  }
+
+  &--extended {
+    width: 280px;
+    margin-top: 25px;
+    margin-bottom: auto;
+    background-color: $mainLightBlack;
+    box-shadow: 0 0 0 65px $mainLightBlack;
+
+    @mixin atSmall {
+      width: 430px;
+      margin-top: 30px;
+    }
+    @mixin atMedium {
+      width: 350px;
+      margin-top: 10px;
+    }
+    @mixin atLarge {
+      margin-left: 30%;
+      width: 500px;
+      margin-top: -30px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.75;
+      margin: 0 0 1.8rem 0;
+
+      @mixin atSmall {
+        font-size: 18px;
+        line-height: 1.8;
+      }
+      @mixin atLarge {
+        font-size: 18px;
+        line-height: 1.85;
+      }
+    }
+  }
   /*styles for project section layer*/
   &--narrow {
     width: auto;
@@ -40,23 +89,9 @@
       box-shadow: 0 0 0 120px $mainLightBlack;
     }
   }
+}
 
-  p {
-    font-size: 17px;
-    line-height: 1.75;
-    margin: 0 0 1.8rem 0;
-
-    @mixin atSmall {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-    @mixin atMedium {
-      font-size: 18px;
-      line-height: 1.85;
-    }
-    @mixin atLarge {
-      font-size: 18px;
-      line-height: 1.85;
-    }
-  }
+ul li {
+  line-height: 1.95;
+  list-style: square;
 }
