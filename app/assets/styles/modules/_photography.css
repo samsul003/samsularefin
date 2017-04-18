@@ -4,12 +4,15 @@
 	column-gap: 0;
   width: 90%;
 	max-width: 1100px;
-	margin: auto auto 5px auto;
+	margin: 45px auto 5px auto;
 	background-color: $mainLightBlack;
 	padding: 20px;
 
+	@mixin atSmall {
+		margin: 45px auto 30px auto;
+	}
 	@mixin atMedium {
-		margin: -50px auto 30px auto;
+		margin: 45px auto 30px auto;
 	}
 	@mixin atLarge {
 		margin: 40px auto 30px auto;
@@ -47,15 +50,3 @@
 		opacity: 0.5;
 	}
 }
-
-/*.gears {
-	margin: 0 auto 120px auto;
-	padding: 20px 30px;
-	width: 900px;
-	height: auto;
-	background-color: $mainLightBlack;
-
-	&:p {
-
-	}
-}*/

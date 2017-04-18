@@ -36,24 +36,32 @@
   }
   a {
     color: $mainWhite;
-    background-color: rgba($mainGrey, 1);
-    font-size: 10px;
-    font-weight: 700;
-    border-radius: 2%;
+    font-size: 13px;
+    font-weight: 500;
     text-decoration: none;
     display: block;
-    padding: 5px 7px;
+    padding: 8px 9px;
+    margin: auto;
 
-    &:hover {
-      color: $mainGold;
-      transition: all .5s ease-out;
+    @mixin atSmall {
+      font-size: 15px;
+      font-weight: 300;
     }
-
     @mixin atMedium {
       font-size: 21px;
+      font-weight: 700;
       padding: 12px 12px;
-      background-color: transparent;
+    @mixin atLarge {
+      font-size: 21px;
+      font-weight: 700;
+      padding: 12px 12px;
+    }
 
+
+      &:hover {
+        color: $mainGold;
+        transition: all .5s ease-out;
+      }
       &:is-current-link {
         color: $mainGold;
       }

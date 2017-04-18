@@ -23,7 +23,7 @@
     margin-right: 50px;
     max-width: 250px;
     max-height: 440px;
-    margin-top: -7%;
+    margin-top: -6%;
     left: 0;
   }
   @mixin atLarge {
