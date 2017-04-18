@@ -1941,11 +1941,11 @@ img {
  */
 
 .icon {
-       background-image: url('/assets/images/sprites/sprite-2281b334.svg');
+       background-image: url('../../assets/images/sprites/sprite-2281b334.svg');
      }
 
 .no-svg .icon {
-       background-image: url('/assets/images/sprites/sprite-2281b334.png');
+       background-image: url('../../assets/images/sprites/sprite-2281b334.png');
      }
 
 .icon--codepen {
@@ -2322,7 +2322,7 @@ img {
 @media (min-width: 1024px) {
 
   #columns {
-    margin: 40px auto 30px auto;
+    margin: 45px auto 30px auto;
   }
 }
 
