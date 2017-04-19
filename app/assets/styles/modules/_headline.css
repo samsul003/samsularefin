@@ -39,8 +39,14 @@
     }
     @mixin atLarge {
       display: block;
-      font-size: 33px;
-      transform: translateX(5%);
+      font-size: 27px;
+      transform: translateX(0);
+      transform-origin: 0 -700%;
+    }
+    @mixin atExtraLarge {
+      display: block;
+      font-size: 30px;
+      transform: translateX(10%);
       transform-origin: 0 -700%;
     }
   }

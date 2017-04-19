@@ -16,9 +16,12 @@
   &--wide {
     margin-top: 60px;
 
-    @mixin atSmall {
-      font-size: 40px;
+    @mixin atMini {
+      margin-top: 90px;
     }
+    /*@mixin atSmall {
+      font-size: 40px;
+    }*/
     @mixin atMedium {
       margin-top: 150px;
       font-size: 55px;
@@ -35,37 +38,39 @@
     }
   }
   &--narrow {
-    margin-top: 20px;
     top: -10%;
     left: 50%;
     transform: translate(-50%, 0);
 
+    @mixin atMini {
+      top: -10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+    }
     @mixin atSmall {
-      margin-top: 20px;
-      top: 0;
+      top: -20%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 40px;
     }
     @mixin atMedium {
-      margin-top: 30px;
       top: 0;
       left: 45%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -40%);
       font-size: 55px;
     }
     @mixin atLarge {
-      margin-top: 60px;
       font-size: 65px;
       top: 0;
       left: 45%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -45%);
     }
   }
   &--left-margin {
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -40%);
   }
   &--less-margin {
     margin-bottom: 2.4rem;

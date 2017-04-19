@@ -31,6 +31,17 @@
       margin-left: 50px;
       width: 75%;
     }
+    @mixin atMini {
+      &:first-child {
+        margin-left: 5%;
+        margin-top: -43%;
+        width: 95%;
+      }
+      &:last-child {
+        margin-left: 21%;
+        width: 65%;
+      }
+    }
     @mixin atSmall {
       &:first-child {
         margin-left: 5%;
@@ -64,9 +75,24 @@
         max-width: 550px;
       }
       &:last-child {
-        margin-top: -250px;
-        margin-left: 340px;
-        max-width: 310px;
+        margin-top: -50%;
+        margin-left: 74%;
+        width: 28%;
+      }
+    }
+    @mixin atExtraLarge {
+      max-width: 1280px;
+      padding-top: 40px;
+
+      &:first-child {
+        margin-top: -15%;
+        margin-left: -5px;
+        max-width: 550px;
+      }
+      &:last-child {
+        margin-top: -42%;
+        margin-left: 75%;
+        width: 26%;
       }
     }
   }
@@ -86,6 +112,13 @@
       left: 0;
       transform: translate(0, 20%);
 
+      @mixin atMini {
+        width: 270px;
+        height: 215px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 21%);
+      }
       @mixin atSmall {
         width: 375px;
         height: 300px;
@@ -135,10 +168,17 @@
         transform: translate(0, 20%);
       }
       @mixin atLarge {
-        width: 270px;
-        height: 410px;
+        width: 240px;
+        height: 355px;
         top: 0;
-        left: -1%;
+        left: 0;
+        transform: translate(0, 20%);
+      }
+      @mixin atExtraLarge {
+        width: 270px;
+        height: 365px;
+        top: 0;
+        left: 0;
         transform: translate(0, 20%);
       }
     }

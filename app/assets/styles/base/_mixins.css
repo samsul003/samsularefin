@@ -1,4 +1,10 @@
-/*media query for mobile devices*/
+/*media query for tiny mobile devices*/
+@define-mixin atMini {
+  @media (min-width: 360px) {
+      @mixin-content;
+  }
+}
+/*media query for small mobile devices*/
 @define-mixin atSmall {
   @media (min-width: 480px) {
       @mixin-content;
@@ -13,6 +19,12 @@
 /*media query for large devices*/
 @define-mixin atLarge{
   @media (min-width: 1024px) {
+      @mixin-content;
+  }
+}
+/*media query for extra large devices*/
+@define-mixin atExtraLarge{
+  @media (min-width: 1280px) {
       @mixin-content;
   }
 }

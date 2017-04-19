@@ -4,13 +4,18 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    perspective: 500px;
+    perspective: 1024px;
     position: relative;
     height: 100%;
+    width: 100%;
     margin-top: 20px;
     background-color: $mainLightBlack;
     box-shadow: 0 0 0 30px $mainLightBlack;
 
+    @mixin atMini {
+      background-color: $mainLightBlack;
+      box-shadow: 0 0 0 50px $mainLightBlack;
+    }
     @mixin atSmall {
       background-color: $mainLightBlack;
       box-shadow: 0 0 0 40px $mainLightBlack;
@@ -49,6 +54,7 @@
     width: 230px;
     margin: 20px;
     display: flex;
+    perspective-origin: center;
     flex-flow: column nowrap;
     opacity: 1;
 
@@ -59,7 +65,12 @@
       margin: 20px;
     }
     @mixin atLarge {
-      margin: 0 25px;
+      width: 200px;
+      margin: 0 20px;
+    }
+    @mixin atExtraLarge {
+      width: 230px;
+      margin: 0 20px;
     }
 
     &:nth-of-type(1) {

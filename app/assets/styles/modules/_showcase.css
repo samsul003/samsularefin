@@ -12,6 +12,13 @@
   float: left;
   @mixin clearfix;
 
+  @mixin atMini {
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 450px;
+    margin-top: -3.5%;
+    left: 3%;
+  }
   @mixin atSmall {
     margin-right: auto;
     max-width: 300px;
@@ -23,7 +30,7 @@
     margin-right: 50px;
     max-width: 250px;
     max-height: 440px;
-    margin-top: -6%;
+    margin-top: -7.5%;
     left: 0;
   }
   @mixin atLarge {
@@ -42,6 +49,10 @@
     left: 0;
     transform: translate(-17%, -6%) scale(.85);
 
+    @mixin atMini {
+      margin-left: 51px;
+      margin-top: 15px;
+    }
     @mixin atSmall {
       margin-left: 50.5px;
       margin-top: 15px;
@@ -69,6 +80,10 @@
     left: 0;
     transform: translate(13%, 10%);
 
+    @mixin atMini {
+      width: 258px;
+    	height: 305px;
+    }
     @mixin atSmall {
       width: 255px;
     	height: 303px;
