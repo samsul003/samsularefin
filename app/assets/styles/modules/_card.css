@@ -10,7 +10,7 @@
     width: 100%;
     margin-top: 20px;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 0 30px $mainLightBlack;
+    box-shadow: 0 0 0 60px $mainLightBlack;
 
     @mixin atMini {
       background-color: $mainLightBlack;
@@ -18,7 +18,7 @@
     }
     @mixin atSmall {
       background-color: $mainLightBlack;
-      box-shadow: 0 0 0 40px $mainLightBlack;
+      box-shadow: 0 0 0 60px $mainLightBlack;
     }
     @mixin atMedium {
       background-color: $mainLightBlack;

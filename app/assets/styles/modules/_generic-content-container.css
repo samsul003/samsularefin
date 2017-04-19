@@ -47,11 +47,12 @@
     margin-top: 60px;
     margin-bottom: auto;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 0 65px $mainLightBlack;
+    box-shadow: 0 0 0 90px $mainLightBlack;
 
     @mixin atMini {
       width: 320px;
       margin-top: 30px;
+      box-shadow: 0 0 0 75px $mainLightBlack;
     }
     @mixin atSmall {
       width: 430px;
@@ -66,6 +67,7 @@
       margin-left: 25%;
       width: 500px;
       margin-top: -30px;
+      box-shadow: 0 0 0 60px $mainLightBlack;
     }
     @mixin atExtraLarge {
       margin-left: 30%;
@@ -96,11 +98,15 @@
     width: auto;
     margin-top: 85px;
     background-color: $mainLightBlack;
-    box-shadow: 0 0 0 130px $mainLightBlack;
+    box-shadow: 0 0 0 140px $mainLightBlack;
 
-    @mixin atSmall {
+    @mixin atMini {
       margin-top: 70px;
       box-shadow: 0 0 0 75px $mainLightBlack;
+    }
+    @mixin atSmall {
+      margin-top: 70px;
+      box-shadow: 0 0 0 130px $mainLightBlack;
     }
     @mixin atMedium {
       margin-top: 50px;

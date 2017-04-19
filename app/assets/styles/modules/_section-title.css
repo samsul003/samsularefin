@@ -14,14 +14,11 @@
   transform: translate(-50%, 0);
 
   &--wide {
-    margin-top: 60px;
+    margin-top: 80px;
 
     @mixin atMini {
       margin-top: 90px;
     }
-    /*@mixin atSmall {
-      font-size: 40px;
-    }*/
     @mixin atMedium {
       margin-top: 150px;
       font-size: 55px;
@@ -30,7 +27,14 @@
       transform: translate(-50%, -50%);
     }
     @mixin atLarge {
-      margin-top: 150px;
+      margin-top: 170px;
+      font-size: 65px;
+      top: -10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @mixin atExtraLarge {
+      margin-top: 170px;
       font-size: 65px;
       top: -10%;
       left: 50%;
@@ -38,9 +42,9 @@
     }
   }
   &--narrow {
-    top: -10%;
+    top: -25%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 
     @mixin atMini {
       top: -10%;

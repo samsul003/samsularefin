@@ -24,7 +24,7 @@
 
     &:first-child {
       margin-left: 4%;
-      margin-top: -100px;
+      margin-top: -150px;
     }
     &:last-child {
       margin-top: -15px;
@@ -34,7 +34,7 @@
     @mixin atMini {
       &:first-child {
         margin-left: 5%;
-        margin-top: -43%;
+        margin-top: -50%;
         width: 95%;
       }
       &:last-child {
@@ -45,7 +45,7 @@
     @mixin atSmall {
       &:first-child {
         margin-left: 5%;
-        margin-top: -100px;
+        margin-top: -150px;
         width: 95%;
       }
       &:last-child {
