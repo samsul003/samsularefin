@@ -36,7 +36,8 @@
 			margin-bottom: 5px;
 		}
 		figcaption {
-		  font-size: .9rem;
+		  font-size: 16px;
+			font-weight: 200;
 			color: $mainWhite;
 		  line-height: 1.5;
 		}

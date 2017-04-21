@@ -3,7 +3,7 @@
   text-transform: capitalize;
   text-align: center;
   padding: 20px 10px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   color: $mainWhite;
@@ -12,13 +12,13 @@
   z-index: 10;
 
   @mixin atSmall {
-    font-size: 18px;
-  }
-  @mixin atMedium {
     font-size: 19px;
   }
-  @mixin atLarge {
+  @mixin atMedium {
     font-size: 20px;
+  }
+  @mixin atLarge {
+    font-size: 21px;
   }
 
   /*styles for headline travel*/

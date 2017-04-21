@@ -32,3 +32,9 @@ img {
   margin: 0 auto;
   padding: 0;
 }
+/*Global highlight styles*/
+.highlight {
+  font-weight: 800;
+  color: $mainGold;
+  opacity: 0.75;
+}

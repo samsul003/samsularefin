@@ -502,6 +502,14 @@ img {
   padding: 0;
 }
 
+/*Global highlight styles*/
+
+.highlight {
+  font-weight: 800;
+  color: rgb(191, 176, 125);
+  opacity: 0.75;
+}
+
 /*media query for tiny mobile devices*/
 
 /*media query for small mobile devices*/
@@ -1348,7 +1356,7 @@ img {
   text-transform: capitalize;
   text-align: center;
   padding: 20px 10px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
@@ -1361,21 +1369,21 @@ img {
 @media (min-width: 480px) {
 
   .headline {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
 @media (min-width: 768px) {
 
   .headline {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1024px) {
 
   .headline {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
@@ -1611,6 +1619,12 @@ img {
   display: table;
 }
 
+.generic-content-container__special::first-letter {
+  font-size: 30px;
+  color: rgb(191, 176, 125);
+  opacity: 0.1;
+}
+
 @media (min-width: 360px) {
 
   .generic-content-container {
@@ -1651,25 +1665,25 @@ img {
   }
 }
 
-.generic-content-container p {
-  font-size: 17px;
+.generic-content-container__special {
+  font-size: 18px;
   line-height: 1.75;
   margin: 0 0 1.8rem 0;
 }
 
 @media (min-width: 480px) {
 
-  .generic-content-container p {
-    font-size: 18px;
+  .generic-content-container__special {
+    font-size: 19px;
     line-height: 1.8;
   }
 }
 
 @media (min-width: 1024px) {
 
-  .generic-content-container p {
-    font-size: 18px;
-    line-height: 1.85;
+  .generic-content-container__special {
+    font-size: 20px;
+    line-height: 1.8;
   }
 }
 
@@ -1729,7 +1743,7 @@ img {
 }
 
 .generic-content-container--extended p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.75;
   margin: 0 0 1.8rem 0;
 }
@@ -1745,14 +1759,26 @@ img {
 @media (min-width: 1024px) {
 
   .generic-content-container--extended p {
-    font-size: 18px;
-    line-height: 1.85;
+    font-size: 20px;
+    line-height: 1.8;
   }
 }
 
 .generic-content-container--extended ul li {
   line-height: 1.85;
   list-style: square;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.generic-content-container--extended ul li:nth-child(1) {
+  color: rgb(191, 176, 125);
+  opacity: 0.75;
+}
+
+.generic-content-container--extended ul li:nth-child(3) {
+  color: rgb(191, 176, 125);
+  opacity: 0.75;
 }
 
 /*styles for project section layer*/
@@ -1966,8 +1992,8 @@ img {
   border: 1px solid rgba(192,192,192, 0.5);
   border-radius: 1%;
   z-index: 9;
-  font-size: 14px;
-  width: 50%;
+  font-size: 14.5px;
+  width: 55%;
   height: auto;
   padding: 10px 0;
   margin-top: -27%;
@@ -1977,23 +2003,25 @@ img {
 @media (min-width: 360px) {
 
   .btn {
-    font-size: 15px;
+    font-size: 15.5px;
     margin-top: -24%;
+    width: 40%;
   }
 }
 
 @media (min-width: 480px) {
 
   .btn {
-    font-size: 15px;
+    font-size: 15.5px;
     margin-top: -25%;
+    width: 40%;
   }
 }
 
 @media (min-width: 768px) {
 
   .btn {
-    font-size: 16px;
+    font-size: 16.5px;
     margin-top: -27%;
   }
 }
@@ -2001,8 +2029,8 @@ img {
 @media (min-width: 1024px) {
 
   .btn {
-    font-size: 16px;
-    width: 40%;
+    font-size: 18px;
+    width: 45%;
     height: auto;
     padding: 10px 0;
     margin-top: -28%;
@@ -2094,7 +2122,7 @@ img {
 @media (min-width: 1280px) {
 
   .btn--travel {
-    left: 9.75%;
+    left: 9.5%;
   }
 }
 
@@ -2575,7 +2603,8 @@ img {
 }
 
 #columns figure figcaption {
-  font-size: .9rem;
+  font-size: 16px;
+  font-weight: 200;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
 }
@@ -2662,6 +2691,6 @@ img {
   .site-footer--text {
     margin-left: -10%;
     top: 50px;
-    font-size: 18px;
+    font-size: 17px;
   }
 }
