@@ -67,10 +67,10 @@
       transform: translate(-14%, -10%) scale(.85);
     }
   }
-  /*styles for box frame*/
+  /*styles for photo frame*/
   &__photo__frame {
     border: 1.5px solid $mainGrey;
-    opacity: 0.3;
+    opacity: 0.9;
     border-radius: 0.5%;
   	width: 198px;
   	height: 238px;

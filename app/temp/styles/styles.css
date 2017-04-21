@@ -1030,11 +1030,11 @@ img {
   }
 }
 
-/*styles for box frame*/
+/*styles for photo frame*/
 
 .showcase__photo__frame {
   border: 1.5px solid rgba(192,192,192, 0.5);
-  opacity: 0.3;
+  opacity: 0.9;
   border-radius: 0.5%;
   width: 198px;
   height: 238px;
@@ -2422,7 +2422,8 @@ img {
 /*styles for first image frame*/
 
 .project__image__frame {
-  border: 1.5px solid rgba(192,192,192, 0.5);
+  border: 1.25px solid rgb(191, 176, 125);
+  opacity: 0.5;
   border-radius: 0.5%;
   width: 230px;
   height: 185px;
@@ -2485,7 +2486,8 @@ img {
 /*styles for second image frame*/
 
 .project__image__frame--travel {
-  border: 1.5px solid rgba(192,192,192, 0.5);
+  border: 1.25px solid rgb(191, 176, 125);
+  opacity: 0.5;
   border-radius: 0.5%;
   width: 175px;
   height: 245px;
