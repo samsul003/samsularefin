@@ -6,5 +6,5 @@ import $ from 'jquery';
 
 var mobileMenu = new MobileMenu();
 var pageLoader = new PageLoader();
-new RevealOnScroll($(".card"), "-12%");
+new RevealOnScroll($(".card"), "-5%");
 var modal = new Modal();
