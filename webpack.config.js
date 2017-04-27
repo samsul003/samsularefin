@@ -1,10 +1,10 @@
 module.exports = {
   entry: {
-    app: "./app/assets/scripts/App.js",
+    app: "./app/assets/scripts/app.js",
     vendor: "./app/assets/scripts/vendor.js"
   },
   output: {
-    path: "./app/temp/scripts",
+    path: __dirname + "./app/temp/scripts", // or path: path.join(__dirname, "dist/js")
     filename: "[name].js"
   },
   module: {
