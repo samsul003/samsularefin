@@ -15,10 +15,10 @@ class RevealOnScroll {
 // using waypoint to reveal each item
   createWaypoints() {
     // points to offsetPercentage object
-    var that = this;
+    let that = this;
     this.itemsToReveal.each(function() {
       // points to itemsToReveal object
-      var currentItem = this;
+      let currentItem = this;
       new Waypoint({
         element: currentItem,
         handler: function() {

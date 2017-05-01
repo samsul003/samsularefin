@@ -4,7 +4,7 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import Modal from './modules/Modal';
 import $ from 'jquery';
 
-var mobileMenu = new MobileMenu();
-var pageLoader = new PageLoader();
+let mobileMenu = new MobileMenu();
+let pageLoader = new PageLoader();
 new RevealOnScroll($(".card"), "-3%");
-var modal = new Modal();
+let modal = new Modal();
