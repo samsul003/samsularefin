@@ -2264,10 +2264,10 @@ img {
 }
 
 @-webkit-keyframes load{
-0%{stroke-dashoffset: 2500};}
+0%{stroke-dashoffset: 2150};}
 
 @keyframes load{
-0%{stroke-dashoffset: 2500};}
+0%{stroke-dashoffset: 2150};}
 
 .reveal-item {
   opacity: 0;

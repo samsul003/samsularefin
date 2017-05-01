@@ -13,8 +13,8 @@ class PageLoader {
   }
 
   loadAnimation() {
-    this.loader.delay(1300).fadeOut("slow");
-    this.siteContent.delay(2000).fadeIn("slow");
+    this.loader.delay(1000).fadeOut("slow");
+    this.siteContent.delay(1700).fadeIn("slow");
 
   }
 }
