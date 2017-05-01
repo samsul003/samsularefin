@@ -10,12 +10,11 @@ class PageLoader {
   events() {
     // page loader animation
     $(document).ready(this.loadAnimation.bind(this));
-
   }
 
   loadAnimation() {
-    this.loader.delay(2000).fadeOut("slow");
-    this.siteContent.delay(2700).fadeIn("slow");
+    this.loader.delay(1300).fadeOut("slow");
+    this.siteContent.delay(2000).fadeIn("slow");
 
   }
 }

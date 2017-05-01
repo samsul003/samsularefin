@@ -10,7 +10,7 @@
         position: relative;
         text-align: center;
         color: $mainWhite;
-        font-family: Lato;
+        font-family: Lato, sans-serif, times, arial;
         font-weight:100;
         margin: 2rem;
 
@@ -59,17 +59,18 @@
             position: absolute;
             left: 0;
             top: 0;
-            transform: rotate(-90deg);
+            transform: rotate(90deg);
         }
         &:nth-child(2) path {
             fill: none;
             stroke-width: 3;
-            stroke-dasharray: 100;
+            stroke-dasharray: 9;
             stroke: $mainGrey;
             opacity: 1;
-            animation: load 15s infinite;
+            animation: load 20s infinite linear;
         }
     }
 }
 
-@keyframes load{0%{stroke-dashoffset:0}}
+@keyframes load{
+0%{stroke-dashoffset: 2500};}

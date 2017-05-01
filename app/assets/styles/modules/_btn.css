@@ -20,24 +20,25 @@
   @mixin atMini {
     font-size: 15.5px;
     margin-top: -24%;
-    width: 40%;
+    width: 50%;
   }
   @mixin atSmall {
     font-size: 15.5px;
     margin-top: -25%;
-    width: 40%;
+    width: 50%;
   }
   @mixin atMedium {
     font-size: 16.5px;
     margin-top: -27%;
+    width: 55%;
   }
   @mixin atLarge {
     font-size: 18px;
-    width: 45%;
+    width: 55%;
     height: auto;
     padding: 10px 0;
     margin-top: -28%;
-    left: 30%;
+    left: 28%;
   }
 
   /*styles for footer button*/

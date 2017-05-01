@@ -111,32 +111,39 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(0, 20%);
+      transform: translate(0, 21%);
 
       @mixin atMini {
         width: 270px;
-        height: 215px;
+        height: 217px;
         top: 0;
         left: 0;
         transform: translate(0, 21%);
       }
       @mixin atSmall {
-        width: 375px;
-        height: 300px;
+        width: 377px;
+        height: 304px;
         top: 0;
         left: 0;
         transform: translate(0, 12%);
       }
       @mixin atMedium {
-        width: 495px;
-        height: 395px;
+        width: 505px;
+        height: 411px;
         top: 0;
         left: 0;
         transform: translate(0, 10%);
       }
       @mixin atLarge {
-        width: 500px;
-        height: 395px;
+        width: 507px;
+        height: 407px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 10%);
+      }
+      @mixin atExtraLarge {
+        width: 509px;
+        height: 409px;
         top: 0;
         left: 0;
         transform: translate(0, 10%);
@@ -148,7 +155,7 @@
       opacity: 0.5;
       border-radius: 0.5%;
       width: 175px;
-      height: 245px;
+      height: 253px;
       display: inline-block;
       position: absolute;
       top: 0;
@@ -156,8 +163,8 @@
       transform: translate(0, 18%);
 
       @mixin atSmall {
-        width: 240px;
-        height: 355px;
+        width: 247px;
+        height: 367px;
         top: 0;
         left: 0;
         transform: translate(0, 11%);
@@ -167,21 +174,21 @@
         height: 380px;
         top: 0;
         left: 0;
-        transform: translate(0, 20%);
+        transform: translate(0, 11%);
       }
       @mixin atLarge {
         width: 240px;
         height: 355px;
         top: 0;
         left: 0;
-        transform: translate(0, 20%);
+        transform: translate(0, 11%);
       }
       @mixin atExtraLarge {
         width: 270px;
-        height: 365px;
+        height: 407px;
         top: 0;
         left: 0;
-        transform: translate(0, 20%);
+        transform: translate(0, 11%);
       }
     }
   }
