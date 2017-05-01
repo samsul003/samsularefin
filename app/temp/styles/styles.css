@@ -956,7 +956,7 @@ img {
     margin-right: 50px;
     max-width: 250px;
     max-height: 440px;
-    margin-top: -7.5%;
+    margin-top: -6%;
     left: 0;
   }
 }
@@ -967,8 +967,19 @@ img {
     margin-right: 50px;
     max-width: 300px;
     max-height: 465px;
+    margin-top: -13.5%;
+    left: -0.5%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .showcase {
+    margin-right: 50px;
+    max-width: 300px;
+    max-height: 465px;
     margin-top: -14.5%;
-    left: 0;
+    left: -0.5%;
   }
 }
 
