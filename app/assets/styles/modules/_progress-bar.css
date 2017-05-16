@@ -10,7 +10,7 @@
         position: relative;
         text-align: center;
         color: $mainWhite;
-        font-family: Lato, sans-serif, times, arial;
+        font-family: 'Ubuntu', 'Lato', sans-serif, times, arial;
         font-weight:100;
         margin: 2rem;
 
@@ -23,9 +23,9 @@
             content: attr(data-percent);
             position: absolute;
             width: 100%;
-            top: 3.7rem;
+            top: 4rem;
             left: -10px;
-            font-size: 2rem;
+            font-size: 1.4rem;
             text-align: center;
 
             @mixin atSmall {
@@ -73,4 +73,5 @@
 }
 
 @keyframes load{
-0%{stroke-dashoffset: 2150};}
+0%{stroke-dashoffset: 2200};
+}
