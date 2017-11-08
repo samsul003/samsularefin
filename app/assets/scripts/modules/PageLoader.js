@@ -4,6 +4,7 @@ class PageLoader {
   constructor() {
     this.loader = $(".loader");
     this.siteContent = $(".site-content");
+    this.navLoader= $("#nav-loader");
     this.events();
   }
 
@@ -13,9 +14,8 @@ class PageLoader {
   }
 
   loadAnimation() {
-    this.loader.delay(1000).fadeOut("slow");
-    this.siteContent.delay(1700).fadeIn("slow");
-
+    this.loader.delay(300).fadeOut("slow");
+    this.siteContent.delay(500).fadeIn("slow");
   }
 }
 

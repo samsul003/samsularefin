@@ -557,14 +557,14 @@ img {
   height: 50px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.7);
-  position :absolute loader 5s infinite;/*magic*/
+  position :absolute loader 4s infinite;/*magic*/
   -webkit-animation: loader 2.5s linear infinite;
           animation: loader 2.5s linear infinite;
   -webkit-transform: scale(.1);
           transform: scale(.1);
   opacity: .5;
-  -webkit-animation-delay: -.5s;
-          animation-delay: -.5s;
+  -webkit-animation-delay: -.4s;
+          animation-delay: -.4s;
 }
 
 /* loader animation */
@@ -1138,8 +1138,8 @@ img {
 /*styles for card layer*/
 
 .card-container--extended {
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,7 +1160,7 @@ img {
 @media (min-width: 1024px) {
 
   .card-container--extended {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
@@ -1236,7 +1236,7 @@ img {
 
 .card--top,
     .card--bottom {
-  padding: 20px;
+  padding: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,7 +1265,7 @@ img {
 }
 
 .card--bottom {
-  height: 100px;
+  height: 75px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: .9;
   text-align: center;
@@ -2179,7 +2179,7 @@ img {
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Ubuntu', 'Lato', sans-serif, times, arial;
   font-weight:100;
-  margin: 2rem;
+  margin: 0;
 }
 
 .progress-bar>li:hover {
@@ -2192,7 +2192,7 @@ img {
   position: absolute;
   width: 100%;
   top: 4rem;
-  left: -10px;
+  left: -5px;
   font-size: 1.4rem;
   text-align: center;
 }

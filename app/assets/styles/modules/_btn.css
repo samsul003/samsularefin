@@ -95,11 +95,10 @@
       left: 9.5%;
     }
   }
-
-    &:hover {
-      color: $mainBlack;
-      font-weight: 600;
-      background-color: $mainWhite;
-      transition: all .5s ease-out;
-    }
+  &:hover {
+    color: $mainBlack;
+    font-weight: 600;
+    background-color: $mainWhite;
+    transition: all .5s ease-out;
+  }
 }

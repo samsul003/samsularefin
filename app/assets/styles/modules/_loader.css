@@ -25,11 +25,11 @@
       height: 50px;
       border-radius: 50%;
       background: $mainWhite;
-      position :absolute loader 5s infinite; /*magic*/
+      position :absolute loader 4s infinite; /*magic*/
       animation: loader 2.5s linear infinite;
       transform: scale(.1);
       opacity: .5;
-      animation-delay: -.5s;
+      animation-delay: -.4s;
   }
 }
 /* loader animation */

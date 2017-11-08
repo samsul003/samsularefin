@@ -32,8 +32,8 @@
 
     /*styles for card layer*/
     &--extended {
-      margin-top: 5px;
-      margin-bottom: 20px;
+      margin-top: 40px;
+      margin-bottom: 50px;
       display: flex;
       flex-flow: row wrap;
       align-items: center;
@@ -42,7 +42,7 @@
       box-shadow: 0 0 0 65px $mainLightBlack;
 
       @mixin atLarge {
-        margin-top: 50px;
+        margin-top: 20px;
       }
     }
 }
@@ -91,7 +91,7 @@
 
     &--top,
     &--bottom {
-        padding: 20px;
+        padding: 7px;
         display: flex;
         flex-flow: column wrap;
 
@@ -109,7 +109,7 @@
     }
 
     &--bottom {
-        height: 100px;
+        height: 75px;
         background-color: $mainWhite;
         opacity: .9;
         text-align: center;

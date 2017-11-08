@@ -12,7 +12,7 @@
         color: $mainWhite;
         font-family: 'Ubuntu', 'Lato', sans-serif, times, arial;
         font-weight:100;
-        margin: 2rem;
+        margin: 0;
 
         &:hover {
           color: $mainGold;
@@ -24,7 +24,7 @@
             position: absolute;
             width: 100%;
             top: 4rem;
-            left: -10px;
+            left: -5px;
             font-size: 1.4rem;
             text-align: center;
 
