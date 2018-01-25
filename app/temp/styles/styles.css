@@ -2132,11 +2132,11 @@ img {
  */
 
 .icon {
-       background-image: url('../../assets/images/sprites/sprite-2281b334.svg');
+       background-image: url('../../assets/images/sprites/sprite-6bc1caa8.svg');
      }
 
 .no-svg .icon {
-       background-image: url('../../assets/images/sprites/sprite-2281b334.png');
+       background-image: url('../../assets/images/sprites/sprite-6bc1caa8.png');
      }
 
 .icon--codepen {
@@ -2558,10 +2558,8 @@ img {
 
 #columns {
 	-webkit-column-width: 320px;
-	   -moz-column-width: 320px;
 	        column-width: 320px;
 	-webkit-column-gap: 0;
-	   -moz-column-gap: 0;
 	        column-gap: 0;
   width: 90%;
 	max-width: 1100px;
