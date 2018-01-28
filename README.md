@@ -13,7 +13,7 @@ npm install
 # serve with hot reload at localhost:3000
 gulp watch
 
-# build for production with minification & svg sprite
+# build for production with minification
 gulp build
 
 ```
