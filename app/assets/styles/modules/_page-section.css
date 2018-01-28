@@ -1,14 +1,14 @@
 /*styles for page section*/
 .page-section {
-  padding: 3.5rem 0;
+  padding: 0 0;
 
   @mixin atMedium {
-    padding: 0.8rem 0 1.5rem 0;
+    padding: 0 0 0 0;
   }
   @mixin atLarge {
-    padding: 1.5rem 0;
+    padding: 0 0;
   }
   @mixin atExtraLarge {
-    padding: 1.5rem 0;
+    padding: 0 0;
   }
 }
