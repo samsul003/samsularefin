@@ -37,7 +37,7 @@
   a {
     color: $mainWhite;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: none;
     display: block;
     padding: 8px 9px;
@@ -49,11 +49,11 @@
     }
     @mixin atMedium {
       font-size: 21px;
-      font-weight: 700;
+      font-weight: 500;
       padding: 12px 12px;
     @mixin atLarge {
       font-size: 21px;
-      font-weight: 700;
+      font-weight: 500;
       padding: 12px 12px;
     }
 

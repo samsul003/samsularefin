@@ -4,7 +4,7 @@
   text-align: center;
   padding: 20px 10px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.5;
   color: $mainWhite;
   margin-top: -1%;
@@ -21,10 +21,11 @@
     font-size: 21px;
   }
 
-  /*styles for headline travel*/
+  /*styles for project headline*/
   &--travel {
     text-transform: capitalize;
     font-size: 20px;
+    font-weight: 200;
     margin-top: 20px;
     display: inline-block;
     transition: all .5s ease-out;
@@ -34,20 +35,76 @@
       margin-left: 15%;
     }
     @mixin atMedium {
-      font-size: 27px;
+      font-size: 23px;
       margin-left: 25%;
     }
     @mixin atLarge {
       display: block;
-      font-size: 27px;
-      transform: translateX(0);
-      transform-origin: 0 -700%;
+      font-size: 23px;
+      margin-left: 57%;
     }
     @mixin atExtraLarge {
       display: block;
-      font-size: 30px;
-      transform: translateX(10%);
-      transform-origin: 0 -700%;
+      font-size: 23px;
+      margin-left: 55%;
     }
   }
+  &--qurasoft {
+     text-transform: capitalize;
+     font-size: 20px;
+     font-weight: 200;
+     margin-top: 20px;
+     display: inline-block;
+     transition: all .5s ease-out;
+
+      @mixin atSmall {
+        font-size: 23px;
+        margin-left: 15%;
+      }
+      @mixin atMedium {
+        font-size: 23px;
+        margin-left: 25%;
+      }
+      @mixin atLarge {
+        display: block;
+        font-size: 23px;
+        margin-left: 55%;
+      }
+      @mixin atExtraLarge {
+        display: block;
+        font-size: 23px;
+        margin-left: 53.5%;
+      }
+  }
+  &--verivox {
+     text-transform: capitalize;
+     font-size: 20px;
+     font-weight: 200;
+     margin-top: 20px;
+     display: inline-block;
+     transition: all .5s ease-out;
+
+      @mixin atSmall {
+        font-size: 23px;
+        margin-left: 15%;
+      }
+      @mixin atMedium {
+        font-size: 23px;
+        margin-left: 25%;
+      }
+      @mixin atLarge {
+        display: block;
+        font-size: 23px;
+        margin-left: 56%;
+      }
+      @mixin atExtraLarge {
+        display: block;
+        font-size: 23px;
+        margin-left: 54%;
+      }
+  }
+  &--gears {
+     font-size: 1.5rem;
+     font-weight: 200;
+   }
 }

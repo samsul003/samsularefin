@@ -4,7 +4,6 @@ class PageLoader {
   constructor() {
     this.loader = $(".loader");
     this.siteContent = $(".site-content");
-    this.navLoader= $("#nav-loader");
     this.events();
   }
 

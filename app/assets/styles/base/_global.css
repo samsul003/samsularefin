@@ -11,8 +11,8 @@ html{
 
 /*Global body styles*/
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  font-family: 'Menlio', sans-serif;
+  font-weight: 300;
   color: $mainWhite;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
@@ -34,7 +34,7 @@ img {
 }
 /*Global highlight styles*/
 .highlight {
-  font-weight: 800;
+  font-weight: 300;
   color: $mainGold;
   opacity: 0.75;
 }

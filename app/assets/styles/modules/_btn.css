@@ -4,7 +4,7 @@
   display: block;
   color: $mainWhite;
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   text-align: center;
   border: 1.5px solid $mainGrey;
@@ -35,10 +35,11 @@
   @mixin atLarge {
     font-size: 18px;
     width: 55%;
-    height: auto;
-    padding: 10px 0;
     margin-top: -28%;
-    left: 28%;
+    left: 25%;
+  }
+  @mixin atExtraLarge {
+    left: 26%;
   }
 
   /*styles for footer button*/
@@ -64,17 +65,17 @@
     }
     @mixin atLarge {
       top: -10px;
-      left: 10%;
+      left: 9.25%;
       margin-bottom: -50px;
     }
     @mixin atExtraLarge {
       top: -10px;
-      left: 7.25%;
+      left: 7%;
       margin-bottom: -50px;
     }
   }
   /*styles for travel view project button*/
-  &--travel {
+  &--project {
     top: 0;
     left: 6%;
     width: auto;
@@ -90,6 +91,7 @@
     }
     @mixin atLarge {
       left: 1.5%;
+      margin: 0 auto;
     }
     @mixin atExtraLarge {
       left: 9.5%;
@@ -97,7 +99,7 @@
   }
   &:hover {
     color: $mainBlack;
-    font-weight: 600;
+    font-weight: 400;
     background-color: $mainWhite;
     transition: all .5s ease-out;
   }

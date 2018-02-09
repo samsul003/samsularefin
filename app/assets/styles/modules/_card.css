@@ -98,6 +98,7 @@
         h2 {
           color: $mainFreshBlack;
           font-style: italic;
+          font-size: 1.3rem;
         }
     }
 

@@ -18,6 +18,7 @@
 
     @mixin atMini {
       margin-top: 90px;
+      margin-top: 150px;
     }
     @mixin atMedium {
       margin-top: 150px;

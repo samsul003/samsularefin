@@ -8,7 +8,7 @@
   @mixin clearfix;
 
   &__special::first-letter {
-    font-size: 30px;
+    font-size: 23px;
     color: $mainGold;
     opacity: 0.7;
   }
@@ -22,8 +22,8 @@
     margin-top: 30px;
   }
   @mixin atMedium {
-    width: 370px;
-    margin-top: 10px;
+    width: 380px;
+    margin-top: 63px;
     box-shadow: 0 0 0 90px $mainLightBlack;
   }
   @mixin atLarge {
@@ -36,16 +36,16 @@
     margin-top: -30px;
   }
   &__special {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.75;
     margin: 0 0 1.8rem 0;
 
     @mixin atSmall {
-      font-size: 19px;
+      font-size: 17px;
       line-height: 1.8;
     }
     @mixin atLarge {
-      font-size: 20px;
+      font-size: 19px;
       line-height: 1.8;
     }
   }
@@ -125,19 +125,19 @@
 
     @mixin atMini {
       margin-top: 70px;
-      box-shadow: 0 0 0 75px $mainLightBlack;
+      box-shadow: 0 0 0 317px $mainLightBlack;
     }
     @mixin atSmall {
       margin-top: 70px;
-      box-shadow: 0 0 0 130px $mainLightBlack;
+      box-shadow: 0 0 0 434px $mainLightBlack;
     }
     @mixin atMedium {
       margin-top: 15px;
-      box-shadow: 0 0 0 90px $mainLightBlack;
+      box-shadow: 0 0 0 423px $mainLightBlack;
     }
     @mixin atLarge {
       margin-top: 70px;
-      box-shadow: 0 0 0 160px $mainLightBlack;
+      box-shadow: 0 0 0 268px $mainLightBlack;
     }
   }
 }
