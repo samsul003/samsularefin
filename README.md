@@ -1,8 +1,5 @@
 # Samsul Arefin [Web Developer / Frontend Developer / Photographer]
 
-> Portfolio Website.
-> Can be visited at https://samsul003.github.io/samsularefin/
-
 ## Build Setup
 
 ``` bash
