@@ -15,16 +15,17 @@ class RevealOnScroll {
 // using waypoint to reveal each item
   createWaypoints() {
     // points to offsetPercentage object
-    let that = this;
-    this.itemsToReveal.each(function() {
+    let context = this;
+    this.itemsToReveal.each((item) => {
       // points to itemsToReveal object
-      let currentItem = this;
+      //let currentItem = this;
+      let currentItem = this.item;
       new Waypoint({
         element: currentItem,
         handler: function() {
           $(currentItem).addClass("reveal-item--is-visible");
         },
-        offset: that.offsetPercentage
+        offset: context.offsetPercentage
       });
     });
   }
