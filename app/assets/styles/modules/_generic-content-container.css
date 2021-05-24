@@ -111,9 +111,13 @@
         opacity: 0.75;
       }
       &:nth-child(5) {
-         color: $mainGold;
-         opacity: 0.75;
-       }
+        color: $mainGold;
+        opacity: 0.75;
+      }
+      &:nth-child(7) {
+        color: $mainGold;
+        opacity: 0.75;
+      }
     }
   }
   /*styles for project section layer*/
