@@ -1,4 +1,4 @@
-## Samsul Arefin [Software Engineer / Photographer]
+## Samsul Arefin [Software Engineer]
 
 
 # Install dependencies
