@@ -1,16 +1,17 @@
-# Samsul Arefin [Web Developer / Frontend Developer / Photographer]
+## Samsul Arefin [Software Engineer / Photographer]
 
-## Build Setup
 
+# Install dependencies
 ``` bash
-
-# install dependencies
 npm install
+```
 
-# serve with hot reload at localhost:3000
+# Serve with hot reload at localhost:3000
+``` bash
 gulp watch
+```
 
-# build for production with minification
+# Build for production with minification
+``` bash
 gulp build
-
 ```
