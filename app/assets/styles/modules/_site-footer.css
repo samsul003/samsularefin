@@ -33,3 +33,9 @@
     }
   }
 }
+
+.site-footer__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}

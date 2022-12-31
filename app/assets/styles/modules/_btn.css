@@ -42,38 +42,6 @@
     left: 26%;
   }
 
-  /*styles for footer button*/
-  &--footer {
-    position: relative;
-    top: 14px;
-    left: 2.25%;
-    width: auto;
-    height: auto;
-    padding: 10px 15px;
-    display: inline-block;
-    margin-bottom: -20px;
-
-    @mixin atSmall {
-      top: -10px;
-      left: 21%;
-      margin-bottom: -50px;
-    }
-    @mixin atMedium {
-      top: -10px;
-      left: 12%;
-      margin-bottom: -50px;
-    }
-    @mixin atLarge {
-      top: -10px;
-      left: 9.25%;
-      margin-bottom: -50px;
-    }
-    @mixin atExtraLarge {
-      top: -10px;
-      left: 7%;
-      margin-bottom: -50px;
-    }
-  }
   /*styles for travel view project button*/
   &--project {
     top: 0;
@@ -103,4 +71,21 @@
     background-color: $mainWhite;
     transition: all .5s ease-out;
   }
+}
+
+/*styles for footer button*/
+.btn--footer {
+  background-color: $mainFreshBlack;
+  color: $mainWhite;
+  position: relative;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border: 1.5px solid $mainGrey;
+  border-radius: 1%;
+  z-index: 9;
+  font-size: 14.5px;
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
 }
