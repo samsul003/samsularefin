@@ -2,10 +2,10 @@
     Instead edit gulp/templates/sprite.css !
  */
      .icon {
-       background-image: url('../../assets/images/sprites/sprite-2d31709d.svg');
+       background-image: url('../../assets/images/sprites/sprite-e69ed907.svg');
      }
      .no-svg .icon {
-       background-image: url('../../assets/images/sprites/sprite-2d31709d.png');
+       background-image: url('../../assets/images/sprites/sprite-e69ed907.png');
      }
     .icon--codepen {
       width: 50px;

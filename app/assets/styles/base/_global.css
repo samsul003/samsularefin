@@ -26,6 +26,10 @@ img {
   vertical-align: top;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Entire content of the page is hidden until the loader animation is complete*/
 .site-content {
   display: none;
@@ -33,8 +37,13 @@ img {
   padding: 0;
 }
 /*Global highlight styles*/
-.highlight {
+.highlight, .highlight a {
   font-weight: 300;
   color: $mainGold;
   opacity: 0.75;
+}
+
+.highlight a {
+  opacity: 1;
+  font-weight: 400;
 }

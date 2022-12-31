@@ -494,6 +494,10 @@ img {
   vertical-align: top;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Entire content of the page is hidden until the loader animation is complete*/
 
 .site-content {
@@ -504,10 +508,15 @@ img {
 
 /*Global highlight styles*/
 
-.highlight {
+.highlight, .highlight a {
   font-weight: 300;
   color: rgb(191, 176, 125);
   opacity: 0.75;
+}
+
+.highlight a {
+  opacity: 1;
+  font-weight: 400;
 }
 
 /*media query for tiny mobile devices*/
@@ -884,6 +893,7 @@ img {
 
 .page-section {
   padding: 0 0;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -956,7 +966,7 @@ img {
     margin-right: 50px;
     max-width: 250px;
     max-height: 440px;
-    margin-top: -6%;
+    margin-top: -27px;
     left: 0;
   }
 }
@@ -965,7 +975,7 @@ img {
 
   .showcase {
     margin-right: 50px;
-    max-width: 300px;
+    max-width: 320px;
     max-height: 465px;
     margin-top: -13.5%;
     left: -0.5%;
@@ -976,7 +986,7 @@ img {
 
   .showcase {
     margin-right: 50px;
-    max-width: 300px;
+    max-width: 320px;
     max-height: 465px;
     margin-top: -14.5%;
     left: -0.5%;
@@ -1543,11 +1553,6 @@ img {
   }
 }
 
-.headline--gears {
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-
 /*styles for section titles*/
 
 .section-title {
@@ -1957,19 +1962,20 @@ img {
 	        transform-origin: 0 50%;
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 1);
-	border: 1.5px solid rgb(191, 176, 125);
-	box-shadow: 0 0 0 8px rgba(0, 0, 0, 1);
+	border: 2px solid rgb(191, 176, 125);
+	box-shadow: 0 0 0 14px rgba(0, 0, 0, 1);
   height: 25px;
 	width: 25px;
-  -webkit-transform:rotate(45deg);
-          transform:rotate(45deg);
+  margin-top: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /*styles for section seperator*/
 
 .separator {
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	opacity: .6;
+	border: 0.5px solid rgb(191, 176, 125);
+	opacity: .4;
 	width: auto;
 	clear: both;
 }
@@ -2267,11 +2273,11 @@ img {
  */
 
 .icon {
-       background-image: url('../../assets/images/sprites/sprite-2d31709d.svg');
+       background-image: url('../../assets/images/sprites/sprite-e69ed907.svg');
      }
 
 .no-svg .icon {
-       background-image: url('../../assets/images/sprites/sprite-2d31709d.png');
+       background-image: url('../../assets/images/sprites/sprite-e69ed907.png');
      }
 
 .icon--codepen {
@@ -2693,10 +2699,8 @@ img {
 
 #columns {
 	-webkit-column-width: 320px;
-	   -moz-column-width: 320px;
 	        column-width: 320px;
 	-webkit-column-gap: 0;
-	   -moz-column-gap: 0;
 	        column-gap: 0;
   	width: 90%;
 	max-width: 1100px;
