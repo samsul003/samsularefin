@@ -1,17 +1,25 @@
 ## Samsul Arefin [Software Engineer]
 
+# Node version required
+
+```
+v8.*.*
+```
 
 # Install dependencies
-``` bash
+
+```bash
 npm install
 ```
 
 # Serve with hot reload at localhost:3000
-``` bash
+
+```bash
 gulp watch
 ```
 
 # Build for production with minification
-``` bash
+
+```bash
 gulp build
 ```
