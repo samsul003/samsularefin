@@ -30,21 +30,14 @@
     margin-right: 50px;
     max-width: 250px;
     max-height: 440px;
-    margin-top: -27px;
+    margin-top: -11px;
     left: 0;
   }
   @mixin atLarge {
     margin-right: 50px;
     max-width: 320px;
     max-height: 465px;
-    margin-top: -13.5%;
-    left: -0.5%;
-  }
-  @mixin atExtraLarge {
-    margin-right: 50px;
-    max-width: 320px;
-    max-height: 465px;
-    margin-top: -14.5%;
+    margin-top: -11.5%;
     left: -0.5%;
   }
 

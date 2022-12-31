@@ -9,8 +9,8 @@
 	background-color: $mainBlack;
 	border: 2px solid $mainGold;
 	box-shadow: 0 0 0 14px $mainBlack;
-  height: 25px;
-	width: 25px;
+  height: 30px;
+	width: 30px;
   margin-top: 16px;
   transform: rotate(45deg);
 }

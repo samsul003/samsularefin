@@ -1,7 +1,6 @@
 /*styles for page section*/
 .page-section {
   padding: 0 0;
-  margin-bottom: 16px;
 
   @mixin atMedium {
     padding: 0 0 0 0;

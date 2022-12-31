@@ -35,7 +35,7 @@
   @mixin atLarge {
     font-size: 18px;
     width: 55%;
-    margin-top: -28%;
+    margin-top: -33%;
     left: 25%;
   }
   @mixin atExtraLarge {
@@ -88,4 +88,11 @@
   width: auto;
   height: auto;
   padding: 8px 16px;
+}
+
+.btn--footer:hover {
+  color: $mainBlack;
+  font-weight: 400;
+  background-color: $mainWhite;
+  transition: all .5s ease-out;
 }
