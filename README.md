@@ -1,5 +1,3 @@
-## Samsul Arefin
-
 # Node version required
 
 ```
