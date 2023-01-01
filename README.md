@@ -1,4 +1,4 @@
-## Samsul Arefin [Software Engineer]
+## Samsul Arefin
 
 # Node version required
 
