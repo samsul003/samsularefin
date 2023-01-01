@@ -1,7 +1,6 @@
 /*styles for site-header*/
 .site-header {
-  padding-bottom: 10px;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 2;
   transition: background-color .3s ease-out;

@@ -19,12 +19,7 @@
 
   @mixin atMini {
     font-size: 15.5px;
-    margin-top: -24%;
-    width: 50%;
-  }
-  @mixin atSmall {
-    font-size: 15.5px;
-    margin-top: -25%;
+    margin-top: -32%;
     width: 50%;
   }
   @mixin atMedium {
@@ -35,7 +30,6 @@
   @mixin atLarge {
     font-size: 18px;
     width: 55%;
-    margin-top: -33%;
     left: 25%;
   }
   @mixin atExtraLarge {

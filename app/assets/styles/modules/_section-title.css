@@ -1,7 +1,5 @@
 /*styles for section titles*/
 .section-title {
-  width: 250px;
-  padding-bottom: 10px;
   position: relative;
   text-align: center;
   font-weight: 300;
@@ -9,69 +7,13 @@
   opacity: 0.5;
   color: $mainGold;
   z-index: 15;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  padding-bottom: 8px;
+  margin: auto;
 
-  &--wide {
-    margin-top: 80px;
-
-    @mixin atMini {
-      margin-top: 90px;
-      margin-top: 150px;
-    }
-    @mixin atMedium {
-      margin-top: 150px;
-      font-size: 55px;
-      top: -10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    @mixin atLarge {
-      margin-top: 170px;
-      font-size: 65px;
-      top: -10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    @mixin atExtraLarge {
-      margin-top: 170px;
-      font-size: 65px;
-      top: -10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  @mixin atMedium {
+    font-size: 65px;
   }
-  &--narrow {
-    top: -25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    @mixin atMini {
-      top: -10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 40px;
-    }
-    @mixin atSmall {
-      top: -20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 40px;
-    }
-    @mixin atMedium {
-      top: 0;
-      left: 45%;
-      transform: translate(-50%, -40%);
-      font-size: 55px;
-    }
-    @mixin atLarge {
-      font-size: 65px;
-      top: 0;
-      left: 45%;
-      transform: translate(-50%, -45%);
-    }
-  }
   &--left-margin {
     top: 0;
     left: 50%;
