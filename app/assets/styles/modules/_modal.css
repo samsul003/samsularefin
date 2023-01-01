@@ -51,8 +51,15 @@
     color: $mainWhite;
     cursor: pointer;
 
-    &:hover {
-      color: $mainGold;
+    & svg {
+      padding: 4px;
+      fill: $mainFreshBlack;
+      background-color: $mainWhite;
+      border-radius: 50%;
+    }
+
+    & svg:hover {
+      background-color: $mainGold;
     }
   }
 }
