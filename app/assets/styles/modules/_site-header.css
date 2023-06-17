@@ -20,7 +20,7 @@
 
     &:hover {
       .site-header__logo {
-        background-color: $mainWhite;
+        background-color: $mainLightWhite;
         color: $mainFreshBlack;
         transition: all .5s ease-out;
       }
@@ -65,7 +65,7 @@
     @mixin atMedium {
       text-transform: capitalize;
       text-decoration: none;
-      color: $mainWhite;
+      color: $mainLightWhite;
       font-size: 23px;
       font-weight: 500;
       display: inline-block;

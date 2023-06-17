@@ -7,7 +7,7 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
-  color: $mainWhite;
+  color: $mainLightWhite;
   transition: all .5s ease-out;
   z-index: 10;
 

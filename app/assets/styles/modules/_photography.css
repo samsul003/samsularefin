@@ -10,7 +10,7 @@
 
 	figure {
 		background: $mainFreshBlack;
-		border: 1px solid $mainWhite;
+		border: 1px solid $mainLightWhite;
 		margin: 15px;
 		padding: 15px;
 		transition: opacity .5s ease-out;
@@ -20,14 +20,14 @@
 		img {
 			width: 100%;
 		  height: auto;
-			border-bottom: 1px solid $mainWhite;
+			border-bottom: 1px solid $mainLightWhite;
 			padding-bottom: 15px;
 			margin-bottom: 5px;
 		}
 		figcaption {
 		  font-size: 16px;
 			font-weight: 200;
-			color: $mainWhite;
+			color: $mainLightWhite;
 		  line-height: 1.5;
 		}
 	}
@@ -36,7 +36,7 @@
 	  cursor: pointer;
 	}
 	&:hover figure:not(:hover) {
-	  border: 1px solid $mainWhite;
+	  border: 1px solid $mainLightWhite;
 		opacity: 0.5;
 	}
 }

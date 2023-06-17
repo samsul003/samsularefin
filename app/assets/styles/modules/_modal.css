@@ -48,13 +48,13 @@
     font-size: 2rem;
     transform: scaleX(1.1);
     transform-origin: 100% 0;
-    color: $mainWhite;
+    color: $mainLightWhite;
     cursor: pointer;
 
     & svg {
       padding: 4px;
       fill: $mainFreshBlack;
-      background-color: $mainWhite;
+      background-color: $mainLightWhite;
       border-radius: 2px;
     }
 

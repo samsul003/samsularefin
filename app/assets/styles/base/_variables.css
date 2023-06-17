@@ -1,5 +1,6 @@
 /*project color variables*/
-$mainWhite:  rgba(255, 255, 255, 0.7);
+$mainWhite:  rgba(255, 255, 255, 1);
+$mainLightWhite: rgba(255, 255, 255, 0.8);
 $mainBlack: rgba(0, 0, 0, 1);
 $mainLightBlack: rgba(0, 0, 0, 0.3);
 $mainFreshBlack: rgba(0, 0, 0, 0.9);
