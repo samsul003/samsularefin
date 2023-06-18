@@ -40,8 +40,8 @@
   }
   /*styles for photo frame*/
   &__photo__frame {
-    border: 2.5px solid $mainGrey;
-    opacity: 0.5;
+    border: 2px solid $mainGold;
+    opacity: 0.6;
     border-radius: 0.5%;
   	width: 198px;
   	height: 238px;

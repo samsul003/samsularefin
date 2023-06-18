@@ -7,7 +7,7 @@
   font-weight: 400;
   text-decoration: none;
   text-align: center;
-  border: 1.5px solid $mainGrey;
+  border: 1.5px solid $mainGoldLight;
   border-radius: 1%;
   z-index: 9;
   font-size: 14.5px;
@@ -64,6 +64,7 @@
     font-weight: 400;
     background-color: $mainWhite;
     transition: all .5s ease-out;
+    border: 1.5px solid $mainGrey;
   }
 }
 
@@ -75,7 +76,7 @@
   font-weight: 400;
   text-decoration: none;
   text-align: center;
-  border: 1.5px solid $mainGrey;
+  border: 1.5px solid $mainGoldLight;
   border-radius: 1%;
   z-index: 9;
   font-size: 14.5px;
@@ -89,4 +90,5 @@
   font-weight: 400;
   background-color: $mainWhite;
   transition: all .5s ease-out;
+  border: 1.5px solid $mainGrey;
 }
