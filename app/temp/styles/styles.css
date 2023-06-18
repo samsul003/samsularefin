@@ -2132,15 +2132,6 @@ a {
 0%{stroke-dashoffset: 2200};
 }
 
-.reveal-item {
-  opacity: 0;
-  transition: all 2s ease-out;
-}
-
-.reveal-item--is-visible {
-  opacity: 1;
-}
-
 /*styles for project section*/
 
 .project {
@@ -2450,14 +2441,19 @@ a {
   line-height: 1.5;
 }
 
-#columns:hover figure{
-  border: 1px solid rgb(191, 176, 125);
+#columns:hover figure {
   cursor: pointer;
+  border: 1px solid rgb(191, 176, 125, 0.7);
+  transition: border 0.5s ease-out;
 }
 
 #columns:hover figure:not(:hover) {
   border: 1px solid rgba(255, 255, 255, 0.8);
-  opacity: 0.5;
+}
+
+&:focus,
+&:active {
+  background-color: transparent;
 }
 
 .social-icons {

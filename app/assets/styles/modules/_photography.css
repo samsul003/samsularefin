@@ -31,12 +31,17 @@
 		  line-height: 1.5;
 		}
 	}
-	&:hover figure{
-	  border: 1px solid $mainGold;
+	&:hover figure {
 	  cursor: pointer;
+	  border: 1px solid $mainGoldLight;
+    transition: border 0.5s ease-out;
 	}
-	&:hover figure:not(:hover) {
+  &:hover figure:not(:hover) {
 	  border: 1px solid $mainLightWhite;
-		opacity: 0.5;
 	}
+}
+
+&:focus,
+&:active {
+  background-color: transparent;
 }
