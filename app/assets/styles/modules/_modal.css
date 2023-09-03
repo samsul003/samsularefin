@@ -55,7 +55,7 @@
       padding: 4px;
       fill: $mainFreshBlack;
       background-color: $mainLightWhite;
-      border-radius: 2px;
+      border-radius: 50%;
     }
 
     & svg:hover {
